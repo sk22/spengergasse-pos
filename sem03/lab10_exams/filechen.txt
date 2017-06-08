@@ -1,0 +1,3 @@
+German: 100, X, 0X, 2016-12-06, german-26-words.txt
+Multiple Choice: answers-mc.txt, V, 0Y, 2016-12-11, positive-mc.txt
+German: 140, I, 0Z, 2016-12-15, german-26-words.txt

@@ -1,0 +1,2 @@
+2016-11-21T18:17:07.753 java.io.FileNotFoundException: \someinvaliddir\file.txt (The system cannot find the path specified)
+2016-11-21T18:17:07.793 java.io.FileNotFoundException: doesnotexist.txt (The system cannot find the file specified)

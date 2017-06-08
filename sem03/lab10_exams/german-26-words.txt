@@ -1,0 +1,3 @@
+Das ist ein überschaubarer Text für Testzwecke mit 5 enthaltenen Zahlen:
+Diese Zahlen wie zum Beispiel 41.5 sollten ignoriert werden!!! Auch 17, 8 und 12 somit entspricht die
+Anzahl der Worte 26.
