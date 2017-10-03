@@ -1,0 +1,11 @@
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\obj\Debug\netcoreapp2.0\sem05-lab02-java-conversion.csprojResolveAssemblyReference.cache
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\obj\Debug\netcoreapp2.0\sem05-lab02-java-conversion.csproj.CoreCompileInputs.cache
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\obj\Debug\netcoreapp2.0\sem05-lab02-java-conversion.AssemblyInfoInputs.cache
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\obj\Debug\netcoreapp2.0\sem05-lab02-java-conversion.AssemblyInfo.cs
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\bin\Debug\netcoreapp2.0\sem05-lab02-java-conversion.deps.json
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\bin\Debug\netcoreapp2.0\sem05-lab02-java-conversion.runtimeconfig.json
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\bin\Debug\netcoreapp2.0\sem05-lab02-java-conversion.runtimeconfig.dev.json
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\bin\Debug\netcoreapp2.0\sem05-lab02-java-conversion.dll
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\bin\Debug\netcoreapp2.0\sem05-lab02-java-conversion.pdb
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\obj\Debug\netcoreapp2.0\sem05-lab02-java-conversion.dll
+C:\Users\samuel\Code\spengergasse\spengergasse-pos\sem05-csharp\sem05-lab02-java-conversion\obj\Debug\netcoreapp2.0\sem05-lab02-java-conversion.pdb
