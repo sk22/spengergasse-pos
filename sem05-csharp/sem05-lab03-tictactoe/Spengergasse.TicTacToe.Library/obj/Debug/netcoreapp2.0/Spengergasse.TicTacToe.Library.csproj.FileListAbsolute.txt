@@ -1,9 +1,0 @@
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\bin\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.deps.json
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\bin\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.dll
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\bin\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.pdb
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\obj\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.csproj.CoreCompileInputs.cache
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\obj\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.AssemblyInfoInputs.cache
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\obj\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.AssemblyInfo.cs
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\obj\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.dll
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\obj\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.pdb
-C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.Library\obj\Debug\netcoreapp2.0\Spengergasse.TicTacToe.Library.csprojResolveAssemblyReference.cache
