@@ -5,6 +5,7 @@
     public int CurrentPlayer { get; private set; } = 1;
 
     public void Set(int cell) {
+      if (cell < 0 || cell >= Cells.Length) return;
       if (Cells[cell] == 0) {
         Cells[cell] = CurrentPlayer;
         IteratePlayer();

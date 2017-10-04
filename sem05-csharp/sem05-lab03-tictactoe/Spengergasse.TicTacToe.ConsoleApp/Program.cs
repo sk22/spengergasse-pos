@@ -42,6 +42,8 @@ namespace Spengergasse.TicTacToe.ConsoleApp {
       return null;
     }
 
+    private static int[] cellIndexTranslation = new [] { 7, 8, 9, 4, 5, 6, 1, 2, 3 };
+
     static void Move() {
       var cells = game.Cells;
       DrawGrid();
@@ -49,10 +51,12 @@ namespace Spengergasse.TicTacToe.ConsoleApp {
       Console.WriteLine();
       Console.WriteLine("It's {0}'s turn.", GetPlayer(game.CurrentPlayer));
 
-      Console.Write("Please enter a valid number between 0 and 8: ");
+      Console.Write("Please enter a valid number between 1 and 9: ");
       var input = ScanNumber();
       Console.WriteLine(input);
-      game.Set(input);
+      var index = Array.IndexOf(cellIndexTranslation, input);
+      Console.WriteLine(index);
+      game.Set(index);
     }
 
     static void DrawGrid() {
@@ -62,22 +66,22 @@ namespace Spengergasse.TicTacToe.ConsoleApp {
       while (i < cells.Length) {
         var col = i % 3;
         if (col == 0) Console.Write("  ");
-        Console.Write(cells[i] == 0 ? i.ToString() : GetPlayer(cells[i]));
+        Console.Write(cells[i] == 0
+          ? cellIndexTranslation[i].ToString()
+          : GetPlayer(cells[i]));
         Console.Write(col == 2 ? '\n' : ' ');
         i++;
       }
     }
 
     static int ScanNumber() {
-      int? number = null;
-      while (number == null) {
+      while (true) {
         try {
-          number = int.Parse(Console.ReadKey(true).KeyChar.ToString());
+          return int.Parse(Console.ReadKey(true).KeyChar.ToString());
         } catch (FormatException) {
           continue;
         }
       }
-      return (int) number;
     }
   }
 }
