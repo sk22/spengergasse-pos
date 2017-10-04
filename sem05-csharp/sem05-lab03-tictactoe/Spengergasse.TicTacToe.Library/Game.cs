@@ -17,9 +17,9 @@ namespace Spengergasse.TicTacToe.Library {
       CurrentPlayer = CurrentPlayer == 1 ? 2 : 1;
 
     public int? CheckWinner() {
-      if (CheckFull()) return 0;
       if (CheckWinner(1)) return 1;
       if (CheckWinner(2)) return 2;
+      if (CheckFull()) return 0;
       return null;
     }
 
