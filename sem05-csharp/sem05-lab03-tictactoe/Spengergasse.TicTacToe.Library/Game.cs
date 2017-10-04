@@ -1,7 +1,5 @@
-﻿using System.Linq;
-
-namespace Spengergasse.TicTacToe.Library {
-  public class Game {
+﻿namespace Spengergasse.TicTacToe.Library {
+  public class Game : IGame {
     public int[] Cells { get; } = new int[9];
 
     public int CurrentPlayer { get; private set; } = 1;
@@ -23,7 +21,7 @@ namespace Spengergasse.TicTacToe.Library {
       return null;
     }
 
-    public bool CheckFull() {
+    private bool CheckFull() {
       foreach (int cell in Cells) {
         if (cell == 0) return false;
       }

@@ -1,0 +1,15 @@
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\hostpolicy.dll
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\hostfxr.dll
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.exe
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.deps.json
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.runtimeconfig.json
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.runtimeconfig.dev.json
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.dll
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.pdb
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.Library.dll
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\bin\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.Library.pdb
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\obj\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\obj\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\obj\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.AssemblyInfo.cs
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\obj\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.dll
+C:\Users\samuel\Code\spengergasse-pos\sem05-csharp\sem05-lab03-tictactoe\Spengergasse.TicTacToe.ConsoleApp\obj\Release\netcoreapp2.0\win10-x64\Spengergasse.TicTacToe.ConsoleApp.pdb

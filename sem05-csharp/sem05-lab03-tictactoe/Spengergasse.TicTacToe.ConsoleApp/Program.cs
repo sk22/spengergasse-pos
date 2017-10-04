@@ -50,9 +50,8 @@ namespace Spengergasse.TicTacToe.ConsoleApp {
       Console.WriteLine("It's {0}'s turn.", GetPlayer(game.CurrentPlayer));
 
       Console.Write("Please enter a valid number between 0 and 8: ");
-      var input = GetNumber(0, 8);
+      var input = ScanNumber();
       Console.WriteLine(input);
-
       game.Set(input);
     }
 
@@ -65,20 +64,20 @@ namespace Spengergasse.TicTacToe.ConsoleApp {
         if (col == 0) Console.Write("  ");
         Console.Write(cells[i] == 0 ? i.ToString() : GetPlayer(cells[i]));
         Console.Write(col == 2 ? '\n' : ' ');
-
         i++;
       }
     }
 
-    static int GetNumber(int min, int max) {
-      try {
-        var input = int.Parse(Console.ReadKey(true).KeyChar.ToString());
-        return input >= min && input <= max
-          ? input
-          : GetNumber(min, max);
-      } catch (FormatException) {
-        return GetNumber(min, max);
+    static int ScanNumber() {
+      int? number = null;
+      while (number == null) {
+        try {
+          number = int.Parse(Console.ReadKey(true).KeyChar.ToString());
+        } catch (FormatException) {
+          continue;
+        }
       }
+      return (int) number;
     }
   }
 }
