@@ -1,0 +1,12 @@
+//Generates XML using XElement  
+
+internal static void GenerateXmlUsingXElement()
+{      
+	MemoryStream ms = new MemoryStream();
+	XElement assembliesNode = new XElement("Assemblies",
+	from Type t in Assembly.GetAssembly(typeof(Object)).GetExportedTypes() 
+	select new XElement("Assembly", 
+						new XAttribute("FullTypeName", t.ToString()),  
+						new XAttribute("IsInterface", t.IsInterface.ToString())));
+	assembliesNode.Save(new XmlTextWriter(ms, System.Text.ASCIIEncoding.ASCII));
+}
