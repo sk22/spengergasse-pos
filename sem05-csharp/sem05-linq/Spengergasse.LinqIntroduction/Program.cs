@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using LinqInAction.LinqBooks.Common;
@@ -104,7 +104,7 @@ namespace Spengergasse.LinqIntroduction {
       PrintHeading("8. Books by Octavio Prince as main author");
 
       ObjectDumper.Write(
-        from book in SampleData.Books 
+        from book in SampleData.Books
         let first = book.Authors.First()
         where first.FirstName == "Octavio"
           && first.LastName == "Prince"
@@ -116,7 +116,12 @@ namespace Spengergasse.LinqIntroduction {
       ObjectDumper.Write(
         from book in SampleData.Books
         group book by book.Publisher into g
-        select new { g.Key.Name, Count = g.Count() }
+        select new {
+          g.Key.Name,
+          Count = g.Count(),
+          AveragePrice = Math.Round(g.Average(b => b.Price)),
+          Pages = g.Sum(b => b.PageCount)
+        }
       );
 
       PrintHeading("10. Books with author counts");
