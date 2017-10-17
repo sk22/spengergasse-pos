@@ -61,7 +61,7 @@ namespace Spengergasse.LinqIntroduction {
         }
       ).Distinct());
 
-      PrintHeading("Books");
+      PrintHeading("Software development books");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -73,6 +73,20 @@ namespace Spengergasse.LinqIntroduction {
           Authors = book.Authors
             .Select(author => author.FirstName + " " + author.LastName)
             .Aggregate((pre, cur) => pre + ", " + cur)
+        }
+      );
+
+      PrintHeading("Software development books with two from's");
+
+      ObjectDumper.Write(
+        from book in SampleData.Books
+        from author in book.Authors
+        where book.Subject.Name == "Software development"
+        orderby book.Title
+        select new {
+          book.Title,
+          book.PageCount,
+          Authors = author.FirstName + " " + author.LastName
         }
       );
 
