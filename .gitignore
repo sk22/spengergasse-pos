@@ -16,6 +16,7 @@ hs_err_pid*
 # IDE files
 
 .vs/
+.vscode/
 .metadata/
 .recommenders/
 .idea/
@@ -30,3 +31,4 @@ hs_err_pid*
 Labor*.pdf
 
 docs/
+
