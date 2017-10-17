@@ -13,7 +13,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { b.Isbn, b.Title, Preis2 = b.Price }
       );
 
-      PrintHeading("PageCount > 200");
+      PrintHeading("1. PageCount > 200");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -21,7 +21,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { book.Isbn, book.Title, book.Price, book.PageCount }
       );
 
-      PrintHeading("Published before August 2007");
+      PrintHeading("2. Published before August 2007");
 
       ObjectDumper.Write(
         from books in SampleData.Books
@@ -30,7 +30,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { books.PublicationDate, books.Title, books.Isbn }
       );
 
-      PrintHeading("Books published by FunBooks");
+      PrintHeading("3. Books published by FunBooks");
 
       ObjectDumper.Write(
         from books in SampleData.Books
@@ -39,7 +39,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { books.Isbn, books.Title, books.Publisher.Name }
       );
 
-      PrintHeading("Subject 'Software development'");
+      PrintHeading("4. Subject 'Software development'");
 
       ObjectDumper.Write(
         from books in SampleData.Books
@@ -48,7 +48,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { books.Title, books.Subject.Description }
       );
 
-      PrintHeading("Publishers with descriptions");
+      PrintHeading("5. Publishers with descriptions");
 
       ObjectDumper.Write((
         from book in SampleData.Books
@@ -61,7 +61,7 @@ namespace Spengergasse.LinqIntroduction {
         }
       ).Distinct());
 
-      PrintHeading("Software development books");
+      PrintHeading("6. Software development books");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -76,7 +76,7 @@ namespace Spengergasse.LinqIntroduction {
         }
       );
 
-      PrintHeading("Software development books with two from's");
+      PrintHeading("6. Software development books with two from's");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -90,7 +90,7 @@ namespace Spengergasse.LinqIntroduction {
         }
       );
 
-      PrintHeading("Books by Octavio Prince");
+      PrintHeading("7. Books by Octavio Prince");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -101,7 +101,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { book.Title, book.PageCount }
       );
 
-      PrintHeading("Books by Octavio Prince as main author");
+      PrintHeading("8. Books by Octavio Prince as main author");
 
       ObjectDumper.Write(
         from book in SampleData.Books 
@@ -111,7 +111,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { book.Title, book.PageCount }
       );
 
-      PrintHeading("Publisher with book counts");
+      PrintHeading("9. Publisher with book counts");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -119,7 +119,7 @@ namespace Spengergasse.LinqIntroduction {
         select new { g.Key.Name, Count = g.Count() }
       );
 
-      PrintHeading("Books with author counts");
+      PrintHeading("10. Books with author counts");
 
       ObjectDumper.Write(
         from book in SampleData.Books
@@ -130,7 +130,7 @@ namespace Spengergasse.LinqIntroduction {
         }
       );
 
-      PrintHeading("Subjects with books");
+      PrintHeading("11. Subjects with books");
 
       var subjects =
         from book in SampleData.Books
