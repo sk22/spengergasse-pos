@@ -199,8 +199,11 @@ namespace Spengergasse.LinqIntroduction {
 
       ObjectDumper.Write(
         from review in SampleData.Reviews
-        group review by review.User into user
-        select new { user.Key.Name, Count = user.Count() }
+        group review by review.User into reviewsPerUser
+        select new {
+          reviewsPerUser.Key.Name,
+          Count = reviewsPerUser.Count()
+        }
       );
 
       System.Console.WriteLine();
