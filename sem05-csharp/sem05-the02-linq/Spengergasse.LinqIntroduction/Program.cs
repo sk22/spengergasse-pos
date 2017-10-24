@@ -188,9 +188,9 @@ namespace Spengergasse.LinqIntroduction {
 
       PrintHeading("5. Book(s) with worst rating");
 
+      var worst = SampleData.Reviews.Min(r => r.Rating);
       ObjectDumper.Write(
         from book in SampleData.Books
-        let worst = SampleData.Reviews.Min(r => r.Rating)
         where book.Reviews.Select(r => r.Rating).Contains(worst)
         select new { book.Title, Rating = worst }
       );
