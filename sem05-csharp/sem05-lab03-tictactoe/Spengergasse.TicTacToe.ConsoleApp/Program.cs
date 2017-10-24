@@ -3,7 +3,7 @@ using Spengergasse.TicTacToe.Library;
 
 namespace Spengergasse.TicTacToe.ConsoleApp {
   public class Program {
-    private static Game game;
+    private static IGame game;
     public static void Main(string[] args) {
       while (true) {
         game = new Game();

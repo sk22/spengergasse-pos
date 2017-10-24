@@ -6,6 +6,8 @@ using LinqInAction.LinqBooks.Common;
 namespace Spengergasse.LinqIntroduction {
   class Program {
     static void Main(string[] args) {
+      PrintTitle("Exercise 1");
+
       ObjectDumper.Write(
         from b in SampleData.Books
         where b.Price > 0
@@ -149,11 +151,42 @@ namespace Spengergasse.LinqIntroduction {
         System.Console.WriteLine();
       }
 
+      PrintTitle("Exercise 2");
+
+      PrintHeading("1. Books with more than 1 author");
+
+      ObjectDumper.Write(
+        from book in SampleData.Books
+        where book.Authors.Count() > 1
+        select new { book.Title, book.Authors }, 1
+      );
+
+      PrintHeading("2. Books about software development");
+
+      ObjectDumper.Write(
+        from book in SampleData.Books
+        where book.Subject.Name == "Software development"
+        select new { book.Title, book.Authors }, 1
+      );
+
+      PrintHeading("Reviews by Fred");
+
+      ObjectDumper.Write(
+        from review in SampleData.Reviews
+        where review.User.Name == "Fred"
+        select new { review.Book.Title, review.Comments }
+      );
+
       System.Console.WriteLine();
     }
 
     static void PrintHeading(string heading) {
       System.Console.WriteLine("\n{0}\n---\n", heading);
+    }
+    static void PrintTitle(string title) {
+      System.Console.WriteLine(
+        "\n{0}\n{1}\n", title, new String('=', title.Length)
+      );
     }
   }
 }
