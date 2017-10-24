@@ -169,12 +169,38 @@ namespace Spengergasse.LinqIntroduction {
         select new { book.Title, book.Authors }, 1
       );
 
-      PrintHeading("Reviews by Fred");
+      PrintHeading("3. Reviews by Fred");
 
       ObjectDumper.Write(
         from review in SampleData.Reviews
         where review.User.Name == "Fred"
         select new { review.Book.Title, review.Comments }
+      );
+
+      PrintHeading("4. Books ordered by ratings");
+
+      ObjectDumper.Write(
+        from book in SampleData.Books
+        let rating = book.Reviews.Select(r => r.Rating).Average()
+        orderby rating descending
+        select new { book.Title, rating }
+      );
+
+      PrintHeading("5. Book(s) with worst rating");
+
+      ObjectDumper.Write(
+        from book in SampleData.Books
+        let worst = SampleData.Reviews.Min(r => r.Rating)
+        where book.Reviews.Select(r => r.Rating).Contains(worst)
+        select new { book.Title, Rating = worst }
+      );
+
+      PrintHeading("6. Reviews per user");
+
+      ObjectDumper.Write(
+        from review in SampleData.Reviews
+        group review by review.User into user
+        select new { user.Key.Name, Count = user.Count() }
       );
 
       System.Console.WriteLine();
