@@ -318,14 +318,14 @@ namespace Spengergasse.LinqIntroduction {
         ))
       ));
 
-      PrintHeading("Publishers with average rating");
+      PrintHeading("10. Publishers with average rating");
 
       System.Console.WriteLine(new XElement(
         "Publishers",
         SampleData.Publishers
           // filtering publishers without reviews
           .Where(p =>
-            SampleData.Reviews.Where(r => r.Book.Publisher == p).Any()
+            SampleData.Reviews.Any(r => r.Book.Publisher == p)
           )
           .Select(p => new XElement(
             "Publisher",
@@ -334,8 +334,7 @@ namespace Spengergasse.LinqIntroduction {
               "AvgRating",
               SampleData.Reviews
                 .Where(r => r.Book.Publisher == p)
-                .Select(r => r.Rating)
-                .Average()
+                .Average(r => r.Rating)
             )
           ))
       ));
