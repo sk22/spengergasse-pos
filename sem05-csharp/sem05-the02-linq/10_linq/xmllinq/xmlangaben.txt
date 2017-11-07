@@ -1,9 +1,9 @@
 
 
 Basierend auf unserem SampleData Projekt erstellen Sie 
-füt die unten folgenden Fragen Ausgaben in XML
+fÃ¼r die unten folgenden Fragen Ausgaben in XML
 
-Beispiel: Geben Sie dickere Bücher als Buchelemente mit dem Buchtitel als Textinhalt aus
+Beispiel: Geben Sie dickere BÃ¼cher als Buchelemente mit dem Buchtitel als Textinhalt aus
             var xel1 =
             new XElement("Buecher",         // das Wurzelelement
                     from b in SampleData.Books
@@ -25,7 +25,7 @@ Beispielausgabe:
 
 
 
-----1 Liste (aller) Bücher, Buchdaten als Elemente -------------------------------
+----1 Liste (aller) BÃ¼cher, Buchdaten als Elemente -------------------------------
 
         
 
@@ -42,7 +42,7 @@ Beispielausgabe:
   </Buch>
 </Buecher>
 
-----2 Liste (aller) Bücher, Buchdaten als Attribute -------------------------------
+----2 Liste (aller) BÃ¼cher, Buchdaten als Attribute -------------------------------
 
 <Buecher>
   <Buch Titel="Bonjour mon Amour" Seiten="50" Isbn="2-444-77777-2" />
@@ -51,7 +51,7 @@ Beispielausgabe:
 
 
 
-----3 Liste alle Bücher, Buchdaten als Attribute und Elemente ----------------------------
+----3 Liste alle BÃ¼cher, Buchdaten als Attribute und Elemente ----------------------------
 
 
 <Buecher>
@@ -75,7 +75,7 @@ Beispielausgabe:
 
 
 
-----4 Liste aller Verlage mit den jeweiligen Büchern und auch noch die Buchautoren dazu
+----4 Liste aller Verlage mit den jeweiligen BÃ¼chern und auch noch die Buchautoren dazu
 ----        der XML File sollte hierarchisch verschachtelt sein -----------------------
 
 
@@ -106,7 +106,7 @@ Beispielausgabe:
 </Buecher>
 
 
-----5  Gebe jene Bücher aus, bei denen Prince ein Author ist
+----5  Gebe jene BÃ¼cher aus, bei denen Prince ein Author ist
 
 
 
@@ -156,10 +156,10 @@ DOM-Tree an, einen Hierarchie von XNodes. Neben Elementen sind auch Texte
             Console.WriteLine("Parent: " + xelin.Parent);
             
             // die folgenden liefern Collections:
-            Console.WriteLine("Elements().Count(): " + xelin.Elements().Count()); // direkt untergeordnete Elemente ("name schränkt ein")
+            Console.WriteLine("Elements().Count(): " + xelin.Elements().Count()); // direkt untergeordnete Elemente ("name schrÃ¤nkt ein")
             Console.WriteLine("Nodes().Count(): " + xelin.Nodes().Count());       // direkt untergeordnete Nodes
             Console.WriteLine("Untergeordnete().Count(): " + xelin.Descendants().Count());   // rekursiv alle darunter liegenden Elemente
-            Console.WriteLine("Xpath_//Preis().Count(): " + xelin.XPathSelectElements("//Preis").Count());  // Elemente gemäss XPath Suche
+            Console.WriteLine("Xpath_//Preis().Count(): " + xelin.XPathSelectElements("//Preis").Count());  // Elemente gemÃ¤ss XPath Suche
 
 
 

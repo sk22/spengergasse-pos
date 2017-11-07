@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 using LinqInAction.LinqBooks.Common;
 
 namespace Spengergasse.LinqIntroduction {
@@ -191,7 +192,7 @@ namespace Spengergasse.LinqIntroduction {
       var worst = SampleData.Reviews.Min(r => r.Rating);
       ObjectDumper.Write(
         from book in SampleData.Books
-        where book.Reviews.Select(r => r.Rating).Contains(worst)
+        where book.Reviews.Any(r => r.Rating == worst)
         select new { book.Title, Rating = worst }
       );
 
@@ -206,11 +207,144 @@ namespace Spengergasse.LinqIntroduction {
         }
       );
 
-      System.Console.WriteLine();
+      PrintTitle("XML Exercises");
+
+      PrintHeading("0. Example");
+
+      Console.WriteLine(new XElement(
+        "Buecher",
+        from b in SampleData.Books
+        where b.PageCount > 100
+        orderby b.Title
+        select new XElement("Buch", b.Title)
+      ));
+
+      PrintHeading("1. All books with data elements");
+
+      System.Console.WriteLine(new XElement(
+        "Buecher",
+        from b in SampleData.Books
+        orderby b.Title
+        select new XElement(
+          "Buch",
+          new XElement("Titel", b.Title),
+          new XElement("Seiten", b.PageCount),
+          new XElement("Isbn", b.Isbn)
+        )
+      ));
+
+      PrintHeading("2. All books with data attributes");
+
+      System.Console.WriteLine(new XElement(
+        "Buecher",
+        from b in SampleData.Books
+        orderby b.Title
+        select new XElement(
+          "Buch",
+          new XAttribute("Titel", b.Title),
+          new XAttribute("Seiten", b.PageCount),
+          new XAttribute("Isbn", b.Isbn)
+        )
+      ));
+
+      PrintHeading("3. Nested data");
+
+      System.Console.WriteLine(new XElement(
+        "Buecher",
+        from p in SampleData.Publishers
+        select new XElement(
+          "Verlag",
+          new XAttribute("Name", p.Name),
+          from b in SampleData.Books
+          where p == b.Publisher
+          select new XElement(
+            "Buch",
+            new XAttribute("Titel", b.Title),
+            from a in b.Authors
+            select new XElement("Autor", a.LastName)
+          )
+        )
+      ));
+
+      PrintTitle("Exercise 2");
+
+      PrintHeading("7. Users with reviews");
+
+      System.Console.WriteLine(new XElement(
+        "Users",
+        from u in SampleData.Users
+        orderby u.Name
+        select new XElement(
+          "User",
+          new XAttribute("Name", u.Name),
+          from r in SampleData.Reviews
+          where r.User == u
+          select new XElement("Review", r.Comments)
+        )
+      ));
+
+      PrintHeading("8. Authors with books and review counts");
+
+      System.Console.WriteLine(new XElement(
+        "Authors",
+        SampleData.Authors.Select(a => new XElement(
+          "Author",
+          new XAttribute("Name", a.LastName + " " + a.FirstName),
+          SampleData.Books
+            .Where(b => b.Authors.Contains(a))
+            .Select(b => new XElement(
+              "Book",
+              new XAttribute("Title", b.Title),
+              new XAttribute("ReviewCount", b.Reviews.Count())
+            ))
+        ))
+      ));
+
+      PrintHeading("9. Publishers with reviews");
+
+      System.Console.WriteLine(new XElement(
+        "Publishers",
+        SampleData.Publishers.Select(p => new XElement(
+          "Publisher",
+          new XAttribute("Name", p.Name),
+          SampleData.Reviews
+            .Where(r => r.Book.Publisher == p)
+            .Select(r => new XElement(
+              "Review",
+              new XAttribute("Title", r.Book.Title),
+              new XAttribute("Rating", r.Rating),
+              r.Comments
+            ))
+        ))
+      ));
+
+      PrintHeading("Publishers with average rating");
+
+      System.Console.WriteLine(new XElement(
+        "Publishers",
+        SampleData.Publishers
+          // filtering publishers without reviews
+          .Where(p =>
+            SampleData.Reviews.Where(r => r.Book.Publisher == p).Any()
+          )
+          .Select(p => new XElement(
+            "Publisher",
+            new XAttribute("Name", p.Name),
+            new XAttribute(
+              "AvgRating",
+              SampleData.Reviews
+                .Where(r => r.Book.Publisher == p)
+                .Select(r => r.Rating)
+                .Average()
+            )
+          ))
+      ));
+
+      Console.WriteLine();
     }
 
     static void PrintHeading(string heading) {
-      System.Console.WriteLine("\n{0}\n---\n", heading);
+      Console.WriteLine("\n{0}\n---\n", heading);
     }
     static void PrintTitle(string title) {
       System.Console.WriteLine(
