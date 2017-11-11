@@ -1,0 +1,138 @@
+--------Übungen zu Linq XML---------
+
+   // Statische Methode XElement.Load(@"..\..\moore.xml") liefert XElement Instanz
+   // XMl File ins Projekt ziehen ist praktisch (ist bearbeitbar)
+   // Values von Elementen bzw. Attributen sind immer String (Convert...)
+   // beim from benötigte Collections von Elementen finden Sie mit
+   //             .Elements(...), .Descendants(), .XPathSelectElements(...)
+   // Exceptions -Nullreferenz- entstehen meist durch falsch geschriebene Elementnamen
+   
+
+1. Benutzen Sie eine der xml Dateien aus Beispiele/actors z.B. moore.xml
+   Welche Filme (Titel) hat der Schauspieler nach 1995 gedreht
+   
+            "Dream Team, The"
+            D.R.E.A.M. Team
+            Saint, The
+            Spice World
+            Quest, The
+
+      
+2. Benutzen Sie eine der xml Dateien aus Beispiele/actors z.B. moore.xml
+   Wieviele Filme hat der Schauspieler gedreht (Ausgabe SchauspielerName und Anzahl)
+
+            Name=RogerMoore         Anzahl=60
+
+             
+3. Benutzen Sie die xml Datei kundenbestellungen.xml
+   Geben Sie die Kunden geordnet nach Land aus
+            
+              Land=Argentinien        Firma=Cactus Comidas para llevar
+              Land=Deutschland        Firma=Alfreds Futterkiste
+              Land=Mexiko             Firma=Ana Trujillo Emparedados y helados
+              Land=Spanien            Firma=Bolido Comidas preparadas
+              Land=USA                Firma=Lets Stop N Shop
+
+             
+4. Benutzen Sie die xml Datei kundenbestellungen.xml
+   Geben Sie pro Kunde Namen und summe der Frachtkosten der Bestellungen aus
+                    
+            Firma=Alfreds Futterkiste        Kosten=69,88
+            Firma=Ana Trujillo Emparedados y helados         Kosten=51,91
+            Firma=Bolido Comidas preparadas  Kosten=16,16
+            Firma=Cactus Comidas para llevar         Kosten=32,61
+            Firma=Lets Stop N Shop   Kosten=142,41
+             
+                          
+5. Benutzen Sie die xml Datei kundenbestellungen.xml
+   Geben Sie pro Mitarbeiter (Personal_Nr) aus, für wieviele Bestelungen der Mitarbeiter zuständig ist
+                    
+            Personal_Nr=9   Bestellanzahl=4
+            Personal_Nr=1   Bestellanzahl=3
+            Personal_Nr=4   Bestellanzahl=2
+     // Schwierige Abfrage, es wird empfohlen  über die Kunden einen 
+     //    group Anzahl_der Bestellungen by  Value_der_PersonalNr   into zwisch
+     // durchzuführen und dann im Select die Anzahl_der Bestellungen zu summieren    
+             
+6. Benutzen Sie eine der xml Dateien aus Beispiele/actors z.B. moore.xml
+   Der Film mit Titel  "Live and Let Die" soll als Jahr 1972 erhalten
+   Schreiben Sie die veränderte Datei auch zurück
+   (verwendbare Methoden von XElement: SetValue und Save)
+
+-------------- Übungen zu DB Zugriff ------- schule2000.mdf ----------
+             
+7. Geben Sie eine Klassenliste der Klasse  "03TA" aus,
+   Sortierung und Ausgabe der Klassenbezeichnung ist erwünscht           
+            
+            Name=Adler      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Gans       Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Geier      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Hundertwasser      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Klassenbester      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Rotkehlchen        Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Sitzenbleiber      Klasse=03TA     Kbez=Kolleg T 03TA
+            
+                         
+8. Geben Sie alle Klassen mit Angabe der Schülerzahl aus
+   
+              Klasse=03TA     Kbez=Kolleg T 03TA      Anzahl=7
+              Klasse=03TB     Kbez=Kolleg T 03TB      Anzahl=7
+              Klasse=0M5A     Kbez=Kolleg A 0M5A      Anzahl=6
+              Klasse=0M5Q     Kbez=Kolleg A 0M5Q      Anzahl=4
+              Klasse=1VL0     Kbez=VorbereitungLG     Anzahl=0
+                         
+
+9. Geben Sie jene Fälle aus, wo ein Klassenvorstand Schüler seiner Klasse geprüft hat
+
+            NameL=Bilek     NameS=Bartgeier         Pdatum=12.01.1998
+            NameL=Beringer  NameS=Klassenbester     Pdatum=12.01.1998
+            NameL=Beringer  NameS=Sitzenbleiber     Pdatum=15.04.1998
+            NameL=Beringer  NameS=Adler     Pdatum=15.03.1999
+            NameL=Beringer  NameS=Klassenbester     Pdatum=15.03.1999
+            NameL=Preißl    NameS=Apfelbaum         Pdatum=01.10.2003
+            NameL=Preißl    NameS=Birnenbaum        Pdatum=01.10.2003
+
+
+10. Geben Sie die Klassen und Schülerdaten als XML aus,
+    In der Klasse als Attribute K_id, K_Bez, Name KV
+    Im Schüler ebenfalls einige Felder als Attribute
+
+
+      <Klassenliste>
+        <Klasse KID="03TA" KBez="Kolleg T 03TA" KVName="Beringer" Schanzahl="7">
+          <Schueler Zuname="Adler" Vorname="Richard" />
+          <Schueler Zuname="Gans" Vorname="Gustav" />
+          <Schueler Zuname="Geier" Vorname="Gustav" />
+          <Schueler Zuname="Hundertwasser" Vorname="Helga" />
+          <Schueler Zuname="Klassenbester" Vorname="Konrad" />
+          <Schueler Zuname="Rotkehlchen" Vorname="Robert" />
+          <Schueler Zuname="Sitzenbleiber" Vorname="Sebastian" />
+        </Klasse>
+        <Klasse KID="03TB" KBez="Kolleg T 03TB" KVName="Bilek" Schanzahl="7">
+          <Schueler Zuname="Bartgeier" Vorname="Burghard" />
+          <Schueler Zuname="Ente" Vorname="Eberhard" />
+             ..........
+        </Klasse>
+      </Klassenliste>
+
+
+
+
+11. Wie könnte die Aufgabenstellung zum folgenden Befehl lauten
+
+             var erg =
+             from v in db.vorgesetzte
+             where v.lehrer.L_Gebdat > v.lehrer1.L_Gebdat
+             select new { NameL1 = v.lehrer.L_Name, GebdL1 = v.lehrer.L_Gebdat,  NameL2 = v.lehrer1.L_Name, GebdL2 = v.lehrer1.L_Gebdat};
+
+
+
+
+
+
+
+
+
+
+             
+             

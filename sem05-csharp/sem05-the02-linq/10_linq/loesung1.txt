@@ -1,0 +1,268 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+using LinqInAction.LinqBooks.Common;
+
+namespace Programnamespace
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           // 1 liste alle Bücher, die mehr als 200 Seiten haben
+            var erg1 =
+            from b in SampleData.Books
+            where b.PageCount > 200
+            select b;
+
+            Console.WriteLine("--1----------------------");
+            ObjectDumper.Write(erg1);
+
+
+           // 2  liste alle Bücher (nur Isbn, PublicationDate, Title ausgeben),
+            //    die  vor August 2007 produziert wurden, sortierung nach
+            //    Title ist erwünscht
+            var erg2 =
+            from b in SampleData.Books
+            where b.PublicationDate.CompareTo(new DateTime(2008,08,01)) < 0   
+              // oder auch where b.PublicationDate < new DateTime(2008,08,01)
+            orderby b.Title
+            select new { b.Isbn, b.PublicationDate, b.Title };
+
+                        // kleiner Hinweis zum select:
+                        // select b            // Ergebnis ist eine Book Collection (wie im from)
+                        // select b.PageCount  // Ergebnis ist eine int Collection (nur ein Feld)
+                        //     alle Varianten mit mehr als einem Feld und weniger als das gesamte Book
+                        // select new {b.Title, b.Isbn }  // Ergebnis ist eine anonyme Klasse
+
+            Console.WriteLine("--2----------------------");
+            ObjectDumper.Write(erg2);
+
+
+           // 3 liste alle Bücher, die vom Verlag mit Namen "FunBooks" stammen,
+            //   Ausgabe einiger Felder aus Book
+            //    Hinweis: natürlich könnte hier ein from-join verwendet werden,
+            //             geht man aber von Book aus, so kann einfach 
+            //             die Referenz auf den Verlag benutzt werden
+            var erg3 =
+            from b in SampleData.Books
+            where b.Publisher.Name.Equals("FunBooks")        -- oder auch b.Publisher.Name =="FunBooks" 
+            select new { b.Publisher.Name,b.Isbn, b.Title };
+
+            Console.WriteLine("--3----------------------");
+            ObjectDumper.Write(erg3);
+
+
+           // 4 Liste description und Name des Subjects "Software development"   
+            //   sowie den Title der Bücher, die  zum subject gehören
+            //   Variante 1 mit  join ist möglich, einem datenbanker auch vertraut, 
+            //        für OO Programmierer aber untypisch
+            var erg4mitjoin =
+            from s in SampleData.Subjects
+            join b in SampleData.Books on s equals b.Subject  // !!!! eher NICHT benutzen
+            where s.Name.Equals("Software development")
+            select new { s.Description, s.Name, b.Title };
+            
+            //  REGEL:  in OO  ist JOIN unwichtig, man verwendet die Referenzen
+            //                          die zwischen den Objekten existieren
+            //                          nur wenn es keine Referenzen, aber Werte gibt ist join nötig
+            var erg4besser =
+            from b in SampleData.Books 
+            where b.Subject.Name.Equals("Software development")
+            select new { b.Subject.Description, b.Subject.Name, b.Title };
+
+            // kleiner Hinweis zum from  (mit join):
+            // from name1 in coll1     //!!! coll1, coll2 müssen beides Collections sein !!!
+            // join name2 in coll2     // die on Bedingung verbindet die beiden Collections
+            // on name1 equals name2.Referenz   // nutzt eine einfache Referenz von coll1 nach coll2
+            // on name1.feld1 equals name2.feld2     // datenbankähnlich verbinden über gemeinsame Felder
+            // siehe auch frage6, dort wird der Zusammenhang mittels Referenz Collection hergestellt
+            // technisch wichtig zu wissen ist, dass immer "feldausfrom equals feldausjoin" geschrieben werden muss 
+            // verkehrte on Bedingungen funktionieren nicht, auch equals als Linq-Schlüsselwort ist essentiell
+            Console.WriteLine("--4----------------------");
+            ObjectDumper.Write(erg4);
+
+           // 5 Liste Name und Website aus publisher, dazu die Bücher
+            //   des Verlags (Title, Price) und auch noch den Namen des 
+            //   Buch-subjects
+            // man braucht Daten aus Subjects, Books, Publishers, aufgrund der
+            // existierenden Referenzen muss man mit Books beginnen
+            var erg5 =
+            from b in SampleData.Books 
+                                 // im select hat man 2 mal name, daher umbenennen
+            select new { P_Name = b.Publisher.Name, b.Title, S_name = b.Subject.Name };
+
+            Console.WriteLine("--5----------------------");
+            ObjectDumper.Write(erg5);
+
+
+           // 6 Liste die Bücher (Title und Pagecount) sowie die
+            //   Autoren, die das Buch geschrieben haben
+            // simpel aber möglich (die Ausgabe erhält die Autorreferenzen als Collection)
+            var erg6 =
+            from b in SampleData.Books 
+            select new { b.Title, b.PageCount, b.Authors };
+               
+            // oder aber die Autorennamen zum Buch dazu (und damit ev. mehrere Zeilen pro Buch         
+            var erg6 =
+            from b in SampleData.Books 
+            from a in b.Authors				// wichtige Regel: im 2. FROM MUSS b. (das Kürzel des ersten) stehen
+            select new { b.Title, b.PageCount, a.FirstName, a.LastName };
+
+            // kleiner Hinweis zum from  (mit from):  
+            //    bei einfachen Referenzen kann man diese Referenzen direkt benutzen,
+            //    nicht aber wenn eine Collection von Referenzen vorliegt
+            //    wie im konkreten Fall in Book  die Authors Referenz Collection
+            // dann ist die from ... from Variante nötig, on Klauel gibt es keine, weil die 
+            // b.Authors  Referenzcollection ohnehin genau auf die für das Book richtigen Autoren verweist
+            Console.WriteLine("--6----------------------");
+            ObjectDumper.Write(erg6);
+
+
+           // 7 Liste die Bücher des Autors  Octavio Prince
+                 // In einer datenbank würde man gedanklich sicher vom Autor ausgehen
+                 // und dessen books dazujoinen, Hier gibt es aber KEINE Verweise von Autor zu Book,
+                 // daher zuerst from book from book.Authors  nötig!
+            var erg7 =
+            from b in SampleData.Books
+            from a in b.Authors
+            where a.FirstName == "Octavio" && a.LastName == "Prince" // == ist bei String überladener operator (== Equals)
+            select b.Title;
+
+            Console.WriteLine("--7----------------------");
+            ObjectDumper.Write(erg7);
+
+
+           // 8 Liste die Bücher, bei denen Octavio Prince
+            //   der Hauptautor (1. Autoreintrag) ist
+            //  Hinweis: von der Authors Referenzcollection in Book ist nur der erste Eintrag zu benutzen
+                         will man  b.Authors.First()  nicht mehrfach tippen       let a = b.Authors.First()
+            var erg8 =
+            from b in SampleData.Books
+            where b.Authors.First().FirstName == "Octavio" && 
+                  b.Authors.First().LastName == "Prince"      // == ist bei String überladener operator (== Equals)
+            select new {b.Title, b.Isbn};
+
+            Console.WriteLine("--8----------------------");
+            ObjectDumper.Write(erg8);
+            // den 2. Autor würde man mit  b.Authors.Skip(1).FirstOrDefault()  erreichen Warnung: kann null sein
+
+
+           // 9 Gebe die Publisher aus, dazu die Anzahl ihrer Bücher
+            //  Hinweis: wenn es um Anzahl, Summe, Durschschnitt, Min,... geht
+            //  ist immer Gruppenbildung vonnöten
+            // möglich wäre diese Variante  (erinnert an geschachtelten Select in SQL)
+            var erg9 =
+            from p in SampleData.Publishers
+            select new { p.Name, 
+						  Anzbuecher = (from b in SampleData.Books
+                                         where b.Publisher == p 
+                                         select 1).Count() };
+
+			// Gruppierung ist aber effizienter
+            var erg9 =
+            from b in SampleData.Books 
+            group b              by   b.Publisher.Name;
+            //    +-Einzeldaten       +-- Gruppenwechselfeld
+            // es ist kein select nötig, group gibt bereits eine Collection
+            // mit Einträgen pro Gruppe aus, darin gibt es den Key (was nach by steht)
+            // sowie eine Subcollection von Basisdaten (das was nach group steht)
+            // mit genau jenen Sätzen, die in die Gruppe gehören
+
+            Console.WriteLine("--9----------------------");
+            foreach (var item in erg9)
+                Console.WriteLine(item.Key + " hat Anzahl: " + item.Count());
+                // die Subcollection wird direkt mit item angesprochen und 
+                // kann Basis von Aggregatsmethoden wie Count, Sum , ... sein
+                // im Falle von Sum muß mit einem delegate (besser lambda) das Feld gewählt werden
+                // ein group Ergebnis kann auch mittels into zwischengespeichert werden um doch einen 
+                // Select anzuwenden
+            var erg9a =
+            from b in SampleData.Books 
+            group b by b.Publisher into gruppe
+            select new
+                        {
+                            Pubs = gruppe.Key.Name,
+                            Anzahl = gruppe.Count(),
+                            Seitensum = gruppe.Sum(b => b.PageCount),
+                            Avgpreis = gruppe.Average(b => b.Price)
+                        };
+
+            Console.WriteLine("--9a----------------------");
+            ObjectDumper.Write(erg9a);
+
+
+            //10 Ausgabe Publishername, booktitle, Anzahl der Autoren (mit Gruppierung)
+            var erg10 =
+            from b in SampleData.Books
+            from a in b.Authors
+            group 1 by b
+            into gruppe
+            select new { gruppe.Key.Publisher.Name,
+                         gruppe.Key.Title,
+                         Anz = gruppe.Count()   };
+
+            // Hinweis: Hir wird die Gruppierung über Book-Instanzen durchgeführt, daher
+            // stehen unter Key alle Felder aus Book zur Verfügung,
+            // die Detailsätze-Collection enthält überhaupt keine Felder mehr, nur die Konstante 1
+            // das reicht aber wenn man nur die Anzahl zählen will
+            
+            // Allerdings ist hier das Zählen gar nicht nötig, weil die Anzahl der Autoren pro Buch
+            //          ohnehin direkt aus der Authors Collection in Book geholt werden kann
+            var erg10 =
+            from b in SampleData.Books
+            select new { b.Publisher.Name,
+                         b.Title,
+                         Anz = b.Authors.Count()   };
+            
+            Console.WriteLine("--10----------------------");
+            ObjectDumper.Write(erg10);
+
+
+       
+            
+           //11 Ausgabe aller Subjects, darunter geschachtelt  
+            //  jeweils die Books dieses Subjects 
+            var erg11 =
+            from b in SampleData.Books
+            group new { b.Title, b.PageCount } by b.Subject;
+
+            Console.WriteLine("--11----------------------");
+            foreach (var gruppe in erg11)
+            {
+                Console.WriteLine(gruppe.Key.Name +                     
+                " Anzahl:" +      gruppe.Count() +
+                " Seitensumme:" + gruppe.Sum(b => b.PageCount)   );
+                ObjectDumper.Write(gruppe);
+            }
+            // Hinweis: Weil das group Ergebnis eine Collection in einer Collection ist
+            // braucht man 2 Schleifen zur Ausgabe, die innere Schleife erledigt ObjectDumper 
+            //  oder man setzt INTO ein  um aufbauend auf der Group Ergebniscollection weiterzumachen
+            var erg11b = 
+            from b in SampleData.Books
+            group new { b.Title, b.Price, b.PageCount } by b.Subject
+                into grpbook
+                select new
+                {
+                    Subject = grpbook.Key.Name,
+                    Anzahl = grpbook.Count(),
+                    avgPreis = grpbook.Average(b => b.Price),
+                    sumSeiten = grpbook.Sum(b => b.PageCount),
+                    Buecher = grpbook
+                };
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+//        Frage:   wozu gibt es let  bzw.  into
+//                 mit  let   kann man einem einelnen Zwischenergebnis einen  Namen zuweisen
+//                 mit  into  kann man einer Collection einen neuen Namen zuweisen
+//                 in beiden Fällen kann man den gewählten Namen in den weiteren Zeilen benutzen
+
+
+
+

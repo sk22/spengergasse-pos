@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using System.Xml.XPath;
 using LinqInAction.LinqBooks.Common;
 
 namespace Spengergasse.LinqIntroduction {
@@ -338,8 +339,6 @@ namespace Spengergasse.LinqIntroduction {
             )
           ))
       ));
-
-      Console.WriteLine();
     }
 
     static void PrintHeading(string heading) {

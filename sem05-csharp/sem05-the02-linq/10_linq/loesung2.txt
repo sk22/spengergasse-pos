@@ -1,0 +1,312 @@
+
+
+Lösen Sie bitte die folgenden Fragen zur Sampladata Struktur
+als Linq to Objects Queries.
+
+1- liste alle Bücher, die mehr als einen Autor haben
+			// das geht leicht, weil die Referenzcollection Authors genau die Anzahl Autoren darstellt
+            var erg =
+            from b in SampleData.Books
+            where b.Authors.Count() > 1
+            select b;
+  
+				// würde man die Anzahl selbst ermitteln (z.B. Verlage mit mehr als 1 Buch)
+				// dann muss ein group by benutzt werden 
+				//  hier ein Beispiel für die Bücheranzahl pro Publisher
+                from b in SampleData.Books
+                group b by b.Publisher
+                into propub
+                where propub.Count() > 1
+                select new {Verlag = propub.Key.Name,
+                            Anzbuecher = propub.Count()};
+  
+  
+2- liste alle Bücher (nur Isbn, Title ausgeben),
+   die  zum Subject "Software development" gehören
+  
+            var erg =
+            from b in SampleData.Books
+            where b.Subject.Name == "Software development"
+            select new {b.Title, b.Isbn };
+            
+3- liste alle Reviews, die User Fred erstellt hat
+
+            var erg =
+            from r in SampleData.Reviews
+            where r.User.Name == "Fred"
+            select r;
+  
+4- Liste alle Bücher, geordnet nach den Ratings
+   in ihren Reviews
+   
+            var erg =		// eine Zeile pro Review
+            from b in SampleData.Books
+            from r in b.Reviews
+            orderby r.Rating descending
+            select new { b.Title, r.Rating };
+            
+            var erg =		// eine Zeile pro Review  noch einfacher
+            from r in SampleData.Reviews
+            orderby r.Rating descending
+            select new { r.Book.Title, r.Rating };
+
+
+            
+            var erg =		// nur den ersten Review-Rating nehmen
+            from b in SampleData.Books            
+            orderby b.Reviews.First().Rating descending
+            select new { b.Title }; 
+            
+            
+            
+            var erg =		// bestes Rating des Buchs (Max oder Average)
+            from b in SampleData.Books
+            orderby b.Reviews.Max(r => r.Rating) descending
+            select new { b.Title };            
+                       	// Average  aufwendiger mit group (der hier unnötg ist) 
+            var ergebnis =
+            from r in SampleData.Reviews
+            group r.Rating by r.Book
+                into gruppeprobuch
+                orderby gruppeprobuch.Average() descending
+                select new
+                {
+                    Buch = gruppeprobuch.Key.Title,
+                    Rating = gruppeprobuch.Average()
+                };                       	
+                       	
+   
+5- Welches Buch (Bücher) hat das schlechteste Rating bekommen
+
+            var maxRating = SampleData.Reviews.Max(r => r.Rating);
+
+            var erg =
+             from b in SampleData.Books
+             where b.Reviews.Max(r => r.Rating)
+                   == maxRating
+             select new { b.Title, Rating = b.Reviews.Max(r => r.Rating) };
+                 // einfacher
+             from r in SampleData.Reviews
+             where  r.Rating == maxRating
+             select new { r.Book.Title, r.Rating };
+
+   
+6- Gib für alle User aus, wieviele Reviews sie geschrieben haben
+ 
+            var erg =
+            from r in SampleData.Reviews
+            group r by r.User into gruppen
+            select new {gruppen.Key.Name, Anz = gruppen.Count()};
+
+ 
+----- ab hier Ausgabe von XML ---- Sie sehen jeweils ein Ausgabemuster  
+
+7- Liste die User mit Ihren Reviews 
+
+           var erg =
+            new XElement ("Benutzer", 
+
+              from u in SampleData.Users
+              select new XElement("User", 
+                     new XAttribute("Name",u.Name),
+                       from r in SampleData.Reviews
+                       where r.User == u
+                       select new XElement("Review",r.Comments)
+              )
+            );
+
+           Console.WriteLine(erg);
+
+
+		<Benutzer>
+		  <User Name="Barney">
+			<Review>cc4</Review>
+			<Review>cc8</Review>
+		  </User>
+		  <User Name="Fred">
+			<Review>cc1</Review>
+			<Review>cc3</Review>
+		  </User>
+		  <User Name="Wilma">
+			<Review>cc2</Review>
+			<Review>cc5</Review>
+			<Review>cc6</Review>
+			<Review>cc7</Review>
+		  </User>
+		</Benutzer>
+
+
+
+8- Liste die Autoren mit Ihren Büchern und dazu
+   die Anzahl der Reviews
+   
+              var erg =
+            new XElement ("Autoren", 
+
+              from a in SampleData.Authors
+              select new XElement("Autor", 
+                     new XAttribute("Name",a.LastName + " " + a.FirstName),
+                       from b in SampleData.Books
+                       where b.Authors.Any(x => x == a)
+                       select new XElement("Buch",
+                           new XAttribute("Titel",b.Title),
+                           new XAttribute("Anzrev",b.Reviews.Count() )
+                         )
+              )
+            );
+
+		<Autoren>
+		  <Autor Name="Good Johnny">
+			<Buch Titel="Funny Stories" Anzreviews="2" />
+		  </Autor>
+		  <Autor Name="Legrand Jeremy">
+			<Buch Titel="All your base are belong to us" Anzreviews="1" />
+		  </Autor>
+		  <Autor Name="Prince Octavio">
+			<Buch Titel="LINQ rules" Anzreviews="3" />
+			<Buch Titel="C# on Rails" Anzreviews="1" />
+			<Buch Titel="Bonjour mon Amour" Anzreviews="1" />
+		  </Autor>
+		  <Autor Name="Simplegame Graziella">
+			<Buch Titel="Funny Stories" Anzreviews="2" />
+			<Buch Titel="Bonjour mon Amour" Anzreviews="1" />
+		  </Autor>
+		</Autoren>
+
+
+      
+9- Geben Sie die Verlage aus, mit Angabe aller Reviews,
+   die Bücher des Verlags betreffen
+   
+              var erg =
+            new XElement ("Verlage", 
+
+              from p in SampleData.Publishers
+              select new XElement("Verlag", 
+                     new XAttribute("Name",p.Name),
+                       from b in SampleData.Books
+                       from r in b.Reviews
+                       where b.Publisher == p    //buch zu verlag
+                       select new XElement("Review",
+                           new XAttribute("Titel",b.Title),
+                           new XAttribute("Review",r.Comments),
+                           new XAttribute("Rating",r.Rating)
+                         )
+              )
+            );
+   
+		<Verlage>
+		  <Verlag Name="FunBooks">
+			<Review Titel="Bonjour mon Amour" Review="cc8" Rating="5" />
+			<Review Titel="Funny Stories" Review="cc1" Rating="2" />
+			<Review Titel="Funny Stories" Review="cc2" Rating="3" />
+		  </Verlag>
+		  <Verlag Name="I Publisher" />
+		  <Verlag Name="Joe Publishing">
+			<Review Titel="All your base are belong to us" Review="cc7" Rating="4" />
+			<Review Titel="C# on Rails" Review="cc6" Rating="3" />
+			<Review Titel="LINQ rules" Review="cc3" Rating="1" />
+			<Review Titel="LINQ rules" Review="cc4" Rating="2" />
+			<Review Titel="LINQ rules" Review="cc5" Rating="1" />
+		  </Verlag>
+		</Verlage>
+
+
+10- Geben Sie Verlage aus, Name und durchschnittlices Rating
+
+           var erg =
+            new XElement ("Verlage", 
+              from p in SampleData.Publishers
+              where (from r in SampleData.Reviews     // where nötig, weil average
+                       where r.Book.Publisher == p    // nicht über leere Coll geht
+                       select r).Count()  >0
+              select new XElement("Verlag", 
+                     new XAttribute("Name",p.Name),
+                     new XAttribute("DRating",
+                       (from r in SampleData.Reviews
+                       where r.Book.Publisher == p 
+                       select r).Average(x=>x.Rating)  )                       
+              )
+            );
+			// durch den where wird der Befehl recht umständlich
+			// alternativ eine Lösung mit group
+			var erg =
+            new XElement ("Verlage", 
+              from r in SampleData.Reviews
+              group  new {r.Rating} by r.Book.Publisher
+              into grp
+              select new XElement("Verlag", 
+                       new XAttribute("Name",grp.Key.Name),
+                       new XAttribute("DRating",
+                                       grp.Average(x=>x.Rating) 
+                     )                       
+              )
+            );
+
+		<Verlage>
+		  <Verlag Name="FunBooks" dRating="3.3333333333333335" />
+		  <Verlag Name="Joe Publishing" dRating="2.2" />
+		</Verlage>
+
+            var xfile = new XElement          // alle 3 Verlage 
+            ("wurzel",
+                from p in SampleData.Publishers
+                select new XElement
+                    ("Verlag",
+                      new XAttribute("Name",p.Name),
+                      new XAttribute("dRating", (from b in SampleData.Books
+                                                 where b.Publisher == p
+                                                 from r in b.Reviews
+                                                 select r.Rating).Count() == 0
+                                                 ? 0.0 :
+                                                (from b in SampleData.Books
+                                                 where b.Publisher == p
+                                                 from r in b.Reviews
+                                                 select r.Rating).Average()
+                                    )
+                     )
+            );
+
+
+
+
+
+11- welche Ausgabe erwarten Sie mit folgendem Code
+
+         static void DisplayProcesses()
+        {
+            List<String> processes = new List<String>();
+            foreach (Process process in Process.GetProcesses())
+            processes.Add(process.ProcessName);
+            ObjectDumper.Write(processes);
+        }
+        static void Main()
+        {
+            DisplayProcesses();
+            Console.ReadKey();
+        }
+
+
+---------  XML Dateien benutzen
+
+Im Ordner xml/beispiele gibt es viele Beispielfiles
+
+Parsen Sie diese direkt in der main oder
+lesen Sie die Files mit   XElement.Load ein
+
+finden Sie selbst Fragestellungen, und 
+implementieren Sie diese
+
+
+z.B.
+
+            XElement el1 = XElement.Load("..\\..\\Costner.xml");
+
+            var erg =
+            from e in el1.Elements("Actor").Elements("Filmography").Elements()
+            select e.Value;
+            
+            ObjectDumper.Write(erg);
+
+
+
