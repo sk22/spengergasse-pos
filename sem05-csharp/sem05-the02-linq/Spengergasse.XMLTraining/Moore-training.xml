@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!--                                                                -->
-<!--   W4F: Copyright Arnaud Sahuguet and Fabien Azavant, 1998-99   -->
-<!--   URL: http://db.cis.upenn.edu/W4F                             -->
-<!--                                                                -->
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <W4F_DOC>
   <Actor>
     <Name>
@@ -17,7 +12,7 @@
       </Movie>
       <Movie>
         <Title>D.R.E.A.M. Team</Title>
-        <Year>1999</Year>
+        <Year>2018</Year>
       </Movie>
       <Movie>
         <Title>Saint, The</Title>
