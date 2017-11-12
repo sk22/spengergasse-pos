@@ -253,16 +253,4 @@
       </Movie>
     </Filmography>
   </Actor>
-  <Actor>
-    <Name>
-      <FirstName>Manfred</FirstName>
-      <LastName>Moore</LastName>
-    </Name>
-    <Filmography>
-      <Movie>
-        <Title>"Dream Team, The"</Title>
-        <Year>1999</Year>
-      </Movie>
-    </Filmography>
-  </Actor>
 </W4F_DOC>
