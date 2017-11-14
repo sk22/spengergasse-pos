@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="oestdaten.Bezirk">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Bundesland" Type="oestdaten.Bundesland" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1" />
+        <Point X="2.688" Y="1" />
+        <Point X="2.688" Y="1.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAIAAAAAAAQgAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Klassen\Bezirk.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bundesland" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oestdaten.Bundesland">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAQAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Klassen\Bundesland.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oestdaten.Gemeinde">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <AssociationLine Name="PostleitzahlGemeindeamt" Type="oestdaten.Postleitzahl" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.812" Y="2.565" />
+        <Point X="5.812" Y="3.125" />
+        <Point X="4.75" Y="3.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Postleitzahlen" Type="oestdaten.Postleitzahl" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="2.565" />
+        <Point X="7" Y="3.688" />
+        <Point X="4.75" Y="3.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAEAAAAkAAAQAAAAAQAAQAgAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Klassen\Gemeinde.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bezirk" />
+      <Property Name="PostleitzahlGemeindeamt" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Postleitzahlen" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="oestdaten.Postleitzahl">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAABAAAAAAAAAAAAAAABgAAAAAAAAAAA=</HashCode>
+      <FileName>Klassen\Postleitzahl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

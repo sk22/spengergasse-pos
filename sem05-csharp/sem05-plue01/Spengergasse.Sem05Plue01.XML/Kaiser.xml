@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pubsp3>
+  <Publisherh3 Pid0="0736" Pname4="New Moon Books" Pcity9="Boston" Pstate9="MA">
+    <Titlef2 Tname6="Emotional Security: A New Algorithm" Ttype4="psychology  " Tprice8="7.9900">
+      <Salesc3 Sid5="7131" Sqty9="25" Store1="Doc-U-Mat: Quality Laundry and Books" Terms4="Net 60" />
+    </Titlef2>
+    <Titlef2 Tname6="Is Anger the Enemy?" Ttype4="psychology  " Tprice8="10.9500">
+      <Salesc3 Sid5="6380" Sqty9="3" Store1="Eric the Read Books" Terms4="Net 60" />
+      <Salesc3 Sid5="7066" Sqty9="75" Store1="Barnum's" Terms4="ON invoice" />
+      <Salesc3 Sid5="7067" Sqty9="10" Store1="News &amp; Brews" Terms4="Net 60" />
+      <Salesc3 Sid5="7131" Sqty9="20" Store1="Doc-U-Mat: Quality Laundry and Books" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="Life Without Fear" Ttype4="psychology  " Tprice8="7.0000">
+      <Salesc3 Sid5="7131" Sqty9="25" Store1="Doc-U-Mat: Quality Laundry and Books" Terms4="Net 60" />
+    </Titlef2>
+    <Titlef2 Tname6="Prolonged Data Deprivation: Four Case Studies" Ttype4="psychology  " Tprice8="19.9900">
+      <Salesc3 Sid5="7131" Sqty9="15" Store1="Doc-U-Mat: Quality Laundry and Books" Terms4="Net 60" />
+    </Titlef2>
+    <Titlef2 Tname6="You Can Combat Computer Stress!" Ttype4="business    " Tprice8="2.9900">
+      <Salesc3 Sid5="7896" Sqty9="35" Store1="Fricative Bookshop" Terms4="ON invoice" />
+    </Titlef2>
+    <Employeei0 Id3="PDI47470M" Name3="Ibsen" Fname5="Palle" Level2="195" Abdat0="1993-05-09T00:00:00" />
+    <Employeei0 Id3="KFJ64308F" Name3="Josephs" Fname5="Karin" Level2="100" Abdat0="1992-10-17T00:00:00" />
+    <Employeei0 Id3="MGK44605M" Name3="Karttunen" Fname5="Matti" Level2="220" Abdat0="1994-05-01T00:00:00" />
+    <Employeei0 Id3="LAL21447M" Name3="Lebihan" Fname5="Laurence" Level2="175" Abdat0="1990-06-03T00:00:00" />
+    <Employeei0 Id3="R-M53550M" Name3="Mendel" Fname5="Roland" Level2="150" Abdat0="1991-09-05T00:00:00" />
+    <Employeei0 Id3="TPO55093M" Name3="O'Rourke" Fname5="Timothy" Level2="100" Abdat0="1988-06-19T00:00:00" />
+    <Employeei0 Id3="MMS49649F" Name3="Saveley" Fname5="Mary" Level2="175" Abdat0="1993-06-29T00:00:00" />
+    <Employeei0 Id3="HAS54740M" Name3="Snyder" Fname5="Howard" Level2="100" Abdat0="1988-11-19T00:00:00" />
+    <Employeei0 Id3="MFS52347M" Name3="Sommer" Fname5="Martin" Level2="165" Abdat0="1990-04-13T00:00:00" />
+    <Employeei0 Id3="GHT50241M" Name3="Thomas" Fname5="Gary" Level2="170" Abdat0="1988-08-09T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="0877" Pname4="Binnet &amp; Hardley" Pcity9="Washington" Pstate9="DC">
+    <Titlef2 Tname6="Computer Phobic AND Non-Phobic Individuals: Behavior Variations" Ttype4="psychology  " Tprice8="21.5900">
+      <Salesc3 Sid5="7131" Sqty9="20" Store1="Doc-U-Mat: Quality Laundry and Books" Terms4="Net 60" />
+    </Titlef2>
+    <Titlef2 Tname6="Fifty Years in Buckingham Palace Kitchens" Ttype4="trad_cook   " Tprice8="11.9500">
+      <Salesc3 Sid5="7067" Sqty9="20" Store1="News &amp; Brews" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean" Ttype4="trad_cook   " Tprice8="20.9500">
+      <Salesc3 Sid5="7067" Sqty9="40" Store1="News &amp; Brews" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="Silicon Valley Gastronomic Treats" Ttype4="mod_cook    " Tprice8="19.9900">
+      <Salesc3 Sid5="7896" Sqty9="10" Store1="Fricative Bookshop" Terms4="Net 60" />
+    </Titlef2>
+    <Titlef2 Tname6="Sushi, Anyone?" Ttype4="trad_cook   " Tprice8="14.9900">
+      <Salesc3 Sid5="7067" Sqty9="20" Store1="News &amp; Brews" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="The Gourmet Microwave" Ttype4="mod_cook    " Tprice8="2.9900">
+      <Salesc3 Sid5="7131" Sqty9="25" Store1="Doc-U-Mat: Quality Laundry and Books" Terms4="Net 30" />
+      <Salesc3 Sid5="8042" Sqty9="15" Store1="Bookbeat" Terms4="ON invoice" />
+    </Titlef2>
+    <Titlef2 Tname6="The Psychology of Computer Cooking" Ttype4="UNDECIDED   " Tprice8="0" />
+    <Employeei0 Id3="PMA42628M" Name3="Accorti" Fname5="Paolo" Level2="35" Abdat0="1992-08-27T00:00:00" />
+    <Employeei0 Id3="VPA30890F" Name3="Ashworth" Fname5="Victoria" Level2="140" Abdat0="1990-09-13T00:00:00" />
+    <Employeei0 Id3="H-B39728F" Name3="Bennett" Fname5="Helen" Level2="35" Abdat0="1989-09-21T00:00:00" />
+    <Employeei0 Id3="L-B31947F" Name3="Brown" Fname5="Lesley" Level2="120" Abdat0="1991-02-13T00:00:00" />
+    <Employeei0 Id3="ARD36773F" Name3="Domingues" Fname5="Anabela" Level2="100" Abdat0="1993-01-27T00:00:00" />
+    <Employeei0 Id3="PHF38899M" Name3="Franken" Fname5="Peter" Level2="75" Abdat0="1992-05-17T00:00:00" />
+    <Employeei0 Id3="PXH22250M" Name3="Henriot" Fname5="Paul" Level2="159" Abdat0="1993-08-19T00:00:00" />
+    <Employeei0 Id3="ENL44273F" Name3="Lincoln" Fname5="Elizabeth" Level2="35" Abdat0="1990-07-24T00:00:00" />
+    <Employeei0 Id3="M-R38834F" Name3="Rance" Fname5="Martine" Level2="75" Abdat0="1992-02-05T00:00:00" />
+    <Employeei0 Id3="DBT39435M" Name3="Tonini" Fname5="Daniel" Level2="75" Abdat0="1990-01-01T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="1389" Pname4="Algodata Infosystems" Pcity9="Berkeley" Pstate9="CA">
+    <Titlef2 Tname6="But Is It User Friendly?" Ttype4="popular_comp" Tprice8="22.9500">
+      <Salesc3 Sid5="8042" Sqty9="30" Store1="Bookbeat" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="Cooking with Computers: Surreptitious Balance Sheets" Ttype4="business    " Tprice8="11.9500">
+      <Salesc3 Sid5="8042" Sqty9="25" Store1="Bookbeat" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="Net Etiquette" Ttype4="popular_comp" Tprice8="0" />
+    <Titlef2 Tname6="Secrets of Silicon Valley" Ttype4="popular_comp" Tprice8="20.0000">
+      <Salesc3 Sid5="7066" Sqty9="50" Store1="Barnum's" Terms4="Net 30" />
+    </Titlef2>
+    <Titlef2 Tname6="Straight Talk About Computers" Ttype4="business    " Tprice8="19.9900">
+      <Salesc3 Sid5="7896" Sqty9="15" Store1="Fricative Bookshop" Terms4="Net 60" />
+    </Titlef2>
+    <Titlef2 Tname6="The Busy Executive's Database Guide" Ttype4="business    " Tprice8="19.9900">
+      <Salesc3 Sid5="6380" Sqty9="5" Store1="Eric the Read Books" Terms4="Net 60" />
+      <Salesc3 Sid5="8042" Sqty9="10" Store1="Bookbeat" Terms4="ON invoice" />
+    </Titlef2>
+    <Employeei0 Id3="PSA89086M" Name3="Afonso" Fname5="Pedro" Level2="89" Abdat0="1990-12-24T00:00:00" />
+    <Employeei0 Id3="A-C71970F" Name3="Cruz" Fname5="Aria" Level2="87" Abdat0="1991-10-26T00:00:00" />
+    <Employeei0 Id3="M-L67958F" Name3="Larsson" Fname5="Maria" Level2="135" Abdat0="1992-03-27T00:00:00" />
+    <Employeei0 Id3="Y-L77953M" Name3="Latimer" Fname5="Yoshi" Level2="32" Abdat0="1989-06-11T00:00:00" />
+    <Employeei0 Id3="SKO22412M" Name3="Ottlieb" Fname5="Sven" Level2="150" Abdat0="1991-04-05T00:00:00" />
+    <Employeei0 Id3="MAP77183M" Name3="Paolino" Fname5="Miguel" Level2="112" Abdat0="1992-12-07T00:00:00" />
+    <Employeei0 Id3="PSP68661F" Name3="Parente" Fname5="Paula" Level2="125" Abdat0="1994-01-19T00:00:00" />
+    <Employeei0 Id3="DWR65030M" Name3="Roel" Fname5="Diego" Level2="192" Abdat0="1991-12-16T00:00:00" />
+    <Employeei0 Id3="CGS88322F" Name3="Schmitt" Fname5="Carine" Level2="64" Abdat0="1992-07-07T00:00:00" />
+    <Employeei0 Id3="MAS70474F" Name3="Smith" Fname5="Margaret" Level2="78" Abdat0="1988-09-29T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="1622" Pname4="Five Lakes Publishing" Pcity9="Chicago" Pstate9="IL">
+    <Employeei0 Id3="RBM23061F" Name3="Muller" Fname5="Rita" Level2="198" Abdat0="1993-10-09T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="1756" Pname4="Ramona Publishers" Pcity9="Dallas" Pstate9="TX">
+    <Employeei0 Id3="MJP25939M" Name3="Pontes" Fname5="Maria" Level2="246" Abdat0="1989-03-01T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="9901" Pname4="GGG&amp;G" Pcity9="Mnchen" Pstate9="">
+    <Employeei0 Id3="JYL26161F" Name3="Labrune" Fname5="Janine" Level2="172" Abdat0="1991-05-26T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="9952" Pname4="Scootney Books" Pcity9="New York" Pstate9="NY">
+    <Employeei0 Id3="F-C16315M" Name3="Chang" Fname5="Francisco" Level2="227" Abdat0="1990-11-03T00:00:00" />
+    <Employeei0 Id3="PTC11962M" Name3="Cramer" Fname5="Philip" Level2="215" Abdat0="1989-11-11T00:00:00" />
+    <Employeei0 Id3="AMD15433F" Name3="Devon" Fname5="Ann" Level2="200" Abdat0="1991-07-16T00:00:00" />
+  </Publisherh3>
+  <Publisherh3 Pid0="9999" Pname4="Lucerne Publishing" Pcity9="Paris" Pstate9="">
+    <Employeei0 Id3="CFH28514M" Name3="Hernadez" Fname5="Carlos" Level2="211" Abdat0="1989-04-21T00:00:00" />
+    <Employeei0 Id3="KJJ92907F" Name3="Jablonski" Fname5="Karla" Level2="170" Abdat0="1994-03-11T00:00:00" />
+    <Employeei0 Id3="POK93028M" Name3="Koskitalo" Fname5="Pirkko" Level2="80" Abdat0="1993-11-29T00:00:00" />
+    <Employeei0 Id3="PCM98509F" Name3="McKenna" Fname5="Patricia" Level2="150" Abdat0="1989-08-01T00:00:00" />
+    <Employeei0 Id3="HAN90777M" Name3="Nagy" Fname5="Helvetius" Level2="120" Abdat0="1993-03-19T00:00:00" />
+    <Employeei0 Id3="M-P91209M" Name3="Pereira" Fname5="Manuel" Level2="101" Abdat0="1989-01-09T00:00:00" />
+    <Employeei0 Id3="A-R89858F" Name3="Roulet" Fname5="Annette" Level2="152" Abdat0="1990-02-21T00:00:00" />
+  </Publisherh3>
+  <Autorg4 Aid0="172-32-1176" Phone0="408 496-7223" City0="Menlo Park" State="CA">White Johnson<Titlen1 Name0="Prolonged Data Deprivation: Four Case Studies" Order="1" /></Autorg4>
+  <Autorg4 Aid0="213-46-8915" Phone0="415 986-7020" City0="Oakland" State="CA">Green Marjorie<Titlen1 Name0="The Busy Executive's Database Guide" Order="2" /><Titlen1 Name0="You Can Combat Computer Stress!" Order="1" /></Autorg4>
+  <Autorg4 Aid0="238-95-7766" Phone0="415 548-7723" City0="Berkeley" State="CA">Carson Cheryl<Titlen1 Name0="But Is It User Friendly?" Order="1" /></Autorg4>
+  <Autorg4 Aid0="267-41-2394" Phone0="408 286-2428" City0="San Jose" State="CA">O'Leary Michael<Titlen1 Name0="Cooking with Computers: Surreptitious Balance Sheets" Order="2" /><Titlen1 Name0="Sushi, Anyone?" Order="2" /></Autorg4>
+  <Autorg4 Aid0="274-80-9391" Phone0="415 834-2919" City0="Oakland" State="CA">Straight Dean<Titlen1 Name0="Straight Talk About Computers" Order="1" /></Autorg4>
+  <Autorg4 Aid0="341-22-1782" Phone0="913 843-0462" City0="Lawrence" State="KS">Smith Meander</Autorg4>
+  <Autorg4 Aid0="409-56-7008" Phone0="415 658-9932" City0="Berkeley" State="CA">Bennet Abraham<Titlen1 Name0="The Busy Executive's Database Guide" Order="1" /></Autorg4>
+  <Autorg4 Aid0="427-17-2319" Phone0="415 836-7128" City0="Palo Alto" State="CA">Dull Ann<Titlen1 Name0="Secrets of Silicon Valley" Order="1" /></Autorg4>
+  <Autorg4 Aid0="472-27-2349" Phone0="707 938-6445" City0="Covelo" State="CA">Gringlesby Burt<Titlen1 Name0="Sushi, Anyone?" Order="3" /></Autorg4>
+  <Autorg4 Aid0="486-29-1786" Phone0="415 585-4620" City0="San Francisco" State="CA">Locksley Charlene<Titlen1 Name0="Net Etiquette" Order="1" /><Titlen1 Name0="Emotional Security: A New Algorithm" Order="1" /></Autorg4>
+  <Autorg4 Aid0="527-72-3246" Phone0="615 297-2723" City0="Nashville" State="TN">Greene Morningstar</Autorg4>
+  <Autorg4 Aid0="648-92-1872" Phone0="503 745-6402" City0="Corvallis" State="OR">Blotchet-Halls Reginald<Titlen1 Name0="Fifty Years in Buckingham Palace Kitchens" Order="1" /></Autorg4>
+  <Autorg4 Aid0="672-71-3249" Phone0="415 935-4228" City0="Walnut Creek" State="CA">Yokomoto Akiko<Titlen1 Name0="Sushi, Anyone?" Order="1" /></Autorg4>
+  <Autorg4 Aid0="712-45-1867" Phone0="615 996-8275" City0="Ann Arbor" State="MI">del Castillo Innes<Titlen1 Name0="Silicon Valley Gastronomic Treats" Order="1" /></Autorg4>
+  <Autorg4 Aid0="722-51-5454" Phone0="219 547-9982" City0="Gary" State="IN">DeFrance Michel<Titlen1 Name0="The Gourmet Microwave" Order="1" /></Autorg4>
+  <Autorg4 Aid0="724-08-9931" Phone0="415 843-2991" City0="Oakland" State="CA">Stringer Dirk</Autorg4>
+  <Autorg4 Aid0="724-80-9391" Phone0="415 354-7128" City0="Oakland" State="CA">MacFeather Stearns<Titlen1 Name0="Cooking with Computers: Surreptitious Balance Sheets" Order="1" /><Titlen1 Name0="Computer Phobic AND Non-Phobic Individuals: Behavior Variations" Order="2" /></Autorg4>
+  <Autorg4 Aid0="756-30-7391" Phone0="415 534-9219" City0="Oakland" State="CA">Karsen Livia<Titlen1 Name0="Computer Phobic AND Non-Phobic Individuals: Behavior Variations" Order="1" /></Autorg4>
+  <Autorg4 Aid0="807-91-6654" Phone0="301 946-8853" City0="Rockville" State="MD">Panteley Sylvia<Titlen1 Name0="Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean" Order="1" /></Autorg4>
+  <Autorg4 Aid0="846-92-7186" Phone0="415 836-7128" City0="Palo Alto" State="CA">Hunter Sheryl<Titlen1 Name0="Secrets of Silicon Valley" Order="2" /></Autorg4>
+  <Autorg4 Aid0="893-72-1158" Phone0="707 448-4982" City0="Vacaville" State="CA">McBadden Heather</Autorg4>
+  <Autorg4 Aid0="899-46-2035" Phone0="801 826-0752" City0="Salt Lake City" State="UT">Ringer Anne<Titlen1 Name0="The Gourmet Microwave" Order="2" /><Titlen1 Name0="Is Anger the Enemy?" Order="2" /></Autorg4>
+  <Autorg4 Aid0="998-72-3567" Phone0="801 826-0752" City0="Salt Lake City" State="UT">Ringer Albert<Titlen1 Name0="Is Anger the Enemy?" Order="1" /><Titlen1 Name0="Life Without Fear" Order="1" /></Autorg4>
+</Pubsp3>
