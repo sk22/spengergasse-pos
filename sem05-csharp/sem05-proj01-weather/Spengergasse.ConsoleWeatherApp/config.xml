@@ -7,19 +7,14 @@
       <WoeId>551801</WoeId>
     </Place>
     <Place>
-      <Country>Austria</Country>
-      <Locality>Auersthal</Locality>
-      <WoeId>541172</WoeId>
+      <Country>United Kingdom</Country>
+      <Locality>London</Locality>
+      <WoeId>44418</WoeId>
     </Place>
     <Place>
       <Country>Australia</Country>
       <Locality>Adelaide</Locality>
       <WoeId>1099805</WoeId>
-    </Place>
-    <Place>
-      <Country>United Kingdom</Country>
-      <Locality>London</Locality>
-      <WoeId>44418</WoeId>
     </Place>
   </Places>
   <CurrentPlace>

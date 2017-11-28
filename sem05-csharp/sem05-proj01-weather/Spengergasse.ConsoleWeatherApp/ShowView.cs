@@ -11,6 +11,11 @@ namespace Spengergasse.ConsoleWeatherApp {
     }
 
     public void Show() {
+      if (state.Places.Count == 1) {
+        Apply(1);
+        return;
+      }
+
       Console.WriteLine();
       Console.Write("Enter a number to show the forecast for: ");
 
@@ -24,24 +29,27 @@ namespace Spengergasse.ConsoleWeatherApp {
         }
 
         SetPlace(number);
-
         Console.Clear();
         new WeatherView(state).Show();
       } catch (FormatException) {
         ConsoleUtil.PrintWarning("Number entered was invalid");
+        Console.Clear();
       }
+    }
+
+    public void Apply(int number) {
+      if (!PlacesView.CheckPlace(state, number)) {
+        Console.Clear();
+        return;
+      }
+      SetPlace(number);
+      Console.Clear();
+      new WeatherView(state).Show();
     }
 
     public void Apply(string input) {
       try {
-        var number = int.Parse(input);
-        if (!PlacesView.CheckPlace(state, number)) {
-          Console.Clear();
-          return;
-        }
-        SetPlace(number);
-        Console.Clear();
-        new WeatherView(state).Show();
+        Apply(int.Parse(input));
       } catch (FormatException) {
         Console.Clear();
       }

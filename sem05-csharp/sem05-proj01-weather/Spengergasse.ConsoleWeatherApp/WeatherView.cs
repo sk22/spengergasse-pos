@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using Spengergasse.CliUtil;
 using Spengergasse.Weather;
 using Spengergasse.Weather.Data;
 
@@ -20,19 +21,24 @@ namespace Spengergasse.ConsoleWeatherApp {
       var place = state.CurrentPlace;
 
       Console.Write("Fetching...");
-      var weather = WeatherData.GetWeatherData(state, place);
-      ConsoleUtil.ClearLine();
+      try {
+        var weather = WeatherData.GetWeatherData(state, place);
+        ConsoleUtil.ClearLine();
 
-      printCondition(weather.Condition);
-      printForecasts(weather.Forecasts.ToList());
+        printCondition(weather.Condition);
+        printForecasts(weather.Forecasts.ToList());
 
-      var option = new Options(new List<Option> {
-        new Option(ConsoleKey.Q, "Quit")
-      }).Show();
+        var option = new Options(new List<Option> {
+          new Option(ConsoleKey.Q, "Quit")
+        }).Show();
 
-      if (option.Action == null) {
-        System.Console.Clear();
-        return;
+        if (option.Action == null) {
+          Console.Clear();
+          return;
+        }
+      } catch (ArgumentException ae) {
+        ConsoleUtil.PrintWarning("The fetched data could not be parsed.");
+        Console.WriteLine(ae.Message);
       }
     }
 

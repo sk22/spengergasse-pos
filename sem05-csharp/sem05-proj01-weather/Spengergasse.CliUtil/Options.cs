@@ -11,6 +11,7 @@ namespace Spengergasse.CliUtil {
       this.options = options;
       this.action = action;
     }
+
     public static string GetOptionsString(List<Option> options) => options
       .Where(option => !option.Hidden)
       .Select(option =>

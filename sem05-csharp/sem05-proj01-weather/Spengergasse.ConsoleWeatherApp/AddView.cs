@@ -25,9 +25,9 @@ namespace Spengergasse.ConsoleWeatherApp {
       while (true) {
         ConsoleUtil.ClearLines(startLine, Console.CursorTop);
 
+        Console.Write("Enter the place's name: ");
+        var input = Console.ReadLine();
         try {
-          Console.Write("Enter the place's name: ");
-          var input = Console.ReadLine();
           if (input.Length == 0) {
             Console.Clear();
             return;
@@ -35,15 +35,6 @@ namespace Spengergasse.ConsoleWeatherApp {
 
           var place = Place.GetPlace(input);
           ConsoleUtil.ClearLine();
-
-
-          if (place == null) {
-            ConsoleUtil.PrintWarning(
-              string.Format("No results for {0}", input)
-            );
-            if (!tryAgain()) return;
-            continue;
-          }
 
           if (!checkLocality(place)) {
             if (!tryAgain()) return;
@@ -53,11 +44,21 @@ namespace Spengergasse.ConsoleWeatherApp {
           if (!resultApproved(place)) continue;
 
           state.Places.Add(place);
-          Console.Clear();
+          new ShowView(state).Apply(state.Places.Count);
           return;
         } catch (WebException we) {
           Console.Clear();
           ConsoleUtil.PrintWarning(we.Message);
+        } catch (InvalidOperationException) {
+          ConsoleUtil.ClearLine();
+          ConsoleUtil.PrintWarning(
+            string.Format("No results for {0}", input)
+          );
+          if (!tryAgain()) {
+            Console.Clear();
+            return;
+          }
+          continue;
         }
       }
     }

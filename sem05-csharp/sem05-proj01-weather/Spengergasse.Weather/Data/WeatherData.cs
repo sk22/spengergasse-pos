@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
@@ -20,15 +21,20 @@ namespace Spengergasse.Weather.Data {
 
 
     private static WeatherData prepareWeather(XElement result) {
-      XNamespace xmlns = "http://xml.weather.yahoo.com/ns/rss/1.0";
-      var item = result.XPathSelectElement("results/channel/item");
-      var condition = item.Element(xmlns + "condition");
-      var forecasts = item.Elements(xmlns + "forecast");
+      try {
+        XNamespace xmlns = "http://xml.weather.yahoo.com/ns/rss/1.0";
+        var item = result.XPathSelectElement("results/channel/item");
+        var condition = item.Element(xmlns + "condition");
+        var forecasts = item.Elements(xmlns + "forecast");
 
-      return new WeatherData {
-        Condition = Condition.GetCondition(condition),
-        Forecasts = forecasts.Select(Forecast.GetForecast)
-      };
+        return new WeatherData {
+          Condition = Condition.GetCondition(condition),
+          Forecasts = forecasts.Select(Forecast.GetForecast)
+        };
+      } catch (NullReferenceException nre) {
+        System.Console.WriteLine(result);
+        throw new ArgumentException("Result was not formed as expected.", nre);
+      }
     }
   }
 }
