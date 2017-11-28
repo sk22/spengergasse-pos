@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Spengergasse.Weather\Spengergasse.Weather.csproj" />
+    <ProjectReference Include="..\Spengergasse.CliUtil\Spengergasse.CliUtil.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

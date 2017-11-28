@@ -5,6 +5,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 using Spengergasse.Weather;
 using Spengergasse.Weather.Data;
+using Spengergasse.CliUtil;
 
 namespace Spengergasse.ConsoleWeatherApp {
   internal class AddView : IView {

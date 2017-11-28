@@ -1,8 +1,7 @@
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 
-namespace Spengergasse.ConsoleWeatherApp {
+namespace Spengergasse.CliUtil {
   public static class ConsoleUtil {
     public static void PrintHeading(string heading) {
       System.Console.WriteLine(heading + "\n===\n");

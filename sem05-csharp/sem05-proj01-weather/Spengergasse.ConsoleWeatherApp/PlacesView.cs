@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using Spengergasse.Weather;
 using Spengergasse.Weather.Data;
+using Spengergasse.CliUtil;
+
 
 namespace Spengergasse.ConsoleWeatherApp {
   internal class PlacesView : IView {
@@ -49,7 +51,7 @@ namespace Spengergasse.ConsoleWeatherApp {
             new Option(ConsoleKey.U, string.Format(
               "Switch temperature unit (°{0})",
               state.TemperatureUnit
-            ), () => { state.ToggleTemperatureUnit(); Console.Clear(); }),
+            ), toggleTemperatureUnit),
             new Option(ConsoleKey.Q, "Quit"),
             new Option(
               ConsoleKey.Enter,
@@ -72,6 +74,10 @@ namespace Spengergasse.ConsoleWeatherApp {
       }
     }
 
+    private void toggleTemperatureUnit() {
+      state.ToggleTemperatureUnit();
+      Console.Clear();
+    }
 
     private void noMatch() {
       Console.Clear();

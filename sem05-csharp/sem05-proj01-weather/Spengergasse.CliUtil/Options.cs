@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Spengergasse.ConsoleWeatherApp {
+namespace Spengergasse.CliUtil {
   public class Options {
     private List<Option> options;
     private Action<ConsoleKeyInfo> action;

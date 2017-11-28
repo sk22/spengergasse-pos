@@ -1,4 +1,5 @@
 using System;
+using Spengergasse.CliUtil;
 using Spengergasse.Weather;
 
 namespace Spengergasse.ConsoleWeatherApp {
