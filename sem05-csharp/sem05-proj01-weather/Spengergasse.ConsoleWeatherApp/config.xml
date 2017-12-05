@@ -4,12 +4,17 @@
     <Place>
       <Country>Austria</Country>
       <Locality>Vienna</Locality>
-      <WoeId>551801</WoeId>
+      <WoeId>542271</WoeId>
     </Place>
     <Place>
       <Country>United Kingdom</Country>
       <Locality>London</Locality>
       <WoeId>44418</WoeId>
+    </Place>
+    <Place>
+      <Country>United States</Country>
+      <Locality>San Francisco</Locality>
+      <WoeId>2487956</WoeId>
     </Place>
     <Place>
       <Country>Australia</Country>
@@ -18,9 +23,9 @@
     </Place>
   </Places>
   <CurrentPlace>
-    <Country>Austria</Country>
-    <Locality>Vienna</Locality>
-    <WoeId>551801</WoeId>
+    <Country>Australia</Country>
+    <Locality>Adelaide</Locality>
+    <WoeId>1099805</WoeId>
   </CurrentPlace>
   <TemperatureUnit>C</TemperatureUnit>
 </State>

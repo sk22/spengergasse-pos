@@ -1,14 +1,30 @@
 # Console Weather App
 
-Example query:
+## Building and Running
 
 ```
-select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="vienna") and u="c"
+cd Spengergasse.ConsoleWeatherApp
+dotnet build -c release
+dotnet .\bin\Release\netcoreapp2.0\Spengergasse.ConsoleWeatherApp.dll
 ```
 
-Endpoint:
+## Framework
 
-```
-https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22vienna%22)%20and%20u%3D%22c%22&format=xml&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys
-```
+The framework required to build this app is `dotnetcore2.0`.
 
+## Team
+
+1. Samuel Kaiser <kai17521@spengergasse.at>
+
+## .NET Core Projects
+
+* `Spengergasse.Weather` Library for interacting with an online weather API
+  - Communicating with the API
+  - Parsing the loaded JSON or XML data
+  - Exporting classes and methods to use the fetched data
+
+* `Spengergasse.ConsoleWeatherApp` Console program for displaying the weather
+  - Inputting demanded information (place, type of data)
+  - Displaying the information
+  - Persisting the places and provide a picker of recents
+  - Convenient controls
