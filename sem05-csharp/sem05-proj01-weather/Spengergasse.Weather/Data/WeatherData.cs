@@ -32,7 +32,6 @@ namespace Spengergasse.Weather.Data {
           Forecasts = forecasts.Select(Forecast.GetForecast)
         };
       } catch (NullReferenceException nre) {
-        System.Console.WriteLine(result);
         throw new ArgumentException("Result was not formed as expected.", nre);
       }
     }

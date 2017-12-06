@@ -27,18 +27,20 @@ namespace Spengergasse.ConsoleWeatherApp {
 
         printCondition(weather.Condition);
         printForecasts(weather.Forecasts.ToList());
+      } catch (ArgumentException ae) {
+        ConsoleUtil.ClearLine();
+        ConsoleUtil.PrintWarning("The fetched data could not be parsed.");
+        Console.WriteLine(ae.Message);
+        Console.WriteLine();
+      }
 
-        var option = new Options(new List<Option> {
+      var option = new Options(new List<Option> {
           new Option(ConsoleKey.Q, "Quit")
         }).Show();
 
-        if (option.Action == null) {
-          Console.Clear();
-          return;
-        }
-      } catch (ArgumentException ae) {
-        ConsoleUtil.PrintWarning("The fetched data could not be parsed.");
-        Console.WriteLine(ae.Message);
+      if (option.Action == null) {
+        Console.Clear();
+        return;
       }
     }
 

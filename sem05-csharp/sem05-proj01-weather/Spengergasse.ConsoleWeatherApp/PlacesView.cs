@@ -4,7 +4,6 @@ using Spengergasse.Weather;
 using Spengergasse.Weather.Data;
 using Spengergasse.CliUtil;
 
-
 namespace Spengergasse.ConsoleWeatherApp {
   internal class PlacesView : IView {
     private State state;

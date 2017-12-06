@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spengergasse.DbAccess", "Spengergasse.DbAccess\Spengergasse.DbAccess.csproj", "{BF02221B-83A9-40BF-ACE9-512424C0E06A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF02221B-83A9-40BF-ACE9-512424C0E06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF02221B-83A9-40BF-ACE9-512424C0E06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF02221B-83A9-40BF-ACE9-512424C0E06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF02221B-83A9-40BF-ACE9-512424C0E06A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F98A2EA0-ABBB-475A-AE59-89F807E7D6B3}
+	EndGlobalSection
+EndGlobal
