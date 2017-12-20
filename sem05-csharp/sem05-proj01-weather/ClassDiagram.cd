@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Spengergasse.ConsoleWeatherApp.AddView" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAIAAAAAEAAAEAAAACAAAAAA=</HashCode>
+      <FileName>AddView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Spengergasse.ConsoleWeatherApp.DeleteView" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>DeleteView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Spengergasse.ConsoleWeatherApp.PlacesView" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABACMAEABAAAAAAEAAAEAAACAAAAAAA=</HashCode>
+      <FileName>PlacesView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Spengergasse.ConsoleWeatherApp.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spengergasse.ConsoleWeatherApp.ShowView" BaseTypeListCollapsed="true">
+    <Position X="10" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAEAAAAAAAAAEAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ShowView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Spengergasse.ConsoleWeatherApp.WeatherView" BaseTypeListCollapsed="true">
+    <Position X="5" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAEAAAEIAAAAAAACAA=</HashCode>
+      <FileName>WeatherView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Spengergasse.CliUtil.ConsoleUtil">
+    <Position X="0.5" Y="9.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spengergasse.CliUtil.Options">
+    <Position X="2.75" Y="9.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spengergasse.Weather.Api">
+    <Position X="0.5" Y="2" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spengergasse.Weather.State">
+    <Position X="2.75" Y="2" Width="2.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="CurrentPlace" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Places" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Spengergasse.Weather.Data.Condition">
+    <Position X="12.25" Y="2.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spengergasse.Weather.Data.Forecast">
+    <Position X="10" Y="2.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spengergasse.Weather.Data.Place">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Spengergasse.Weather.Data.WeatherData">
+    <Position X="10" Y="0.5" Width="2.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Condition" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Forecasts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Struct Name="Spengergasse.CliUtil.Option">
+    <Position X="5" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Interface Name="Spengergasse.ConsoleWeatherApp.IView">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

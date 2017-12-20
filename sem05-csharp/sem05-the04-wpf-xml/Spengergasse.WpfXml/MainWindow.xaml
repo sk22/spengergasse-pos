@@ -28,7 +28,10 @@
      >
       <ComboBox.ItemTemplate>
         <DataTemplate>
-          <TextBlock Text="{Binding XPath=@Klasse}" />
+          <TextBlock>
+            <Run Text="{Binding XPath=@Klasse}" FontSize="18" />
+            <Run Text="{Binding XPath=@Kv}" />
+          </TextBlock>
         </DataTemplate>
       </ComboBox.ItemTemplate>
     </ComboBox>
@@ -41,9 +44,25 @@
     >
       <ListBox.ItemTemplate>
         <DataTemplate>
-          <TextBlock Text="{Binding XPath=@Name}" />
+          <TextBlock>
+            <Run Text="{Binding XPath=@Name}" />
+            (<Run Text="{Binding XPath=@Ges}" />)
+          </TextBlock>
         </DataTemplate>
       </ListBox.ItemTemplate>
     </ListBox>
+    <StackPanel
+      Grid.Row="1"
+      Grid.Column="1"
+      Margin="10"
+      DataContext="{Binding ElementName=student, Path=SelectedItem}"
+    >
+      <TextBlock>Name</TextBlock>
+      <TextBox Text="{Binding XPath=@Name}" />
+      <TextBlock>Geschlecht</TextBlock>
+      <TextBox Text="{Binding XPath=@Ges}" />
+      <TextBlock>Abteilung</TextBlock>
+      <TextBlock Text="{Binding XPath=../../../@Aznr}" />
+    </StackPanel>
   </Grid>
 </Window>
