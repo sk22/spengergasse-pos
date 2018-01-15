@@ -1,0 +1,96 @@
+
+--8   Wie viele Stunden werden in labors unterrichtet (Raum beginnt mit LA)
+					select count(*) from stunden where st_r_raum like 'LA%';
+--9   Welche Schüler haben Unterricht im Lehrsaal "B1"     
+      select  schueler.* FROM schueler inner join stunden on s_k_klasse  = st_k_klasse where st_r_raum = 'B1';
+-- 10   Welche Lehrer sind Abteilungsvorstände
+       select distinct l_id, l_name from vorgesetzte inner join lehrer ON l_id = v_l_vorg where v_art like 'A%'
+          -- 2. Variante übder die dienstrechtlichen Vorgesetzten
+      select * from lehrer  where L_L_chef = (select L_ID from lehrer where l_l_chef IS NULL)
+--11  Gibt es Fälle, wo ein Vorgesetzter den gleichen 
+--      Vornamen hat wie sein Untergebener
+--    Frage ob    a) dienstrechtlicher Vorgesetzter (L_L_chef)
+          --oder  b) allgemeine V. Tabelle  vorgesetzte
+          in beiden Fällen muss die lehrertabelle umbenannt werden
+		 --11a  
+		select chef.l_id, chef.l_vorname, lehrer.l_id, lehrer.l_vorname
+		from Lehrer  INNER JOIN  lehrer  chef ON chef.L_id = lehrer.l_l_chef          
+		where lehrer.l_vorname = chef.l_vorname
+		  -- 11b
+		select v.l_id, v.l_vorname, u.l_id, u.l_vorname     
+		from lehrer U inner join vorgesetzte on  u.l_id = v_l_unt
+					  INNER JOIN lehrer v on v_l_vorg = v.l_id
+		where v.l_vorname = u.l_vorname
+--14  Ermitteln Sie die Durchschnittsnote pro Gegenstand
+--    über alle Prüfungen
+
+--15  Welche Gegenstände werden von einem Lehrer unterrichtet,
+--    der dienstrechtlicher Vorgesetzter anderer Lehrer ist
+
+
+--16  In welchen Fällen unterrichten Vorgesetzte und Untergebene
+--    in der gleichen Klasse
+
+--17  Welche Schüler sind Klassensprecher einer falschen Klasse
+
+
+--18  Unterrichten KVs den Gegenstand 'Programmieren', welche?
+
+--19  Welche Schüler wurden noch nicht geprüft
+
+--20  Wer ist der zweitälteste Schüler
+
+--21  Suche falsche Fremdschlüssel in der Tabelle pruefung
+
+--22  Ermittle für ALLE Lehrer Anzahl und Notenschnitt der Prüfungen
+
+--23  Welche Lehrer sind weder Untergebene noch Vorgesetzte
+
+--24  Welche Gegenstände werden unterrichtet, 
+--    wurden aber noch nicht geprüft
+
+--25  Gibt es Lehrer, die in mehreren Klassen KV sind
+
+--26  Hat der Schüler 'Adler' mehr Prüfungen als der Schüler 'Berger'
+--    Kann man  ja oder nein ausgeben
+
+--27  Welche Lehrer sind alte Lehrer (älter Hälfte des Altersdurchschnitts)
+
+--28  Welche Lehrer unterrichten in JEDER Klasse
+
+--29  Liefern Sie den Notenschnitt aller Schüler und ebenfalls
+--    den Notenschnitt der Klassensprecher (union)
+
+--30  Welche Personen in der Schule haben Geburtstag am 31.April
+
+--31  Welche Gegenstände werden NUR von Vorgesetzten unterrichtet
+
+--32  Erstellen Sie eine Statistik zur Notengebung aller Lehrer
+--    eine Zeile für jeden Lehrer, 
+--    Lnr, Lname, DNote, Anzprüfs, Anz1er, Anz2er,... Anz5er 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
