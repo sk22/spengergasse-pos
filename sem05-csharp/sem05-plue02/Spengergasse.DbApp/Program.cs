@@ -90,7 +90,7 @@ namespace Spengergasse.DbApp {
     }
 
     static void Heading(string heading) {
-      Console.WriteLine($"\n{heading}\n===\n");
+      Console.WriteLine($"\n\n{heading}\n===\n");
     }
 
     static void Print(object obj) {
