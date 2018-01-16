@@ -109,6 +109,14 @@ namespace Spengergasse.DbAccess {
 
       Title("angabe3 - nurdb");
 
+      Heading("Task 7");
+
+      Print(
+        from s in db.schuelers
+        orderby s.klassen.K_Bez
+        select new { s.S_Name, s.S_K_Klasse, s.klassen.K_Bez }
+      );
+
       Heading("Task 10");
 
       // get all data as anonymous classes

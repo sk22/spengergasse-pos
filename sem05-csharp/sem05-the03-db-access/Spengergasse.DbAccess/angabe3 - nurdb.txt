@@ -1,0 +1,78 @@
+
+-------------- Übungen zu DB Zugriff ------- schule2000.mdf ----------
+             
+7. Geben Sie eine Klassenliste der Klasse  "03TA" aus,
+   Sortierung und Ausgabe der Klassenbezeichnung ist erwünscht           
+            
+            Name=Adler      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Gans       Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Geier      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Hundertwasser      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Klassenbester      Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Rotkehlchen        Klasse=03TA     Kbez=Kolleg T 03TA
+            Name=Sitzenbleiber      Klasse=03TA     Kbez=Kolleg T 03TA
+            
+                         
+8. Geben Sie alle Klassen mit Angabe der Schülerzahl aus
+   
+              Klasse=03TA     Kbez=Kolleg T 03TA      Anzahl=7
+              Klasse=03TB     Kbez=Kolleg T 03TB      Anzahl=7
+              Klasse=0M5A     Kbez=Kolleg A 0M5A      Anzahl=6
+              Klasse=0M5Q     Kbez=Kolleg A 0M5Q      Anzahl=4
+              Klasse=1VL0     Kbez=VorbereitungLG     Anzahl=0
+                         
+
+9. Geben Sie jene Fälle aus, wo ein Klassenvorstand Schüler seiner Klasse geprüft hat
+
+            NameL=Bilek     NameS=Bartgeier         Pdatum=12.01.1998
+            NameL=Beringer  NameS=Klassenbester     Pdatum=12.01.1998
+            NameL=Beringer  NameS=Sitzenbleiber     Pdatum=15.04.1998
+            NameL=Beringer  NameS=Adler     Pdatum=15.03.1999
+            NameL=Beringer  NameS=Klassenbester     Pdatum=15.03.1999
+            NameL=Preißl    NameS=Apfelbaum         Pdatum=01.10.2003
+            NameL=Preißl    NameS=Birnenbaum        Pdatum=01.10.2003
+
+
+10. Geben Sie die Klassen und Schülerdaten als XML aus,
+    In der Klasse als Attribute K_id, K_Bez, Name KV
+    Im Schüler ebenfalls einige Felder als Attribute
+
+
+      <Klassenliste>
+        <Klasse KID="03TA" KBez="Kolleg T 03TA" KVName="Beringer" Schanzahl="7">
+          <Schueler Zuname="Adler" Vorname="Richard" />
+          <Schueler Zuname="Gans" Vorname="Gustav" />
+          <Schueler Zuname="Geier" Vorname="Gustav" />
+          <Schueler Zuname="Hundertwasser" Vorname="Helga" />
+          <Schueler Zuname="Klassenbester" Vorname="Konrad" />
+          <Schueler Zuname="Rotkehlchen" Vorname="Robert" />
+          <Schueler Zuname="Sitzenbleiber" Vorname="Sebastian" />
+        </Klasse>
+        <Klasse KID="03TB" KBez="Kolleg T 03TB" KVName="Bilek" Schanzahl="7">
+          <Schueler Zuname="Bartgeier" Vorname="Burghard" />
+          <Schueler Zuname="Ente" Vorname="Eberhard" />
+             ..........
+        </Klasse>
+      </Klassenliste>
+
+
+
+
+11. Wie könnte die Aufgabenstellung zum folgenden Befehl lauten
+
+             var erg =
+             from v in db.vorgesetzte
+             where v.lehrer.L_Gebdat > v.lehrer1.L_Gebdat
+             select new { NameL1 = v.lehrer.L_Name, GebdL1 = v.lehrer.L_Gebdat,  NameL2 = v.lehrer1.L_Name, GebdL2 = v.lehrer1.L_Gebdat};
+
+
+
+
+
+
+
+
+
+
+             
+             
