@@ -1,0 +1,79 @@
+﻿<Window
+  x:Class="Spengergasse.WpfDb1.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Spengergasse.WpfDb1"
+  mc:Ignorable="d"
+  Title="MainWindow" Height="350" Width="525"
+  Loaded="Window_Loaded">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <TextBlock Grid.Row="0" Grid.Column="0" Text="Classes" Margin="5" />
+    <ListBox
+      x:Name="ClassesList"
+      Grid.Row="1"
+      Grid.Column="0"
+      DisplayMemberPath="K_Bez" />
+
+    <TextBlock Grid.Row="0" Grid.Column="1" Text="Students" Margin="5" />
+    <ListBox
+      x:Name="StudentsList"
+      Grid.Row="1"
+      Grid.Column="1"
+      ItemsSource="{Binding ElementName=ClassesList, Path=SelectedItem.schuelers}">
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <TextBlock>
+            <Run Text="{Binding Path=S_Name}" />
+            <Run Text="{Binding Path=S_Vorname}" />
+          </TextBlock>
+        </DataTemplate>
+      </ListBox.ItemTemplate>  
+    </ListBox>
+
+    <TextBlock Grid.Row="0" Grid.Column="2" Text="Details" Margin="5" />
+    <StackPanel
+      Grid.Row="1"
+      Grid.Column="2"
+      Margin="5"
+      DataContext="{Binding ElementName=StudentsList, Path=SelectedItem}">
+      <TextBlock Text="Student No." />
+      <TextBox Text="{Binding Path=S_SCHNR}" IsReadOnly="True" />
+
+      <TextBlock Text="Name" />
+      <TextBox Text="{Binding Path=S_Name}" />
+
+      <TextBlock Text="First name" />
+      <TextBox Text="{Binding Path=S_Vorname}" />
+
+      <TextBlock Text="Birthdate" />
+      <TextBox Text="{Binding Path=S_Gebdat}" />
+
+      <TextBlock Text="Address" />
+      <TextBox Text="{Binding Path=S_Adresse}" />
+
+      <TextBlock Text="Class" />
+      <TextBox Text="{Binding Path=S_K_Klasse}" />
+
+      <Button
+        x:Name="SaveButton"
+        Content="Save"
+        Grid.Row="6"
+        Grid.Column="1"
+        Grid.ColumnSpan="2"
+        Margin="0 8 0 3"
+        Click="SaveButton_Click" />
+    </StackPanel>
+  </Grid>
+</Window>
