@@ -6,7 +6,7 @@
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   xmlns:local="clr-namespace:Spengergasse.WpfDb1"
   mc:Ignorable="d"
-  Title="MainWindow" Height="350" Width="525"
+  Title="Students" Height="350" Width="525"
   Loaded="Window_Loaded">
   <Grid>
     <Grid.RowDefinitions>
@@ -22,14 +22,14 @@
     <TextBlock Grid.Row="0" Grid.Column="0" Text="Classes" Margin="5" />
     <ListBox
       x:Name="ClassesList"
-      Grid.Row="1"
+      Grid.Row="2"
       Grid.Column="0"
       DisplayMemberPath="K_Bez" />
 
     <TextBlock Grid.Row="0" Grid.Column="1" Text="Students" Margin="5" />
     <ListBox
       x:Name="StudentsList"
-      Grid.Row="1"
+      Grid.Row="2"
       Grid.Column="1"
       ItemsSource="{Binding ElementName=ClassesList, Path=SelectedItem.schuelers}">
       <ListBox.ItemTemplate>
@@ -44,7 +44,7 @@
 
     <TextBlock Grid.Row="0" Grid.Column="2" Text="Details" Margin="5" />
     <StackPanel
-      Grid.Row="1"
+      Grid.Row="2"
       Grid.Column="2"
       Margin="5"
       DataContext="{Binding ElementName=StudentsList, Path=SelectedItem}">
@@ -58,22 +58,44 @@
       <TextBox Text="{Binding Path=S_Vorname}" />
 
       <TextBlock Text="Birthdate" />
-      <TextBox Text="{Binding Path=S_Gebdat}" />
+      <DatePicker SelectedDate="{Binding Path=S_Gebdat}" />
 
       <TextBlock Text="Address" />
       <TextBox Text="{Binding Path=S_Adresse}" />
 
       <TextBlock Text="Class" />
-      <TextBox Text="{Binding Path=S_K_Klasse}" />
+      <ComboBox
+        ItemsSource="{Binding ElementName=ClassesList, Path=Items}"
+        SelectedValuePath="K_ID"
+        DisplayMemberPath="K_Bez"
+        SelectedItem="{Binding Path=klassen}" />
 
-      <Button
-        x:Name="SaveButton"
-        Content="Save"
-        Grid.Row="6"
+      <TextBlock x:Name="ErrorBox" Margin="0, 5, 0, 5"></TextBlock>
+
+      <StackPanel
+        Grid.Row="7"
         Grid.Column="1"
         Grid.ColumnSpan="2"
         Margin="0 8 0 3"
-        Click="SaveButton_Click" />
+        Orientation="Horizontal">
+        <StackPanel.Resources>
+          <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="0,0,5,0"/>
+          </Style>
+        </StackPanel.Resources>
+        <Button
+          x:Name="SaveButton"
+          Content="Save"
+          Click="SaveButton_Click" />
+        <Button
+          x:Name="DeleteButton"
+          Content="Delete"
+          Click="DeleteButton_Click" />
+        <Button
+          x:Name="NewButton"
+          Content="New"
+          Click="NewButton_Click" />
+      </StackPanel>
     </StackPanel>
   </Grid>
 </Window>

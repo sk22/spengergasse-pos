@@ -29,7 +29,34 @@ namespace Spengergasse.WpfDb1 {
     }
 
     private void SaveButton_Click(object sender, RoutedEventArgs e) {
-      db.SaveChanges();
+      try {
+        int rows = db.SaveChanges();
+        ErrorBox.Text = rows + " rows updated.";
+        StudentsList.UnselectAll();
+        ClassesList.Items.Refresh();
+      } catch (Exception ex) {
+        ErrorBox.Text = ex.Message;
+        for (var ie = ex.InnerException; ie != null; ie = ie.InnerException) {
+          ErrorBox.Text += "\n" + ie.Message;
+        }
+      }
+    }
+
+    private void DeleteButton_Click(object sender, RoutedEventArgs e) {
+      if (StudentsList.SelectedItem == null) return;
+      db.schuelers.Remove((schueler)StudentsList.SelectedItem);
+      StudentsList.Items.Refresh();
+    }
+
+    private void NewButton_Click(object sender, RoutedEventArgs e) {
+      var c = (klassen)ClassesList.SelectedItem;
+      if (c == null) return;
+
+      var s = new schueler { S_Name = "Unnamed", S_K_Klasse = c.K_ID };
+      c.schuelers.Add(s);
+
+      StudentsList.Items.Refresh();
+      StudentsList.SelectedItem = s;
     }
   }
 }

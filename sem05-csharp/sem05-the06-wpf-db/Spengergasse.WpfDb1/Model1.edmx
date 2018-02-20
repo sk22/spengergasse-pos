@@ -58,7 +58,7 @@
           <Key>
             <PropertyRef Name="S_SCHNR" />
           </Key>
-          <Property Name="S_SCHNR" Type="smallint" Nullable="false" />
+          <Property Name="S_SCHNR" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="S_Name" Type="nvarchar" MaxLength="50" />
           <Property Name="S_Vorname" Type="nvarchar" MaxLength="50" />
           <Property Name="S_Gebdat" Type="datetime" />
@@ -407,7 +407,7 @@
           <Key>
             <PropertyRef Name="S_SCHNR" />
           </Key>
-          <Property Name="S_SCHNR" Type="Int16" Nullable="false" />
+          <Property Name="S_SCHNR" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="S_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="S_Vorname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="S_Gebdat" Type="DateTime" Precision="3" />
