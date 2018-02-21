@@ -1,0 +1,47 @@
+﻿<Window
+  x:Class="Spengergasse.WpfXml_Kundenbestellungen.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Spengergasse.WpfXml_Kundenbestellungen"
+  mc:Ignorable="d"
+  Title="Kundenbestellungen" Height="350" Width="525">
+  <Window.Resources>
+    <XmlDataProvider x:Key="bestellungen" Source="kundenbestellungen.xml" />
+  </Window.Resources>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <ListView
+      Grid.Column="0"
+      ItemsSource="{Binding Source={StaticResource bestellungen}, XPath=/Kunden_liste/Kunden}"
+      Name="list"
+      IsSynchronizedWithCurrentItem="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <StackPanel>
+            <TextBlock Text="{Binding XPath=Kunden_Code}" FontWeight="Bold" />
+            <StackPanel Margin="5,0,0,0">
+              <TextBlock Text="{Binding XPath=@Firma}" />
+              <TextBlock Text="{Binding XPath=@Ort}" />
+            </StackPanel>
+          </StackPanel>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <DataGrid
+      DataContext="{Binding ElementName=list, Path=SelectedItem}"
+      ItemsSource="{Binding XPath=Bestellungen}"
+      Grid.Column="1"
+      AutoGenerateColumns="False">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Bestell-Nr" Binding="{Binding XPath=Bestell_Nr}" />
+        <DataGridTextColumn Header="Bestelldatum" Binding="{Binding XPath=Bestelldatum}" />
+        <DataGridTextColumn Header="Frachtkosten" Binding="{Binding XPath=Frachtkosten}" />
+      </DataGrid.Columns>
+    </DataGrid>
+  </Grid>
+</Window>
