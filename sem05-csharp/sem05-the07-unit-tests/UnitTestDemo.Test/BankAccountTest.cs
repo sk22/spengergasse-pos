@@ -53,5 +53,22 @@ namespace UnitTestDemo.Test {
         Assert.Throws<ArgumentOutOfRangeException>(() => account.Credit(value));
       }
     }
+
+    [Theory]
+    [InlineData(100, 10, true)]
+    [InlineData(0, 0, true)]
+    [InlineData(10, 10, true)]
+    [InlineData(10, 11, false)]
+    [InlineData(1000, 2000, false)]
+    [InlineData(1000000, 999999, true)]
+    public void DebitThrowsWhenUnderZero(decimal init, decimal value, bool expected) {
+      var account = new BankAccount("Hans", init);
+      if (expected) {
+        account.Debit(value);
+        Assert.Equal(account.Balance, init - value);
+      } else {
+        Assert.Throws<ArgumentOutOfRangeException>(() => account.Debit(value));
+      }
+    }
   }
 }
