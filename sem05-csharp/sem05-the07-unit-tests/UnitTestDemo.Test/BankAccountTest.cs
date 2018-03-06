@@ -34,5 +34,24 @@ namespace UnitTestDemo.Test {
       account.FreezeAccount();
       Assert.Throws<Exception>(() => account.Credit(5m));
     }
+
+    [Theory]
+    [InlineData(10, true)]
+    [InlineData(-10, false)]
+    [InlineData(10000, true)]
+    [InlineData(9999.99, true)]
+    [InlineData(1234.5678, true)]
+    [InlineData(-9999.99, false)]
+    [InlineData(0, true)]
+    public void CreditOnlyWorksWithValidValues(decimal value, bool expected) {
+      var init = 11.99m;
+      var account = new BankAccount("Hans", init);
+      if (expected) {
+        account.Credit(value);
+        Assert.Equal(account.Balance, init + value);
+      } else {
+        Assert.Throws<ArgumentOutOfRangeException>(() => account.Credit(value));
+      }
+    }
   }
 }
