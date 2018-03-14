@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schulep1>
+  <Abteilungo3 Anr2="BM" Aname4="Betriebsmanagement" Av7="ZLA">
+    <Klassed0 Knr5="3AHWIT" Kvnr6="MAH" Kvname7="Mahler Heinrich">
+      <Schuelerg4 Sname5="Bakovic Ivan" Sges="m" />
+      <Schuelerg4 Sname5="Dukic Aleksander" Sges="m" />
+      <Schuelerg4 Sname5="Galic Lidija" Sges="w" />
+      <Schuelerg4 Sname5="Hinterberger Tobias" Sges="m" />
+      <Schuelerg4 Sname5="Kayaci Ahmetali" Sges="m" />
+      <Schuelerg4 Sname5="Kellner Florian" Sges="m" />
+      <Schuelerg4 Sname5="Mahmoud Mohamed" Sges="m" />
+      <Schuelerg4 Sname5="Obradović Stevan" Sges="m" />
+      <Schuelerg4 Sname5="Stadler Eliana" Sges="w" />
+      <Schuelerg4 Sname5="Türkkan Ali" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="RISL" Lehrer5="AF" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="D" Lehrer5="BZ" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="APT1" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="MET1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="MET1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="WEN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="SPA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="KIR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="WEN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="SPA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="KIR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="WEN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="SPA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="KIR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="E1" Lehrer5="KOM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRMNx" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRMNy" Lehrer5="WAB" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRMNx" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRMNy" Lehrer5="WAB" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="PMM" Lehrer5="FM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="BET" Lehrer5="HAU" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="D" Lehrer5="BZ" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="GGP" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="GGP" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="INF1y" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="INF1x" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="INF1y" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="INF1x" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="INF1y" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="INF1x" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="UFW1" Lehrer5="HAU" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="UFW1" Lehrer5="HAU" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BSFU" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="BSFU" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="APT1" Lehrer5="MAH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="APT1" Lehrer5="MAH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="PMMx" Lehrer5="FM" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="PMMy" Lehrer5="FM" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="BET" Lehrer5="SPA" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="E1" Lehrer5="KOM" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="LA1" Lehrer5="MAH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="LA1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="LA1" Lehrer5="MAH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="LA1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="LA1" Lehrer5="MAH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="LA1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="RK" Lehrer5="BI" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="UFW1" Lehrer5="GRM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="BESP" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="BESP" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FNW2" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FNW2" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FNW2" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FNW2" Lehrer5="SED" Lges="w" />
+    </Klassed0>
+    <Klassed0 Knr5="3BHWIT" Kvnr6="NI" Kvname7="Niemeczek Claudia">
+      <Schuelerg4 Sname5="Altintas Burak" Sges="m" />
+      <Schuelerg4 Sname5="Heckel Christopher" Sges="m" />
+      <Schuelerg4 Sname5="Huber Anna - Katharina" Sges="w" />
+      <Schuelerg4 Sname5="Kielmas Patrick" Sges="m" />
+      <Schuelerg4 Sname5="Koppensteiner Vanessa" Sges="w" />
+      <Schuelerg4 Sname5="Rac Mario" Sges="m" />
+      <Schuelerg4 Sname5="Wolfram Elisabeth" Sges="w" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="E1" Lehrer5="SO" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="APT1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="APT1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="UFW1" Lehrer5="GRM" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="SPN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="SOD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="WEPT" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="SPN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="SOD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="WEPT" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="SPN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="SOD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="WEPT" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="RISL" Lehrer5="AF" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="RK" Lehrer5="BI" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MET1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MET1" Lehrer5="ZLA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="E1" Lehrer5="SO" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="NW2" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="INF1x" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="INF1x" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="INF1x" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="BET" Lehrer5="HAU" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="UFW1" Lehrer5="HAU" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="BESP" Lehrer5="CSR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="BESP" Lehrer5="KOM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="BESP" Lehrer5="CSR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="BESP" Lehrer5="KOM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="INF1y" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="INF1y" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="INF1y" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BET" Lehrer5="SPA" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="UFW1" Lehrer5="HAU" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="APT1" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="GGP" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="GGP" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="LA1" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="LA1" Lehrer5="SPN" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="LA1" Lehrer5="WAB" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="LA1" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="LA1" Lehrer5="SPN" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="LA1" Lehrer5="WAB" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="LA1" Lehrer5="SED" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="LA1" Lehrer5="SPN" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="LA1" Lehrer5="WAB" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="D" Lehrer5="PE" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="D" Lehrer5="PE" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="PRMNx" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="PRMNy" Lehrer5="WAB" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="PRMNx" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="PRMNy" Lehrer5="WAB" Lges="m" />
+    </Klassed0>
+  </Abteilungo3>
+  <Abteilungo3 Anr2="EDV-Abend" Aname4="EDV und Organisation Abend" Av7="BF">
+    <Klassed0 Knr5="3ABIF" Kvnr6="GT" Kvname7="Griesmayer Thomas">
+      <Schuelerg4 Sname5="Berisha Halil" Sges="m" />
+      <Schuelerg4 Sname5="Fuchs Stefan" Sges="m" />
+      <Schuelerg4 Sname5="Gallardo Villacis Marlon" Sges="m" />
+      <Schuelerg4 Sname5="Kryvonos Yuriy" Sges="m" />
+      <Schuelerg4 Sname5="Mader Constantin" Sges="m" />
+      <Schuelerg4 Sname5="Mykhaylova Mariya" Sges="w" />
+      <Schuelerg4 Sname5="Puka Marcin" Sges="m" />
+      <Schuelerg4 Sname5="Sammer Marlene" Sges="w" />
+      <Schuelerg4 Sname5="Sinn Christopher" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="POS1" Lehrer5="BF" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="12" Fach2="POS1" Lehrer5="BF" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="13" Fach2="BWM" Lehrer5="LIC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="14" Fach2="BWM" Lehrer5="LIC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="15" Fach2="NVS1" Lehrer5="CO" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="15" Fach2="NVS1y" Lehrer5="HY" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="16" Fach2="NVS1" Lehrer5="CO" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="16" Fach2="NVS1y" Lehrer5="HY" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="AM" Lehrer5="SW" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="12" Fach2="AM" Lehrer5="SW" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="POS1" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="POS1y" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="POS1" Lehrer5="SCG" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="POS1y" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="POS1" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="POS1y" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="POS1" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="POS1y" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="POS1" Lehrer5="SCG" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="POS1y" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="POS1" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="POS1y" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="D" Lehrer5="SB" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="12" Fach2="D" Lehrer5="SB" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="13" Fach2="DBI1" Lehrer5="GT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="14" Fach2="DBI1" Lehrer5="GT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="15" Fach2="DBI1" Lehrer5="HIK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="15" Fach2="DBI2" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="16" Fach2="DBI1" Lehrer5="HIK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="16" Fach2="DBI2" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="WIR3" Lehrer5="BIG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="12" Fach2="WIR3" Lehrer5="BIG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="13" Fach2="TICP4A" Lehrer5="HB" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="14" Fach2="TICP4A" Lehrer5="HB" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="15" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="15" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="16" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="16" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="12" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3BBIF" Kvnr6="FIN" Kvname7="Fink-Steinwender Heidi Marie">
+      <Schuelerg4 Sname5="Arayici Cemal" Sges="m" />
+      <Schuelerg4 Sname5="Glaser Marvin Michael" Sges="m" />
+      <Schuelerg4 Sname5="Köbke Lukas" Sges="m" />
+      <Schuelerg4 Sname5="Michl Raphael" Sges="m" />
+      <Schuelerg4 Sname5="Morkoc Can" Sges="m" />
+      <Schuelerg4 Sname5="Nikolic Denis" Sges="m" />
+      <Schuelerg4 Sname5="Sarwari Fahrid" Sges="m" />
+      <Schuelerg4 Sname5="Simek Nina" Sges="w" />
+      <Schuelerg4 Sname5="Tampier Alexander" Sges="m" />
+      <Schuelerg4 Sname5="Tran Quoc Thai" Sges="m" />
+      <Schuelerg4 Sname5="Vasylkiv Ihor" Sges="m" />
+      <Schuelerg4 Sname5="Weinberger Hermann" Sges="m" />
+      <Schuelerg4 Sname5="Wiesinger Uwe" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="12" Fach2="RISL" Lehrer5="AA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="13" Fach2="DBI1" Lehrer5="GT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="14" Fach2="DBI1" Lehrer5="GT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="15" Fach2="POS1" Lehrer5="BF" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="16" Fach2="POS1" Lehrer5="BF" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="12" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="12" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="D" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="D" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="POS1y" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="POS1x" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="POS1y" Lehrer5="SCG" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="POS1x" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="POS1y" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="POS1x" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="POS1y" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="POS1x" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="POS1y" Lehrer5="SCG" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="POS1x" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="POS1y" Lehrer5="SE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="POS1x" Lehrer5="TT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="NVS1" Lehrer5="CO" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="NVS1" Lehrer5="HY" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="12" Fach2="NVS1" Lehrer5="CO" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="12" Fach2="NVS1" Lehrer5="HY" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="13" Fach2="BWM" Lehrer5="LIC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="14" Fach2="BWM" Lehrer5="LIC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="15" Fach2="E1x" Lehrer5="FIN" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="16" Fach2="E1x" Lehrer5="FIN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="AM" Lehrer5="SW" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="12" Fach2="AM" Lehrer5="SW" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="13" Fach2="WIR3" Lehrer5="BIG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="14" Fach2="WIR3" Lehrer5="BIG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="15" Fach2="DBI1" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="15" Fach2="DBI1" Lehrer5="HIK" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="16" Fach2="DBI1" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="16" Fach2="DBI1" Lehrer5="HIK" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="12" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="13" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="14" Fach2="RE" Lehrer5="AT" Lges="w" />
+    </Klassed0>
+  </Abteilungo3>
+  <Abteilungo3 Anr2="EDV-FS/K" Aname4="EDV Fachschule" Av7="BC">
+    <Klassed0 Knr5="3AAIF" Kvnr6="GC" Kvname7="Gründl Claudia">
+      <Schuelerg4 Sname5="Biener Alexander" Sges="m" />
+      <Schuelerg4 Sname5="Blauensteiner Rene-Josef" Sges="m" />
+      <Schuelerg4 Sname5="Brunner Michael" Sges="m" />
+      <Schuelerg4 Sname5="Kraft Sebastian" Sges="m" />
+      <Schuelerg4 Sname5="Strauß Patricia" Sges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="BWM" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="AM" Lehrer5="PK" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="PK" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1x" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="DUK" Lehrer5="PRS" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="BWM" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="E1x" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="DUK" Lehrer5="PRS" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="12" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="13" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="14" Fach2="RE" Lehrer5="AT" Lges="w" />
+    </Klassed0>
+    <Klassed0 Knr5="3AFID" Kvnr6="KRB" Kvname7="Krajina Brigitta">
+      <Schuelerg4 Sname5="Caasi John Mark" Sges="m" />
+      <Schuelerg4 Sname5="Dolezal Bernhard" Sges="m" />
+      <Schuelerg4 Sname5="Gartner Stefan" Sges="m" />
+      <Schuelerg4 Sname5="Joncic Oliver" Sges="m" />
+      <Schuelerg4 Sname5="Köksal Niyazi" Sges="m" />
+      <Schuelerg4 Sname5="Malischnig Constantin" Sges="m" />
+      <Schuelerg4 Sname5="Markovic Marko" Sges="m" />
+      <Schuelerg4 Sname5="Mikic Manuel" Sges="m" />
+      <Schuelerg4 Sname5="Tan Salih" Sges="m" />
+      <Schuelerg4 Sname5="Vida Patrick" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="RWDV" Lehrer5="HL" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="RWDV" Lehrer5="HL" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="BSPK" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="BSPK" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="BADV" Lehrer5="NWV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="BADV" Lehrer5="NWV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="NWTE" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="NWTE" Lehrer5="SKO" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="NWTE" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="NWTE" Lehrer5="SKO" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="NWTE" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="NWTE" Lehrer5="SKO" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="BADVy" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="BADVx" Lehrer5="NWV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BADVy" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BADVx" Lehrer5="NWV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BADVy" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BADVx" Lehrer5="NWV" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="NWTE" Lehrer5="SKO" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="RWDV" Lehrer5="HL" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="E1" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="MSRT" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="MSRT" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="MSRT" Lehrer5="TP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MSRT" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MSRT" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MSRT" Lehrer5="TP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="DUK" Lehrer5="KRB" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="BET2" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="BET2" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="DUK" Lehrer5="KRB" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="E1" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="TEKO" Lehrer5="ZH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="TEKO" Lehrer5="GA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="TEKO" Lehrer5="ZH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="TEKO" Lehrer5="GA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="TEKO" Lehrer5="ZH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="TEKO" Lehrer5="GA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="TEKO" Lehrer5="ZH" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3AHBGM" Kvnr6="ZEP" Kvname7="Zeppelzauer Wolfgang">
+      <Schuelerg4 Sname5="Barrientos Leonardo" Sges="m" />
+      <Schuelerg4 Sname5="Bogicevic Stefan" Sges="m" />
+      <Schuelerg4 Sname5="Dogru Arzu" Sges="w" />
+      <Schuelerg4 Sname5="Icme Eren Irfan" Sges="m" />
+      <Schuelerg4 Sname5="Polovina Edon" Sges="m" />
+      <Schuelerg4 Sname5="Saric Bernhard" Sges="m" />
+      <Schuelerg4 Sname5="Seifert Raphael" Sges="m" />
+      <Schuelerg4 Sname5="Stöckl Philipp" Sges="m" />
+      <Schuelerg4 Sname5="Üzen Zeynep" Sges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="GGP" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="BMG2" Lehrer5="DLG" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="BMG2" Lehrer5="DLG" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="BMG2" Lehrer5="DLG" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="MGT" Lehrer5="CAM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="MGINy" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="MGINx" Lehrer5="WW" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="MGINy" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="MGINx" Lehrer5="WW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="GOM2" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MISy" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MISx" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MISy" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MISx" Lehrer5="IR" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="NW2" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="AM" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="GOM2" Lehrer5="RGM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="GOM2" Lehrer5="RGM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="PRE" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="PRE" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="PRE" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="PRE" Lehrer5="MAY" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="NW2" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="BSPK" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="BSPM" Lehrer5="PEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="BSPK" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="BSPM" Lehrer5="PEC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="D" Lehrer5="KY" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="D" Lehrer5="CEC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="E1" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="GGP" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="RISL" Lehrer5="AF" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MGIN" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MGIN" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MGINy" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MGINx" Lehrer5="WW" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="E1" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="MIS" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="D" Lehrer5="KY" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="D" Lehrer5="CEC" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="RK" Lehrer5="HAI" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="BMSVx" Lehrer5="CAM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="BMSVy" Lehrer5="JEL" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="BMSVx" Lehrer5="CAM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="BMSVy" Lehrer5="JEL" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="AM" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="MGT" Lehrer5="CAM" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3AKIF" Kvnr6="GC" Kvname7="Gründl Claudia">
+      <Schuelerg4 Sname5="Huber Jessica" Sges="w" />
+      <Schuelerg4 Sname5="Maier Bernadett" Sges="w" />
+      <Schuelerg4 Sname5="Matejka Alexander" Sges="m" />
+      <Schuelerg4 Sname5="Nekowitsch Martin" Sges="m" />
+      <Schuelerg4 Sname5="Nekrep Beata" Sges="w" />
+      <Schuelerg4 Sname5="Sammer Marlene" Sges="w" />
+      <Schuelerg4 Sname5="Schwanzelberger Eva" Sges="w" />
+      <Schuelerg4 Sname5="Sinn Christopher" Sges="m" />
+      <Schuelerg4 Sname5="Wegleitner Michael" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="BWM" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="PRE" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="TICP4A" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="TICP4A" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="BWM" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="DUK" Lehrer5="PE" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="AM" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="12" Fach2="AM" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="DUK" Lehrer5="PE" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="NWVS" Lehrer5="AH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="NWVS" Lehrer5="STA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="12" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3BAIF" Kvnr6="AT" Kvname7="Antonescu Margareth">
+      <Schuelerg4 Sname5="Bübl Mathias" Sges="m" />
+      <Schuelerg4 Sname5="Gerguis Peter" Sges="m" />
+      <Schuelerg4 Sname5="Jovanovic Emilijan" Sges="m" />
+      <Schuelerg4 Sname5="Kovacs Claudia Silvia" Sges="w" />
+      <Schuelerg4 Sname5="Lichtenberger Philipp" Sges="m" />
+      <Schuelerg4 Sname5="Mader Paul" Sges="m" />
+      <Schuelerg4 Sname5="Pantic Branislav" Sges="m" />
+      <Schuelerg4 Sname5="Pirhan Renaz" Sges="m" />
+      <Schuelerg4 Sname5="Pszczola Daniel" Sges="m" />
+      <Schuelerg4 Sname5="Ram Munish" Sges="m" />
+      <Schuelerg4 Sname5="Rit Marijana" Sges="w" />
+      <Schuelerg4 Sname5="Schwarz Markus" Sges="m" />
+      <Schuelerg4 Sname5="Stögbauer Alexander" Sges="m" />
+      <Schuelerg4 Sname5="Ulusoy Bengül" Sges="w" />
+      <Schuelerg4 Sname5="Vijatov Maja" Sges="w" />
+      <Schuelerg4 Sname5="Wieser Dominik" Sges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="BWM" Lehrer5="TSI" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="AM" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1y" Lehrer5="FAV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1x" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="KUE" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="BWM" Lehrer5="TSI" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="NWVS" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="NWVS" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="NWVS" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="NWVS" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="12" Fach2="NWVS" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="12" Fach2="NWVS" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="DUK" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="PRE" Lehrer5="MAY" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="PRE" Lehrer5="MAY" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="E1y" Lehrer5="FAV" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="E1x" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="POS1" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="NWVS" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="NWVS" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="NWVS" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="NWVS" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="12" Fach2="NWVS" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="12" Fach2="NWVS" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="POS1" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="POS1" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="POS1" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="DUK" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="DBI1" Lehrer5="ZIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="DBI1" Lehrer5="RA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="DBI1" Lehrer5="ZIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="12" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3BHBGM" Kvnr6="PRS" Kvname7="Pratscher Susanne">
+      <Schuelerg4 Sname5="Arzberger Elija" Sges="m" />
+      <Schuelerg4 Sname5="Dunst Astrid" Sges="w" />
+      <Schuelerg4 Sname5="Florescu Romana " Sges="w" />
+      <Schuelerg4 Sname5="Jovanovic Andrija" Sges="m" />
+      <Schuelerg4 Sname5="Méndez Cortez Leon" Sges="m" />
+      <Schuelerg4 Sname5="Milicevic Stojan" Sges="m" />
+      <Schuelerg4 Sname5="Moci Jori" Sges="m" />
+      <Schuelerg4 Sname5="Wagner Ivana" Sges="w" />
+      <Schuelerg4 Sname5="Zahrl Fabian" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="AM" Lehrer5="KUM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="BSPM" Lehrer5="KOM" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="BSPK" Lehrer5="LAP" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="BSPM" Lehrer5="KOM" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="BSPK" Lehrer5="LAP" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="BMG2" Lehrer5="DLG" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="BMG2" Lehrer5="DLG" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="BMG2" Lehrer5="DLG" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="PRE" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="PRE" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="PRE" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="PRE" Lehrer5="WH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MGINy" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MGINx" Lehrer5="WW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MGINy" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MGINx" Lehrer5="WW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="MGINy" Lehrer5="RR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="MGINx" Lehrer5="WW" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="KUM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="AM" Lehrer5="KUM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="GOM2" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="NW2" Lehrer5="BRA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="GOM2" Lehrer5="RGM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="GOM2" Lehrer5="RGM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="MGIN" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="MGIN" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="GGP" Lehrer5="PF" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="BMSVy" Lehrer5="BW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="BMSVx" Lehrer5="CAM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="BMSVy" Lehrer5="BW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="BMSVx" Lehrer5="CAM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="NW2" Lehrer5="BRA" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="GGP" Lehrer5="PF" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="D" Lehrer5="PRS" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="E1" Lehrer5="PRS" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MISx" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MISy" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MISx" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MISy" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MGT" Lehrer5="JEL" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MGT" Lehrer5="JEL" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="E1" Lehrer5="PRS" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="D" Lehrer5="PRS" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="MIS" Lehrer5="DP" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="PRE" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+    </Klassed0>
+  </Abteilungo3>
+  <Abteilungo3 Anr2="EDV-Tag" Aname4="EDV und Organisation Tag" Av7="LO">
+    <Klassed0 Knr5="3AHIF" Kvnr6="GC" Kvname7="Gründl Claudia">
+      <Schuelerg4 Sname5="Amaichigh Teryilla" Sges="m" />
+      <Schuelerg4 Sname5="Coufal Philipp" Sges="m" />
+      <Schuelerg4 Sname5="Csuka Stefan" Sges="m" />
+      <Schuelerg4 Sname5="Hejda Fabian" Sges="m" />
+      <Schuelerg4 Sname5="Mayer Sabine" Sges="w" />
+      <Schuelerg4 Sname5="Müllner Florian" Sges="m" />
+      <Schuelerg4 Sname5="Schlögl Stephan" Sges="m" />
+      <Schuelerg4 Sname5="Schreier Guido" Sges="m" />
+      <Schuelerg4 Sname5="Stephanides Markus" Sges="m" />
+      <Schuelerg4 Sname5="Sujkic Aleksandar" Sges="m" />
+      <Schuelerg4 Sname5="Timcak Matus" Sges="m" />
+      <Schuelerg4 Sname5="Toth Dennis" Sges="m" />
+      <Schuelerg4 Sname5="Wurm Alexander" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="RISL" Lehrer5="AF" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="E1" Lehrer5="TK" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="BWM2" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="BWM2" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="AM" Lehrer5="FM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="POS1" Lehrer5="ZUM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="POS1" Lehrer5="ZUM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="DBI1y" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="DBi1x" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="DBI1y" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="DBi1x" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="BSPKx" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="BSPKx" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="AM" Lehrer5="FM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="D" Lehrer5="KY" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="D" Lehrer5="KY" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="BWM1" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="BWM1" Lehrer5="GC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="E1" Lehrer5="TK" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BSPKx" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BSPKy" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BSPM" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BSPKy" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="BSPKx" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="BSPKy" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="BSPM" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="BSPKy" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="AM" Lehrer5="FM" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="POS1" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="POS1" Lehrer5="PIR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="NVS1" Lehrer5="AMA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="NVS1y" Lehrer5="AMA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="NVS1x" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="NVS1y" Lehrer5="AMA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="NVS1x" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3BHIF" Kvnr6="PC" Kvname7="Pemmer Christian">
+      <Schuelerg4 Sname5="Aslan Metin" Sges="m" />
+      <Schuelerg4 Sname5="Dittrich Erik" Sges="m" />
+      <Schuelerg4 Sname5="Haupt Alexander" Sges="m" />
+      <Schuelerg4 Sname5="Ilic Lazar" Sges="m" />
+      <Schuelerg4 Sname5="Jokic Josip" Sges="m" />
+      <Schuelerg4 Sname5="Kern Lukas" Sges="m" />
+      <Schuelerg4 Sname5="Lechner Steven" Sges="m" />
+      <Schuelerg4 Sname5="Leitgeb Stefan" Sges="m" />
+      <Schuelerg4 Sname5="Salvador Ray-Marc" Sges="m" />
+      <Schuelerg4 Sname5="Schmutterer Martin" Sges="m" />
+      <Schuelerg4 Sname5="Schöppl Florian" Sges="m" />
+      <Schuelerg4 Sname5="Stojakovic Nemanja" Sges="m" />
+      <Schuelerg4 Sname5="Tobisch Aaron" Sges="m" />
+      <Schuelerg4 Sname5="von Voss Leon-Vincent" Sges="m" />
+      <Schuelerg4 Sname5="Wannemacher Mario" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="E1x" Lehrer5="HAE" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="E1y" Lehrer5="SO" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="AM" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="D" Lehrer5="NAI" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="RK" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="FBBL" Lehrer5="JO" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="12" Fach2="FBBL" Lehrer5="JO" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="D" Lehrer5="NAI" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="BWM1" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="AM" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="GGPB" Lehrer5="PF" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="POS1" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="POS1" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="RK" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="AM" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="NVS1x" Lehrer5="AMA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="NVS1y" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="NVS1x" Lehrer5="AMA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="NVS1y" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="NVS1" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="DBi1x" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="DBI1y" Lehrer5="SZ" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="DBi1x" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="DBI1y" Lehrer5="SZ" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BWM2" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BSPKy" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BSPKx" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BSPKy" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BSPKx" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="NW2" Lehrer5="BOM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="POS1" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="POS1" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="GGPB" Lehrer5="PF" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="E1x" Lehrer5="HAE" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="E1y" Lehrer5="SO" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="BWM1" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="POS1" Lehrer5="SP" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="BWM2" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="DBI1" Lehrer5="SZ" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FPP" Lehrer5="MC" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3CHIF" Kvnr6="NAI" Kvname7="Naimer Eva-Maria">
+      <Schuelerg4 Sname5="Edlinger Raphael" Sges="m" />
+      <Schuelerg4 Sname5="Gashi Endrit" Sges="m" />
+      <Schuelerg4 Sname5="Holzer Daniel" Sges="m" />
+      <Schuelerg4 Sname5="Knopp Johannes" Sges="m" />
+      <Schuelerg4 Sname5="Krupitza Diego" Sges="m" />
+      <Schuelerg4 Sname5="Lehner Christopher" Sges="m" />
+      <Schuelerg4 Sname5="Osagie Jonathan" Sges="m" />
+      <Schuelerg4 Sname5="Özdemir Safa" Sges="m" />
+      <Schuelerg4 Sname5="Pichler Philip" Sges="m" />
+      <Schuelerg4 Sname5="Seltenhammer Dominik" Sges="m" />
+      <Schuelerg4 Sname5="Steinbach Adrian" Sges="m" />
+      <Schuelerg4 Sname5="Thierry Vincent" Sges="m" />
+      <Schuelerg4 Sname5="Uygun Hamza" Sges="m" />
+      <Schuelerg4 Sname5="Yurtsevener Can Marco" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="RISL" Lehrer5="AF" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="NW2" Lehrer5="CSR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="NW2" Lehrer5="CSR" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="D" Lehrer5="NAI" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="RK" Lehrer5="PC" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="E1" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="BSPK" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="BSPK" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="BWM1" Lehrer5="TSI" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BWM1" Lehrer5="TSI" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="PRE" Lehrer5="PT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="NVS1x" Lehrer5="OM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="NVS1y" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="NVS1x" Lehrer5="OM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="NVS1y" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="DBI1" Lehrer5="GRU" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="D" Lehrer5="NAI" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="POS1" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="POS1" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="POS1" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="POS1" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="BSFU" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="BSFU" Lehrer5="HT" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="E1" Lehrer5="LAD" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="GGPB" Lehrer5="PF" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="DBi1x" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="DBI1y" Lehrer5="GRU" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="DBi1x" Lehrer5="FZ" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="DBI1y" Lehrer5="GRU" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="NVS1" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="GGPB" Lehrer5="PF" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="NVS1" Lehrer5="SWH" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="AM" Lehrer5="KM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="BWM2" Lehrer5="HL" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="BWM2" Lehrer5="HL" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="BWM2" Lehrer5="HL" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="BWM2" Lehrer5="HL" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3EHIF" Kvnr6="ZOE" Kvname7="Zöttl Andreas">
+      <Schuelerg4 Sname5="Arazli Emin" Sges="m" />
+      <Schuelerg4 Sname5="Brandstätter Moritz" Sges="m" />
+      <Schuelerg4 Sname5="De Ro Sebastian" Sges="m" />
+      <Schuelerg4 Sname5="Goebel Sebastian" Sges="m" />
+      <Schuelerg4 Sname5="Hochreiter Thomas" Sges="m" />
+      <Schuelerg4 Sname5="Liu Mi" Sges="m" />
+      <Schuelerg4 Sname5="Matar Stefan" Sges="m" />
+      <Schuelerg4 Sname5="Meyer-Mölleringhof Maximilian" Sges="m" />
+      <Schuelerg4 Sname5="Neumair Jonas" Sges="m" />
+      <Schuelerg4 Sname5="Rebernig Claudio" Sges="m" />
+      <Schuelerg4 Sname5="Simic Njegos" Sges="m" />
+      <Schuelerg4 Sname5="Sperlich Raphael" Sges="m" />
+      <Schuelerg4 Sname5="Tiefenbrunner Adrian" Sges="m" />
+      <Schuelerg4 Sname5="Weiss Luca" Sges="m" />
+      <Schuelerg4 Sname5="Wunderlich Sean" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="D" Lehrer5="KRB" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="FEP" Lehrer5="HAE" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="FEP" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="PRE" Lehrer5="SH" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="POS1" Lehrer5="ZOE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="POS1" Lehrer5="ZOE" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="BWM2" Lehrer5="ZUM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="BWM2" Lehrer5="ZUM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="AM" Lehrer5="PK" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="AM" Lehrer5="PK" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="DBi1x" Lehrer5="SZ" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="DBI1y" Lehrer5="ZOE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="DBi1x" Lehrer5="SZ" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="DBI1y" Lehrer5="ZOE" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="PRE" Lehrer5="PUC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1x" Lehrer5="HAE" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1y" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="E1x" Lehrer5="HAE" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="E1y" Lehrer5="KU" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="BSPK" Lehrer5="LAP" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="BSPK" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="BSPK" Lehrer5="LAP" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="BSPK" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="BWM1" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="NVS1y" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="NVS1x" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="NVS1y" Lehrer5="BH" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="NVS1x" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="POS1" Lehrer5="PS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="NW2" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="DBI1" Lehrer5="BAN" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="GGPB" Lehrer5="POP" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="TINF" Lehrer5="RX" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="TINF" Lehrer5="ZEP" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="NVS1" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="POS1" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="POS1" Lehrer5="WK" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="BWM1" Lehrer5="HEB" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="D" Lehrer5="KRB" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="AM" Lehrer5="PK" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="RK" Lehrer5="BI" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="NW2" Lehrer5="HD" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="FINNO" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="FINNO" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="FRAP" Lehrer5="OEZT" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="FINNO" Lehrer5="HW" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="11" Fach2="FINNO" Lehrer5="HW" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3FHIF" Kvnr6="KU" Kvname7="Kugler Christine" />
+  </Abteilungo3>
+  <Abteilungo3 Anr2="KD" Aname4="Kunst und Design" Av7="PRW">
+    <Klassed0 Knr5="3ABKUF" Kvnr6="BIN" Kvname7="Binder Florian">
+      <Schuelerg4 Sname5="Binder Benjamin" Sges="m" />
+      <Schuelerg4 Sname5="Cichawa Norbert" Sges="m" />
+      <Schuelerg4 Sname5="Francisci Gerfried" Sges="m" />
+      <Schuelerg4 Sname5="Höhn Melina" Sges="w" />
+      <Schuelerg4 Sname5="Irurita Laura" Sges="w" />
+      <Schuelerg4 Sname5="Janka Christoph" Sges="m" />
+      <Schuelerg4 Sname5="Kampf Matthias" Sges="m" />
+      <Schuelerg4 Sname5="Langenau Julia" Sges="w" />
+      <Schuelerg4 Sname5="Lik Daria" Sges="w" />
+      <Schuelerg4 Sname5="Mann Barbara" Sges="w" />
+      <Schuelerg4 Sname5="Prendinger Miriam" Sges="w" />
+      <Schuelerg4 Sname5="Prikryl Oliver" Sges="m" />
+      <Schuelerg4 Sname5="Schuster Tanja" Sges="w" />
+      <Schuelerg4 Sname5="Sendlbeck Sascha" Sges="m" />
+      <Schuelerg4 Sname5="Solanki Rikin" Sges="m" />
+      <Schuelerg4 Sname5="Strasser Julia" Sges="w" />
+      <Schuelerg4 Sname5="Synowiec Adrian" Sges="m" />
+      <Schuelerg4 Sname5="Unger Alexander" Sges="m" />
+      <Schuelerg4 Sname5="Wild Patrick" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="TMEN" Lehrer5="DOB" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="MUL1" Lehrer5="MIM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="12" Fach2="TMEN" Lehrer5="DOB" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="12" Fach2="MUL1" Lehrer5="MIM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="13" Fach2="STK" Lehrer5="SWB" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="13" Fach2="EKPR" Lehrer5="SJ" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="14" Fach2="STK" Lehrer5="SWB" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="14" Fach2="EKPR" Lehrer5="SJ" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="15" Fach2="MUL1" Lehrer5="BIN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="15" Fach2="MUL1" Lehrer5="TRM" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="16" Fach2="MUL1" Lehrer5="BIN" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="16" Fach2="MUL1" Lehrer5="TRM" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="12" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="13" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="14" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="15" Fach2="TMEN" Lehrer5="SCR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="16" Fach2="TMEN" Lehrer5="SCR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="KPRA" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="12" Fach2="KPRA" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="13" Fach2="EKPR" Lehrer5="SCJ" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="14" Fach2="EKPR" Lehrer5="SCJ" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="15" Fach2="TMEN" Lehrer5="HIL" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="15" Fach2="TMEN" Lehrer5="SCR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="16" Fach2="TMEN" Lehrer5="HIL" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="16" Fach2="TMEN" Lehrer5="SCR" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="10" Fach2="FEMIK" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="MDSG" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="11" Fach2="FEMIK" Lehrer5="LAN" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="12" Fach2="MDSG" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="13" Fach2="MUL1" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="14" Fach2="MUL1" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FPP" Lehrer5="MC" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3AHKUI" Kvnr6="SBA" Kvname7="Schnabl Barbara">
+      <Schuelerg4 Sname5="David Nina" Sges="w" />
+      <Schuelerg4 Sname5="Eder Yvonne" Sges="w" />
+      <Schuelerg4 Sname5="Elsner Lisa Zoë" Sges="w" />
+      <Schuelerg4 Sname5="Fazekas Sarah" Sges="w" />
+      <Schuelerg4 Sname5="Forman Marie-Louise" Sges="w" />
+      <Schuelerg4 Sname5="Izundu Catherine" Sges="w" />
+      <Schuelerg4 Sname5="Kirchmayer Teresa" Sges="w" />
+      <Schuelerg4 Sname5="Leptien Denise" Sges="w" />
+      <Schuelerg4 Sname5="Mündl Verena" Sges="w" />
+      <Schuelerg4 Sname5="Röver Viktoria" Sges="w" />
+      <Schuelerg4 Sname5="Werther Melanie" Sges="w" />
+      <Schuelerg4 Sname5="Winkelbauer Almut" Sges="w" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="DKO2x" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="DKO2x" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="TAI" Lehrer5="MAT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="TAI" Lehrer5="VUV" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="TAI" Lehrer5="MAT" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="TAI" Lehrer5="VUV" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="EW1" Lehrer5="DVO" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="EW1" Lehrer5="SBA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="EW1" Lehrer5="DVO" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="EW1" Lehrer5="SBA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="EW1" Lehrer5="DVO" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="EW1" Lehrer5="SBA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="EW1" Lehrer5="DVO" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="EW1" Lehrer5="SBA" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="TAI" Lehrer5="DVO" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="KGKP" Lehrer5="BAE" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="KGKP" Lehrer5="BAE" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="E1y" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="E1x" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="E1y" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="E1x" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="RK" Lehrer5="ROG" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="BRA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BESP" Lehrer5="MST" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BESP" Lehrer5="CSR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BESP" Lehrer5="MST" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="BESP" Lehrer5="MST" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BESP" Lehrer5="MST" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BESP" Lehrer5="CSR" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BESP" Lehrer5="MST" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="BESP" Lehrer5="MST" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="DAKO" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="DAKO" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="DAKO" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="DAKO" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="AP4" Lehrer5="PIF" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="AP4" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="AP4" Lehrer5="PIF" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="AP4" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="AP4" Lehrer5="PIF" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="AP4" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="AP4" Lehrer5="PIF" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="AP4" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="AP4" Lehrer5="PIF" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="AP4" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="KOM2" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="RK" Lehrer5="ROG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="TAI" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="TAI" Lehrer5="MAU" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="TAI" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="TAI" Lehrer5="MAU" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="AM" Lehrer5="BRA" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="GGPB" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="GGPB" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="D" Lehrer5="KOL" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="DKO2y" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="DKO2y" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="NW2" Lehrer5="MOS" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="NW2" Lehrer5="MOS" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="5" Fach2="D" Lehrer5="KOL" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="ASM3" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="ASM3" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="ASM3" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="ASM3" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FTHE3" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FTHE3" Lehrer5="LOY" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FTHE3" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FTHE3" Lehrer5="LOY" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="SCC" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FLTS" Lehrer5="KDC" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3AHMNA" Kvnr6="MD" Kvname7="Mörth Dominik">
+      <Schuelerg4 Sname5="Baumann Helene" Sges="w" />
+      <Schuelerg4 Sname5="Buger Theresa" Sges="w" />
+      <Schuelerg4 Sname5="Essl Florian" Sges="m" />
+      <Schuelerg4 Sname5="Frrokaj Florentin" Sges="m" />
+      <Schuelerg4 Sname5="Glasner Jakob" Sges="m" />
+      <Schuelerg4 Sname5="Laa Caroline" Sges="w" />
+      <Schuelerg4 Sname5="Laa Philip" Sges="m" />
+      <Schuelerg4 Sname5="Schüttengruber Lydia" Sges="w" />
+      <Schuelerg4 Sname5="Stagl Zoe" Sges="w" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="MP" Lehrer5="JAD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="MP" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="MP" Lehrer5="JAD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="MP" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="MP" Lehrer5="JAD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="MP" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="MP" Lehrer5="JAD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="MP" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="E1y" Lehrer5="SCF" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="5" Fach2="E1x" Lehrer5="SL" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="MTIN" Lehrer5="DOB" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="MTIN" Lehrer5="DOB" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="MTIN" Lehrer5="FER" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="MTIN" Lehrer5="SJ" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="MTIN" Lehrer5="FER" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="MTIN" Lehrer5="SJ" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="GGPB" Lehrer5="LAP" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="GGPB" Lehrer5="LAP" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="RK" Lehrer5="ROG" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="MTKG" Lehrer5="BAE" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="MTKG" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="MTKG" Lehrer5="BAE" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="MTKG" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1y" Lehrer5="SCF" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="E1x" Lehrer5="SL" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="MGG2" Lehrer5="LAM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="MGG2" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="MGG2" Lehrer5="LAM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="MGG2" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="MGG2" Lehrer5="LAM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="MGG2" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="MGG2" Lehrer5="LAM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="11" Fach2="MGG2" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="D" Lehrer5="STC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="RK" Lehrer5="ROG" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="MGG2" Lehrer5="LAM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="BESP" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="BESP" Lehrer5="PEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="BESP" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="6" Fach2="BESP" Lehrer5="PEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="MP" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="MP" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="MP" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="MP" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="MP" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="MP" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="MP" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="MP" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="D" Lehrer5="STC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="MTIN" Lehrer5="JAD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="MTIN" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="MTIN" Lehrer5="JAD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="MTIN" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MPJ" Lehrer5="HAM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MPJ" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MPJ" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MPJ" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MPJ" Lehrer5="HAM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MPJ" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MPJ" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MPJ" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MPJ" Lehrer5="HAM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MPJ" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MPJ" Lehrer5="KEC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MPJ" Lehrer5="STS" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="AM" Lehrer5="KY" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="AM" Lehrer5="KY" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="NW2" Lehrer5="BRA" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="NW2" Lehrer5="BRA" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FTHE3" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FTHE3" Lehrer5="LOY" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FPP" Lehrer5="MC" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FTHE3" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FTHE3" Lehrer5="LOY" Lges="w" />
+    </Klassed0>
+    <Klassed0 Knr5="3AHMNG" Kvnr6="KOP" Kvname7="Kock Philipp Anselm">
+      <Schuelerg4 Sname5="Golder Kaya" Sges="w" />
+      <Schuelerg4 Sname5="Hassler Klaus" Sges="m" />
+      <Schuelerg4 Sname5="Luiskandl Jannis" Sges="m" />
+      <Schuelerg4 Sname5="Mocan Mircea" Sges="m" />
+      <Schuelerg4 Sname5="Obereigner Christina" Sges="w" />
+      <Schuelerg4 Sname5="Palagic Catalin" Sges="m" />
+      <Schuelerg4 Sname5="Praxmarer Agnes" Sges="w" />
+      <Schuelerg4 Sname5="Varga Raphael" Sges="m" />
+      <Stundek5 Wotag="1" Stunde4="1" Fach2="NW2" Lehrer5="MOS" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="2" Fach2="RISL" Lehrer5="AF" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="3" Fach2="AM" Lehrer5="KAS" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="E1y" Lehrer5="SCF" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="4" Fach2="E1x" Lehrer5="SL" Lges="w" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="MPJ" Lehrer5="KOP" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="6" Fach2="MPJ" Lehrer5="MEA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="MPJ" Lehrer5="KOP" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="7" Fach2="MPJ" Lehrer5="MEA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="MPJ" Lehrer5="KOP" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="8" Fach2="MPJ" Lehrer5="MEA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="9" Fach2="MGG2" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="10" Fach2="MTIN" Lehrer5="NOA" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="11" Fach2="FBBL" Lehrer5="JO" Lges="m" />
+      <Stundek5 Wotag="1" Stunde4="12" Fach2="FBBL" Lehrer5="JO" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="MTIN" Lehrer5="GRU" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="1" Fach2="MTIN" Lehrer5="MAU" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MTIN" Lehrer5="GRU" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="MTIN" Lehrer5="MAU" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MTIN" Lehrer5="GRU" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="MTIN" Lehrer5="MAU" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="NW2" Lehrer5="MOS" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="6" Fach2="AM" Lehrer5="KAS" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="GGPB" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="GGPB" Lehrer5="BV" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="RE" Lehrer5="AT" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="MP" Lehrer5="KSR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="MP" Lehrer5="LUP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="MP" Lehrer5="KSR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="MP" Lehrer5="LUP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="MP" Lehrer5="KSR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="MP" Lehrer5="LUP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="MP" Lehrer5="KSR" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="MP" Lehrer5="LUP" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="7" Fach2="D" Lehrer5="STC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="MTKG" Lehrer5="BAE" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="MTKG" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="MTKG" Lehrer5="BAE" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="MTKG" Lehrer5="HOS" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BESP" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BESP" Lehrer5="OEM" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BESP" Lehrer5="KDC" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="BESP" Lehrer5="KNJ" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="E1y" Lehrer5="SCF" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="E1x" Lehrer5="SL" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="D" Lehrer5="STC" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MGG2" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="6" Fach2="MGG2" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MGG2" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="MGG2" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MGG2" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="MGG2" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MGG2" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="MGG2" Lehrer5="MD" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="MP" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="1" Fach2="MP" Lehrer5="JIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="MP" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="MP" Lehrer5="JIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="MP" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="MP" Lehrer5="JIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="MP" Lehrer5="HAG" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="MP" Lehrer5="JIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="MTIN" Lehrer5="JIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="MTIN" Lehrer5="LUP" Lges="m" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="MTIN" Lehrer5="JIM" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="MTIN" Lehrer5="LUP" Lges="m" />
+    </Klassed0>
+    <Klassed0 Knr5="3AKKUX" Kvnr6="STK" Kvname7="Strake Bernhard">
+      <Schuelerg4 Sname5="Fahrnberger Lisa" Sges="w" />
+      <Schuelerg4 Sname5="Guiotto Marilena" Sges="w" />
+      <Schuelerg4 Sname5="Heinlein Katrin" Sges="w" />
+      <Schuelerg4 Sname5="Huang Ying-ying Huong" Sges="w" />
+      <Schuelerg4 Sname5="Kulovics Anna" Sges="w" />
+      <Schuelerg4 Sname5="Meissl Julia" Sges="w" />
+      <Schuelerg4 Sname5="Müllner Tanja" Sges="w" />
+      <Schuelerg4 Sname5="Porsch Martina" Sges="w" />
+      <Schuelerg4 Sname5="Posch Niki" Sges="w" />
+      <Schuelerg4 Sname5="Sabando Katja" Sges="w" />
+      <Schuelerg4 Sname5="Shailobekova Seine" Sges="w" />
+      <Schuelerg4 Sname5="Stöger Nadine" Sges="w" />
+      <Schuelerg4 Sname5="Vevera Nicole" Sges="w" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="DEGM" Lehrer5="MAT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="2" Fach2="DEGM" Lehrer5="VUV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="DEGM" Lehrer5="MAT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="3" Fach2="DEGM" Lehrer5="VUV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="DEGM" Lehrer5="MAT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="4" Fach2="DEGM" Lehrer5="VUV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="DEGM" Lehrer5="MAT" Lges="m" />
+      <Stundek5 Wotag="2" Stunde4="5" Fach2="DEGM" Lehrer5="VUV" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="7" Fach2="DAKO" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="8" Fach2="DAKO" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="9" Fach2="DAKO" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="DAKO" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="2" Stunde4="10" Fach2="DAKO" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="AW5A" Lehrer5="AGU" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="AW5A" Lehrer5="SSA" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="1" Fach2="AW5A" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="AW5A" Lehrer5="AGU" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="AW5A" Lehrer5="SSA" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="2" Fach2="AW5A" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="AW5A" Lehrer5="AGU" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="AW5A" Lehrer5="SSA" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="3" Fach2="AW5A" Lehrer5="ZIA" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="4" Fach2="DUK" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="5" Fach2="DUK" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="EPR1" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="8" Fach2="EPR1" Lehrer5="VVL" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="EPR1" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="9" Fach2="EPR1" Lehrer5="VVL" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="EPR1" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="10" Fach2="EPR1" Lehrer5="VVL" Lges="m" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="EPR1" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="3" Stunde4="11" Fach2="EPR1" Lehrer5="VVL" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="1" Fach2="DKO2" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="2" Fach2="DKO2" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="3" Fach2="DKO2" Lehrer5="HOH" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="4" Fach2="TEPH" Lehrer5="VVL" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="5" Fach2="TEPH" Lehrer5="VVL" Lges="m" />
+      <Stundek5 Wotag="4" Stunde4="7" Fach2="DESD" Lehrer5="AGU" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="8" Fach2="DESD" Lehrer5="AGU" Lges="w" />
+      <Stundek5 Wotag="4" Stunde4="9" Fach2="DESD" Lehrer5="AGU" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="2" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="3" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="4" Fach2="WIR3" Lehrer5="HUB" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="6" Fach2="DEGM" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="7" Fach2="DEGM" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="8" Fach2="DEGM" Lehrer5="PIC" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="9" Fach2="MUW" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="5" Stunde4="10" Fach2="MUW" Lehrer5="SCW" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FKKGW" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FEW" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="1" Fach2="FEW" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FKKGW" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FEW" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="2" Fach2="FEW" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FKKGW" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FEW" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="3" Fach2="FEW" Lehrer5="TOM" Lges="w" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FKKGW" Lehrer5="STK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FEW" Lehrer5="PRK" Lges="m" />
+      <Stundek5 Wotag="6" Stunde4="4" Fach2="FEW" Lehrer5="TOM" Lges="w" />
+    </Klassed0>
+  </Abteilungo3>
+</Schulep1>

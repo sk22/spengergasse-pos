@@ -1,0 +1,64 @@
+﻿<Window x:Class="Spengergasse.WpfXmlInvoices.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spengergasse.WpfXmlInvoices"
+        mc:Ignorable="d"
+        Title="Invoices" Height="350" Width="525">
+  <Window.Resources>
+    <XmlDataProvider x:Key="InvoicesData"  Source="invoices.xml" />
+  </Window.Resources>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="auto" MinWidth="150" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="150" />
+    </Grid.RowDefinitions>
+    <ListBox
+      Grid.Column="0"
+      Grid.Row="0"
+      Grid.RowSpan="2"
+      ItemsSource="{Binding Source={StaticResource InvoicesData}, XPath=/Invoices/Invoice}"
+      Name="InvoicesList"
+      SelectedIndex="0">
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <ListBoxItem>
+            <TextBlock Text="{Binding XPath=CustomerName}" />
+          </ListBoxItem>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+    <DataGrid
+      Grid.Column="1"
+      Grid.Row="0"
+      DataContext="{Binding ElementName=InvoicesList, Path=SelectedItem}"
+      ItemsSource="{Binding XPath=LineItems/LineItem}"
+      Name="DataGrid"
+      AutoGenerateColumns="False">
+      <DataGrid.Columns>
+        <DataGridTextColumn Header="Sku" Binding="{Binding XPath=Sku}" />
+        <DataGridTextColumn Header="Description" Binding="{Binding XPath=Description}" />
+        <DataGridTextColumn Header="Price" Binding="{Binding XPath=Price}" />
+      </DataGrid.Columns>
+    </DataGrid>
+    <StackPanel Grid.Column="1" Grid.Row="1" Margin="10" DataContext="{Binding ElementName=DataGrid, Path=SelectedItem}">
+      <StackPanel Orientation="Horizontal">
+        <Label>Sku</Label>
+        <TextBox Text="{Binding XPath=Sku}" />
+      </StackPanel>
+      <StackPanel Orientation="Horizontal">
+        <Label>Description</Label>
+        <TextBox Text="{Binding XPath=Description}" />
+      </StackPanel>
+      <StackPanel Orientation="Horizontal">
+        <Label>Price</Label>
+        <TextBox Text="{Binding XPath=Price}" />
+      </StackPanel>
+    </StackPanel>
+  </Grid>
+</Window>
