@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+// UNFINISHED
 namespace Spengergasse.DbModel.Models {
   public class VMLessons {
     public stunden CurrentLesson { get; set; }
@@ -17,7 +18,8 @@ namespace Spengergasse.DbModel.Models {
     public List<lehrer> AllTeachers {
       get {
         using (Schule2000Entities db = new Schule2000Entities()) {
-          return db.lehrers.OrderBy(t => t.L_Name).ThenBy(t => t.L_Vorname).ToList();
+          return db.lehrers.OrderBy(t => t.L_Name).ThenBy(t => t.L_Vorname).ToList()
+            .Concat(new List<lehrer> { new lehrer { L_ID = null, L_Name = "Kein Lehrer" } }).ToList();
         }
       }
     }

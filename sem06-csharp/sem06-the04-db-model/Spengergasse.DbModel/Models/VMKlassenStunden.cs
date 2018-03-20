@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
+// UNFINISHED
 namespace Spengergasse.DbModel.Models {
   public class VMKlassenStunden : INotifyPropertyChanged {
     private string selectedClass;
@@ -66,10 +67,35 @@ namespace Spengergasse.DbModel.Models {
     public void SaveExecuted(object param) {
       if (param == null) return;
       if (param is stunden) {
+        var vm = new VMLessons { CurrentLesson = param as stunden };
         var view = new Lessons {
-          DataContext = new VMLessons { CurrentLesson = param as stunden }
+          // View -> ViewModel
+          DataContext = vm
         };
         view.ShowDialog();
+        if (view.DialogResult.HasValue && view.DialogResult.Value) {
+          using (Schule2000Entities db = new Schule2000Entities()) {
+            db.Entry(vm.CurrentLesson).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+          }
+        }
+      }
+
+      if (param is klassen) {
+        var vm = new VMLessons {
+          CurrentLesson = new stunden { ST_K_Klasse = (param as klassen).K_ID }
+        };
+        var view = new Lessons {
+          DataContext = vm
+        };
+        view.ShowDialog();
+        if (view.DialogResult.HasValue && view.DialogResult.Value) {
+          using (Schule2000Entities db = new Schule2000Entities()) {
+            db.stundens.Add(vm.CurrentLesson);
+            db.SaveChanges();
+            PropertyChanged(this, new PropertyChangedEventArgs("LessonsOfClass"));
+          }
+        }
       }
     }
   }
