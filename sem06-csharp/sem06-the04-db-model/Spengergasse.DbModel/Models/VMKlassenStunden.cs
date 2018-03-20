@@ -4,11 +4,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Spengergasse.DbModel.Models {
   public class VMKlassenStunden : INotifyPropertyChanged {
     private string selectedClass;
     private stunden selectedLesson;
+    private DelegateCommand saveInsertLessonCommand;
 
     public string SelectedClass {
       get => selectedClass;
@@ -46,5 +48,29 @@ namespace Spengergasse.DbModel.Models {
     }
 
     public event PropertyChangedEventHandler PropertyChanged;
+
+    public ICommand SaveInsertLessonCommand {
+      get {
+        if (saveInsertLessonCommand == null) {
+          saveInsertLessonCommand = new DelegateCommand(
+            SaveExecuted,
+            SaveCanExecute
+          );
+        }
+        return saveInsertLessonCommand;
+      }
+    }
+
+    public bool SaveCanExecute(object param) => param != null;
+
+    public void SaveExecuted(object param) {
+      if (param == null) return;
+      if (param is stunden) {
+        var view = new Lessons {
+          DataContext = new VMLessons { CurrentLesson = param as stunden }
+        };
+        view.ShowDialog();
+      }
+    }
   }
 }

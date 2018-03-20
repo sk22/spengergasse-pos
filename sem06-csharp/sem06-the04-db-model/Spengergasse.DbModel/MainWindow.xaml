@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
   <Window.Resources>
-    <ObjectDataProvider x:Key="VM" ObjectType="{x:Type models:VMKlassenStunden}" />
+    <ObjectDataProvider x:Key="ViewModel" ObjectType="{x:Type models:VMKlassenStunden}" />
   </Window.Resources>
-  <Grid DataContext="{Binding Source={StaticResource VM}}">
+  <Grid DataContext="{Binding Source={StaticResource ViewModel}}">
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="*"/>
       <ColumnDefinition Width="*"/>
@@ -19,14 +19,14 @@
     <ListBox
       Name="ClassesList"
       Grid.Column="0"
-      ItemsSource="{Binding AllClasses}"
+      ItemsSource="{Binding Path=AllClasses}"
       DisplayMemberPath="K_Bez"
       SelectedValuePath="K_ID"
       SelectedValue="{Binding Path=SelectedClass, Mode=OneWayToSource}" />
     <ListBox
       Name="LessonsList"
       Grid.Column="1"
-      ItemsSource="{Binding LessonsOfClass}"
+      ItemsSource="{Binding Path=LessonsOfClass}"
       SelectedItem="{Binding Path=SelectedLesson, Mode=OneWayToSource}">
       <ListBox.ItemTemplate>
         <DataTemplate>
@@ -39,10 +39,18 @@
     </ListBox>
     <StackPanel Grid.Column="2">
       <StackPanel Orientation="Horizontal" DataContext="{Binding Path=SelectedLesson}">
-        <TextBlock>
-          <Run Text="Teacher " />
-          <Run Text="{Binding Path=ST_T_Lehrer}" />
-        </TextBlock>
+        <TextBlock>Teacher: </TextBlock>
+        <TextBlock Text="{Binding Path=ST_L_Lehrer}" />
+      </StackPanel>
+      <StackPanel>
+        <Button
+          Content="Change Lessons"
+          Command="{Binding Path=SaveInsertLessonCommand}"
+          CommandParameter="{Binding ElementName=LessonsList, Path=SelectedItem}" />
+        <Button
+          Content="New Lesson"
+          Command="{Binding Path=SaveInsertLessonCommand}"
+          CommandParameter="{Binding ElementName=ClassesList, Path=SelectedItem}" />
       </StackPanel>
     </StackPanel>
   </Grid>

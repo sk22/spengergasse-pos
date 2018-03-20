@@ -1,0 +1,34 @@
+﻿<Window
+  x:Class="Spengergasse.DbModel.Lessons"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Spengergasse.DbModel"
+  xmlns:model="clr-namespace:Spengergasse.DbModel.Models"
+  mc:Ignorable="d"
+  Title="Lesson" Height="200" Width="300">
+  <!-- DataContext set in VMKlassenStunden.cs -->
+  <StackPanel>
+    <TextBlock Text="Class" />
+    <TextBlock Text="{Binding Path=CurrentLesson.ST_K_Klasse}" />
+    <TextBlock Text="Hour" />
+    <TextBlock Text="{Binding Path=CurrentLesson.ST_Stunde}" />
+    <ComboBox
+      Name="Teacher"
+      ItemsSource="{Binding Path=AllTeachers}"
+      SelectedValue="{Binding Path=CurrentLesson.ST_L_Lehrer}"
+      DisplayMemberPath="L_Name"
+      SelectedValuePath="L_ID" />
+    <ComboBox
+      Name="Subject"
+      ItemsSource="{Binding Path=AllSubjects}"
+      SelectedValue="{Binding Path=CurrentLesson.ST_G_Fach}"
+      DisplayMemberPath="G_Bez"
+      SelectedValuePath="G_ID" />
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+      <Button x:Name="Save" IsDefault="True"  Content="Speichern"  Margin="4" Click="Save_Click"/>
+      <Button x:Name="Cancel" IsCancel="True"  Margin="4" Content="Abbruch"/>
+    </StackPanel>
+  </StackPanel>
+</Window>
