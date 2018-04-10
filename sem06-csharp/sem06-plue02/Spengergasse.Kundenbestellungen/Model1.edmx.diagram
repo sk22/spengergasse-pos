@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7897bbf5b327437982968f393a3ec38d" Name="Diagram1">
+        <EntityTypeShape EntityType="KaiserNordwindModel.Artikel" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Bestelldetail" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Bestellungen" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Kategorien" Width="1.5" PointX="0.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Kunden" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Lieferanten" Width="1.5" PointX="0.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Personal" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KaiserNordwindModel.Versandfirman" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <AssociationConnector Association="KaiserNordwindModel.Artikel_FK00" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.Artikel_FK01" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.Bestelldetails_FK00" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.Bestelldetails_FK01" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.Bestellungen_FK00" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.Bestellungen_FK01" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.Bestellungen_FK02" ManuallyRouted="false" />
+        <AssociationConnector Association="KaiserNordwindModel.FK_Personal_Personal" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

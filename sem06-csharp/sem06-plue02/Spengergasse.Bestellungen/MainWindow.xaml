@@ -1,0 +1,59 @@
+﻿<Window
+  x:Class="Spengergasse.Lieferanten.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Spengergasse.Lieferanten"
+  mc:Ignorable="d"
+  Loaded="Window_Loaded"
+  Title="Lieferanten" Height="600" Width="800">
+  <Grid Margin="5">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <TextBlock Grid.Row="0" Margin="5">Lieferant</TextBlock>
+    <ComboBox
+      Grid.Row="1" Margin="5"
+      Name="lieferantenComboBox"
+      DisplayMemberPath="Firmak4" />
+    <DataGrid
+      Grid.Row="2" Margin="5"
+      Name="artikelListBox"
+      DataContext="{Binding ElementName=lieferantenComboBox, Path=SelectedItem}"
+      AutoGenerateColumns="False"
+      ItemsSource="{Binding Artikels}">
+      <DataGrid.Columns>
+        <DataGridTextColumn
+          Header="Art. No"
+          Binding="{Binding Artikel_Nre3}" />
+        <DataGridTextColumn
+          Header="Bezeichnung"
+          Binding="{Binding Artikelnamex5}" />
+        <DataGridTextColumn
+          Header="Kategorie"
+          Binding="{Binding Kategorien.Kategorienamel7}" />
+        <DataGridTextColumn
+          Header="Liefereinheit"
+          Binding="{Binding Liefereinheitw8}" />
+        <DataGridTextColumn
+          Header="Einzelpreis"
+          Binding="{Binding Einzelpreisn5, StringFormat=N2}" />
+        <DataGridTextColumn
+          Header="Lagerbestand"
+          Binding="{Binding Lagerbestandc8}" />
+        <DataGridTextColumn
+          Header="Bestellt"
+          Binding="{Binding BestellteEinheitenm1, StringFormat=N2}" />
+        <DataGridTextColumn
+          Header="Mindestbestand"
+          Binding="{Binding Mindestbestandm5, StringFormat=N2}" />
+        <DataGridTextColumn
+          Header="Auslaufartikel"
+          Binding="{Binding Auslaufartikelk2, StringFormat=N2}" />
+      </DataGrid.Columns>
+    </DataGrid>
+  </Grid>
+</Window>
