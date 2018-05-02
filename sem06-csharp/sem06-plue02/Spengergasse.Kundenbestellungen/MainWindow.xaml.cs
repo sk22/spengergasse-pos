@@ -18,8 +18,16 @@ namespace Spengergasse.Kundenbestellungen {
   /// Interaction logic for MainWindow.xaml
   /// </summary>
   public partial class MainWindow : Window {
-    public MainWindow() {
-      InitializeComponent();
+    KaiserNordwindEntities context = new KaiserNordwindEntities();
+
+    public MainWindow() => InitializeComponent();
+
+    private void Window_Loaded(object sender, RoutedEventArgs e) {
+      kundenListBox.ItemsSource = context.Kundens.ToList();
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e) {
+      context.SaveChanges();
     }
   }
 }

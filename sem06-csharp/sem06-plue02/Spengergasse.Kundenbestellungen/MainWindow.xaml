@@ -1,12 +1,201 @@
-﻿<Window x:Class="Spengergasse.Kundenbestellungen.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Spengergasse.Kundenbestellungen"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+﻿<Window
+  x:Class="Spengergasse.Kundenbestellungen.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Spengergasse.Kundenbestellungen"
+  mc:Ignorable="d"
+  Loaded="Window_Loaded"
+  Title="Kundenbestellungen" Height="600" Width="950">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="2*" />
+      <RowDefinition Height="1*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <TextBlock
+      Grid.Row="0" Grid.Column="0" Margin="5"
+      FontWeight="SemiBold">
+      Kunden
+    </TextBlock>
+    <ListBox
+      Grid.Row="1" Grid.Column="0"
+      Name="kundenListBox"
+      DisplayMemberPath="Firmal3" />
+
+    <TextBlock
+      Grid.Row="0" Grid.Column="1" Margin="5"
+      FontWeight="SemiBold">
+      Kundendetails
+    </TextBlock>
+    <Grid
+      Grid.Row="1" Grid.Column="1"
+      DataContext="{Binding ElementName=kundenListBox, Path=SelectedItem}">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <TextBlock Grid.Column="0" Grid.Row="0" Margin="5">
+        Kundennummer
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="0" Margin="5"
+        Text="{Binding Kunden_Codeq1}" />
+      <TextBlock Grid.Column="0" Grid.Row="1" Margin="5">
+        Firma
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="1" Margin="5"
+        Text="{Binding Firmal3}" />
+      <TextBlock Grid.Column="0" Grid.Row="2" Margin="5">
+        Kontaktperson
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="2" Margin="5"
+        Text="{Binding Kontaktpersonb8}" />
+      <TextBlock Grid.Column="0" Grid.Row="3" Margin="5">
+        Position
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="3" Margin="5"
+        Text="{Binding Positionk9}" />
+      <TextBlock Grid.Column="0" Grid.Row="4" Margin="5">
+        Straße
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="4" Margin="5"
+        Text="{Binding Straßel8}" />
+      <TextBlock Grid.Column="0" Grid.Row="5" Margin="5">
+        Ort
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="5" Margin="5"
+        Text="{Binding Orts6}" />
+      <TextBlock Grid.Column="0" Grid.Row="6" Margin="5">
+        PLZ
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="6" Margin="5"
+        Text="{Binding PLZy8}" />
+      <TextBlock Grid.Column="0" Grid.Row="7" Margin="5">
+        Land
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="7" Margin="5"
+        Text="{Binding Landp1}" />
+      <TextBlock Grid.Column="0" Grid.Row="8" Margin="5">
+        Telefon
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="8" Margin="5"
+        Text="{Binding Telefonn1}" />
+      <TextBlock Grid.Column="0" Grid.Row="9" Margin="5">
+        Fax
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="9" Margin="5"
+        Text="{Binding Telefaxw9}" />
     </Grid>
+
+    <TextBlock
+      Grid.Row="0" Grid.Column="2" Margin="5"
+      FontWeight="SemiBold">
+      Bestellungen
+    </TextBlock>
+
+    <ListBox
+      Grid.Row="1" Grid.Column="2"
+      Name="bestellungenListBox"
+      DisplayMemberPath="Bestell_Nrv7"
+      DataContext="{Binding ElementName=kundenListBox, Path=SelectedItem}"
+      ItemsSource="{Binding Path=Bestellungens}" />
+
+    <TextBlock
+      Grid.Row="0" Grid.Column="3" Margin="5"
+      FontWeight="SemiBold">
+      Details
+    </TextBlock>
+
+    <Grid
+      Grid.Row="1" Grid.Column="3"
+      DataContext="{Binding ElementName=bestellungenListBox, Path=SelectedItem}">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <TextBlock Grid.Column="0" Grid.Row="0" Margin="5">
+        Bestellung No
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="0" Margin="5"
+        Text="{Binding Bestell_Nrv7}"/>
+      <TextBlock Grid.Column="0" Grid.Row="1" Margin="5">
+        Personal No
+      </TextBlock>
+      <TextBox
+        Grid.Column="1" Grid.Row="1" Margin="5"
+        Text="{Binding Personal_Nrk3}"/>
+      <TextBlock Grid.Column="0" Grid.Row="2" Margin="5">
+        Bestelldatum
+      </TextBlock>
+      <DatePickerTextBox
+        Grid.Column="1" Grid.Row="2" Margin="5"
+        Text="{Binding Bestelldatums1}"/>
+    </Grid>
+    <DataGrid
+      Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"
+      AutoGenerateColumns="False"
+      IsReadOnly="True"
+      DataContext="{Binding ElementName=bestellungenListBox, Path=SelectedItem}"
+      ItemsSource="{Binding Bestelldetails}">
+      <DataGrid.Columns>
+        <DataGridTextColumn
+          Header="Art. No" Binding="{Binding Artikel_Nrk8}" />
+        <DataGridTextColumn
+          Header="Bezeichnung" Binding="{Binding Artikel.Artikelnamex5}" />
+        <DataGridTextColumn
+          Header="Anzahl" Binding="{Binding Anzahlt2}" />
+        <DataGridTextColumn
+          Header="Rabatt" Binding="{Binding Rabattm4}" />
+      </DataGrid.Columns>
+    </DataGrid>
+    <Button
+      Grid.Row="3" Grid.Column="3" Margin="5"
+      IsDefault="True"
+      Click="Button_Click"
+      HorizontalAlignment="Right"
+      Content="Save" />
+  </Grid>
 </Window>

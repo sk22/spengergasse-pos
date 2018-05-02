@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Spengergasse.Lieferanten
+namespace Spengergasse.Kundenbestellungen
 {
     using System;
     using System.Data.Entity;

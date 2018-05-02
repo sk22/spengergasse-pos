@@ -1,0 +1,58 @@
+﻿@model Spengergasse.WebApplication.Models.schueler
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Schüler</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Vorname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_Vorname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Gebdat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_Gebdat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_Adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_K_Klasse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.klassen.K_Bez)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.S_SCHNR }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

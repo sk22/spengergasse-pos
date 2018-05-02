@@ -1,0 +1,56 @@
+﻿@model Spengergasse.WebApplication.Models.klassen
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>klassen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.K_Bez)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.K_Bez)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.K_L_Klavst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lehrer.L_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.K_S_Klaspr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.schueler.S_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.K_S_Klasprstv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.schueler1.S_Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,63 @@
+﻿@model Spengergasse.WebApplication.Models.klassen
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Klassen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+      <dt>
+        @Html.DisplayNameFor(model => model.K_ID)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.K_ID)
+      </dd>
+
+      <dt>
+        @Html.DisplayNameFor(model => model.K_Bez)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.K_Bez)
+      </dd>
+
+      <dt>
+        @Html.DisplayNameFor(model => model.K_L_Klavst)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.lehrer.L_Name)
+      </dd>
+
+      <dt>
+        @Html.DisplayNameFor(model => model.K_S_Klasprstv)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.K_S_Klasprstv)
+      </dd>
+
+      <dt>
+        @* Html.DisplayNameFor(model => model.schueler1.S_Name) *@
+        Schüler
+      </dt>
+
+      <dd>
+        @foreach (var item in Model.schuelers) {
+          @Html.DisplayFor(model => item.S_Name)
+          @Html.Encode(" ");
+        }
+        @Html.DisplayFor(model => model.schuelers.Count)
+      </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.K_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
