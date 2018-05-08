@@ -10,48 +10,48 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ST_G_Fach)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ST_K_Klasse)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ST_L_Lehrer)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ST_R_Raum)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ST_Stunde)
-        </th>
-        <th></th>
-    </tr>
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.gegenstaende.G_Bez)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.klassen.K_Bez)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.ST_Stunde)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.lehrer.L_Name)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.raeume.R_ID)
+    </th>
+    <th></th>
+  </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.gegenstaende.G_Bez)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.klassen.K_Bez)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.lehrer.L_Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.raeume.R_ID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ST_Stunde)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }) |
-            @Html.ActionLink("Details", "Details", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }) |
-            @Html.ActionLink("Delete", "Delete", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde })
-        </td>
-    </tr>
+  <tr>
+    <td>
+      @Html.DisplayFor(modelItem => item.gegenstaende.G_Bez)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.klassen.K_Bez)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.ST_Stunde)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.lehrer.L_Name)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.raeume.R_ID)
+    </td>
+    <td>
+      @Html.ActionLink("Edit", "Edit", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }) |
+      @Html.ActionLink("Details", "Details", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }) |
+      @Html.ActionLink("Delete", "Delete", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde })
+    </td>
+  </tr>
 }
 
 </table>

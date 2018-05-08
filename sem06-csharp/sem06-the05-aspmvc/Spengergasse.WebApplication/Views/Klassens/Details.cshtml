@@ -42,19 +42,11 @@
         @Html.DisplayFor(model => model.K_S_Klasprstv)
       </dd>
 
-      <dt>
-        @* Html.DisplayNameFor(model => model.schueler1.S_Name) *@
-        Schüler
-      </dt>
+      <dt>Schüler</dt>
+      <dd>@string.Join(", ", Model.schuelers.Select(s => s.S_Name));</dd>
 
-      <dd>
-        @foreach (var item in Model.schuelers) {
-          @Html.DisplayFor(model => item.S_Name)
-          @Html.Encode(" ");
-        }
-        @Html.DisplayFor(model => model.schuelers.Count)
-      </dd>
-
+      <dt>Anzahl</dt>
+      <dd>@Html.DisplayFor(model => model.schuelers.Count)</dd>
     </dl>
 </div>
 <p>
