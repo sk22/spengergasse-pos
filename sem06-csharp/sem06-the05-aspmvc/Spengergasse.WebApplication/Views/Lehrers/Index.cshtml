@@ -47,10 +47,16 @@
             @Html.DisplayFor(modelItem => item.lehrer2.L_Name)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.L_ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.L_ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.L_ID })
+          @Html.ActionLink("Edit", "Edit", new { id = item.L_ID }) |
+          @Html.ActionLink("Details", "Details", new { id = item.L_ID }) |
+          @Html.ActionLink("Delete", "Delete", new { id = item.L_ID }) |
+          @if (item.stundens.Count != 0) {
+            @Html.ActionLink("Stunden", "Index", "Stundens", new { lehrer = item.L_ID }, null)
+          } else {
+            <span>Stunden</span>
+          }
         </td>
+        @* missing: stunden des lehrers *@
     </tr>
 }
 

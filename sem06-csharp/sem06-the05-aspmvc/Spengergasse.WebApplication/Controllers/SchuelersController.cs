@@ -15,9 +15,11 @@ namespace Spengergasse.WebApplication.Controllers
         private Schule2000Entities db = new Schule2000Entities();
 
         // GET: Schuelers
-        public ActionResult Index()
+        public ActionResult Index(string search)
         {
-            var schuelers = db.schuelers.Include(s => s.klassen);
+            var schuelers = db.schuelers
+              .Include(s => s.klassen)
+              .Where(s => string.IsNullOrEmpty(search) ? true : s.S_Name.Contains(search));
             return View(schuelers.ToList());
         }
 

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Spengergasse.WebApplication.Models.stunden>
+
+<table class="table">
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.gegenstaende.G_Bez)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.klassen.K_Bez)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.ST_Stunde)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.lehrer.L_Name)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.raeume.R_ID)
+    </th>
+    <th></th>
+  </tr>
+
+@foreach (var item in Model) {
+  <tr>
+    <td>
+      @Html.DisplayFor(modelItem => item.gegenstaende.G_Bez)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.klassen.K_Bez)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.ST_Stunde)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.lehrer.L_Name)
+    </td>
+    <td>
+      @Html.DisplayFor(modelItem => item.raeume.R_ID)
+    </td>
+    <td>
+      @Html.ActionLink("Edit", "Edit", "Stundens", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }, null) |
+      @Html.ActionLink("Details", "Details", "Stundens", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }, null) |
+      @Html.ActionLink("Delete", "Delete", "Stundens", new { klasse = item.ST_K_Klasse, stunde = item.ST_Stunde }, null)
+    </td>
+  </tr>
+}
+
+</table>

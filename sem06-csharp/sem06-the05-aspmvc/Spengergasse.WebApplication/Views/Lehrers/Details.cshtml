@@ -56,3 +56,7 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.L_ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+<h3>Stunden</h3>
+
+@Html.Partial("../Stundens/IndexPartial", Model.stundens);

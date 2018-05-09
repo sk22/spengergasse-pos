@@ -285,6 +285,7 @@
     <Content Include="Views\Stundens\Details.cshtml" />
     <Content Include="Views\Stundens\Edit.cshtml" />
     <Content Include="Views\Stundens\Index.cshtml" />
+    <Content Include="Views\Stundens\IndexPartial.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
