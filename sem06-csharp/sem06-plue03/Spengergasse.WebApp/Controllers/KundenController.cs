@@ -15,7 +15,10 @@ namespace Spengergasse.WebApp.Controllers {
 
     // GET: Kunden
     public ActionResult Index() {
-      return View(db.Kundens.ToList());
+      var user = (int) Session["user"];
+      return View(db.Kundens.Where(
+        k => k.Bestellungens.Any(b => b.Personal_Nrk3 == user)
+      ).ToList());
     }
 
     // GET: Kunden/Details/5

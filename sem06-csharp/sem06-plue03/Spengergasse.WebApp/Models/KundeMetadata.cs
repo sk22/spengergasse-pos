@@ -6,7 +6,9 @@ using System.Web;
 
 namespace Spengergasse.WebApp.Models {
   [MetadataType(typeof(KundeMetadata))]
-  public partial class Kunden { }
+  public partial class Kunden {
+    public int AnzahlBestellungen => Bestellungens.Count;
+  }
 
   public class KundeMetadata {
     [Display(Name = "Kunden-Code")]
@@ -51,5 +53,10 @@ namespace Spengergasse.WebApp.Models {
     [Display(Name = "Telefax")]
     [Required]
     public string Telefaxw9 { get; set; }
+
+    [Display(Name = "Bestellungen")]
+    [Required]
+    public int AnzahlBestellungen { get; set; }
+
   }
 }

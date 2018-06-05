@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Spengergasse.WebApp.Models.Bestellungen>
+
+<table class="table">
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.Bestelldatums1)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Lieferdatumm7)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Versanddatump2)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Frachtkostenk1)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Empfaengerp1)
+    </th>
+    <th>
+      Adresse
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Kunden.Firmal3)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Personal_Nrk3)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.VersandUeberf7)
+    </th>
+    <th></th>
+  </tr>
+
+  @foreach (var item in Model) {
+    <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.Bestelldatums1)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Lieferdatumm7)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Versanddatump2)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Frachtkostenk1)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Empfaengerp1)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Straßem2)<br />
+        @Html.DisplayFor(modelItem => item.Ortw9)<br />
+        @Html.DisplayFor(modelItem => item.Regionk1)<br />
+        @Html.DisplayFor(modelItem => item.PLZt5)<br />
+        @Html.DisplayFor(modelItem => item.Bestimmungslandr4)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Kunden.Firmal3)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Personal.Nachnamel1)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Versandfirman.Firmae2)
+      </td>
+      <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Bestell_Nrv7 })<br />
+        @Html.ActionLink("Details", "Details", new { id = item.Bestell_Nrv7 })<br />
+        @Html.ActionLink("Delete", "Delete", new { id = item.Bestell_Nrv7 })
+      </td>
+    </tr>
+  }
+
+</table>

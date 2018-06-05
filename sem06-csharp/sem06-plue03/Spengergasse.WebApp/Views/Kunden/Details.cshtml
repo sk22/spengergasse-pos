@@ -1,98 +1,100 @@
 ﻿@model Spengergasse.WebApp.Models.Kunden
 
 @{
-    ViewBag.Title = "Details";
+  ViewBag.Title = "Details";
 }
 
 <h2>Details</h2>
 
 <div>
-    <h4>Kunden</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Firmal3)
-        </dt>
+  <h4>Kunden</h4>
+  <hr />
+  <dl class="dl-horizontal">
+    <dt>
+      @Html.DisplayNameFor(model => model.Firmal3)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Firmal3)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Firmal3)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Kontaktpersonb8)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Kontaktpersonb8)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Kontaktpersonb8)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Kontaktpersonb8)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Positionk9)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Positionk9)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Positionk9)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Positionk9)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Straßel8)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Straßel8)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Straßel8)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Straßel8)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Orts6)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Orts6)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Orts6)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Orts6)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Regionx8)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Regionx8)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Regionx8)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Regionx8)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PLZy8)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.PLZy8)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PLZy8)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.PLZy8)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Landp1)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Landp1)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Landp1)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Landp1)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Telefonn1)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Telefonn1)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Telefonn1)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Telefonn1)
+    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Telefaxw9)
-        </dt>
+    <dt>
+      @Html.DisplayNameFor(model => model.Telefaxw9)
+    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Telefaxw9)
-        </dd>
+    <dd>
+      @Html.DisplayFor(model => model.Telefaxw9)
+    </dd>
 
-    </dl>
+  </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Kunden_Codeq1 }) |
-    @Html.ActionLink("Back to List", "Index")
+  @Html.ActionLink("Edit", "Edit", new { id = Model.Kunden_Codeq1 }) |
+  @Html.ActionLink("Back to List", "Index")
 </p>
+
+@Html.Partial("../Bestellungen/_IndexPartial", Model.Bestellungens)

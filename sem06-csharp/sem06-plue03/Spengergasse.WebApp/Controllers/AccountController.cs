@@ -27,6 +27,7 @@ namespace Spengergasse.WebApp.Controllers {
 
         if (personal != null) {
           FormsAuthentication.SetAuthCookie(model.Username, model.RememberMe);
+          Session["user"] = personal.Personal_Nrr3;
           return RedirectToLocal(returnUrl);  // Url  ?? "~/Home/Index"
         } else {
           ModelState.AddModelError("", "Invalid username or password.");
@@ -40,6 +41,7 @@ namespace Spengergasse.WebApp.Controllers {
     [ValidateAntiForgeryToken]
     public ActionResult LogOff() {
       FormsAuthentication.SignOut();
+      Session["user"] = null;
       return RedirectToAction("Index", "Home");
     }
 

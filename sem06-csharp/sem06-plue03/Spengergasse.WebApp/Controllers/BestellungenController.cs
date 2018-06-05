@@ -14,9 +14,18 @@ namespace Spengergasse.WebApp.Controllers {
     private KaiserNordwindEntities db = new KaiserNordwindEntities();
 
     // GET: Bestellungen
-    public ActionResult Index() {
-      var bestellungens = db.Bestellungens.Include(b => b.Kunden).Include(b => b.Personal).Include(b => b.Versandfirman);
-      return View(bestellungens.ToList());
+    public ActionResult Index(string kunde, DateTime? datum) {
+      var bestellungen = db.Bestellungens.Include(b => b.Kunden).Include(b => b.Personal).Include(b => b.Versandfirman);
+      if (!String.IsNullOrEmpty(kunde)) {
+        bestellungen = bestellungen.Where(b => b.Kunden_Codeg9 == kunde);
+      }
+      if (datum != null) {
+        bestellungen = bestellungen.Where(b => b.Bestelldatums1 == datum);
+      }
+
+      ViewBag.kunde = new SelectList(db.Kundens, "Kunden_Codeq1", "Firmal3");
+
+      return View(bestellungen.ToList());
     }
 
     // GET: Bestellungen/Details/5
