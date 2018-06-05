@@ -1,0 +1,128 @@
+﻿@model Spengergasse.WebApp.Models.Bestellungen
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Bestellungen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bestelldatums1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bestelldatums1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lieferdatumm7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lieferdatumm7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Versanddatump2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Versanddatump2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Frachtkostenk1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Frachtkostenk1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empfaengerp1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empfaengerp1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Straßem2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Straßem2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ortw9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ortw9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Regionk1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Regionk1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PLZt5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLZt5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bestimmungslandr4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bestimmungslandr4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kunden.Firmal3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kunden.Firmal3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Personal.Nachnamel1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Personal.Nachnamel1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Versandfirman.Firmae2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Versandfirman.Firmae2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

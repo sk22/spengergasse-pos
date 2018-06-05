@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Spengergasse.WebApp.Models.Bestelldetail>
+
+@{
+  ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+  @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.Einzelpreisw2)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Anzahlt2)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Rabattm4)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Artikel.Artikelnamex5)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Bestellungen.Kunden_Codeg9)
+    </th>
+    <th></th>
+  </tr>
+
+  @foreach (var item in Model) {
+    <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.Einzelpreisw2)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Anzahlt2)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Rabattm4)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Artikel.Artikelnamex5)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Bestellungen.Kunden_Codeg9)
+      </td>
+      <td>
+        @Html.ActionLink("Edit", "Edit", new { artikel = item.Artikel_Nrk8, bestellung = item.Bestell_Nrn8 })<br />
+        @Html.ActionLink("Details", "Details", new { artikel = item.Artikel_Nrk8, bestellung = item.Bestell_Nrn8 })<br />
+        @Html.ActionLink("Delete", "Delete", new { artikel = item.Artikel_Nrk8, bestellung = item.Bestell_Nrn8 })
+      </td>
+    </tr>
+  }
+
+</table>

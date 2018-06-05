@@ -1,0 +1,64 @@
+﻿@model Spengergasse.WebApp.Models.Bestelldetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Bestelldetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Einzelpreisw2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Einzelpreisw2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anzahlt2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anzahlt2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rabattm4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rabattm4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Artikel.Artikelnamex5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Artikel.Artikelnamex5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bestellungen.Kunden_Codeg9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bestellungen.Kunden_Codeg9)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

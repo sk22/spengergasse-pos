@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Spengergasse.WebApp.Models.Kunden>
+
+@{
+  ViewBag.Title = "Kunden";
+}
+
+<h2>Kunden</h2>
+
+<p>
+  @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.Firmal3)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Kontaktpersonb8)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Positionk9)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Straßel8)
+    </th>
+    <th>
+      Adresse
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Telefonn1)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Telefaxw9)
+    </th>
+    <th>@Html.DisplayNameFor(model => model.AnzahlBestellungen)</th>
+    <th></th>
+  </tr>
+
+  @foreach (var item in Model) {
+    <tr>
+      <td>
+        @Html.DisplayFor(modelItem => item.Firmal3)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Kontaktpersonb8)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Positionk9)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Straßel8)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Orts6)
+        @Html.DisplayFor(modelItem => item.Regionx8)
+        @Html.DisplayFor(modelItem => item.PLZy8)
+        @Html.DisplayFor(modelItem => item.Landp1)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Telefonn1)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Telefaxw9)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.AnzahlBestellungen)
+      </td>
+      <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Kunden_Codeq1 })<br />
+        @Html.ActionLink("Details", "Details", new { id = item.Kunden_Codeq1 })<br />
+        @Html.ActionLink("Delete", "Delete", new { id = item.Kunden_Codeq1 })
+      </td>
+    </tr>
+  }
+
+</table>

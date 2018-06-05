@@ -1,0 +1,58 @@
+﻿@model Spengergasse.WebApp.Models.Bestelldetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bestelldetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Einzelpreisw2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Einzelpreisw2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anzahlt2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anzahlt2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rabattm4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rabattm4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Artikel.Artikelnamex5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Artikel.Artikelnamex5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bestellungen.Kunden_Codeg9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bestellungen.Kunden_Codeg9)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
