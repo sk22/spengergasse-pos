@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Spengergasse.MusicMetaWebApp.App_Data
+namespace Spengergasse.MusicMetaWebApp.Models
 {
     using System;
     using System.Data.Entity;

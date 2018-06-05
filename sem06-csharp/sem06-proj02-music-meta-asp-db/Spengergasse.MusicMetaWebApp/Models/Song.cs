@@ -7,25 +7,32 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Spengergasse.MusicMetaWebApp.App_Data
+namespace Spengergasse.MusicMetaWebApp.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Member
+    public partial class Song
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Member()
+        public Song()
         {
-            this.ArtistMembers = new HashSet<ArtistMember>();
+            this.SongComments = new HashSet<SongComment>();
         }
     
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Biography { get; set; }
-        public Nullable<System.DateTime> Birthdate { get; set; }
+        public string Title { get; set; }
+        public Nullable<int> ArtistId { get; set; }
+        public Nullable<int> AlbumId { get; set; }
+        public string Genre { get; set; }
+        public Nullable<int> DiscNo { get; set; }
+        public Nullable<int> TrackNo { get; set; }
+        public Nullable<System.DateTime> ReleaseDate { get; set; }
+        public string Comment { get; set; }
     
+        public virtual Album Album { get; set; }
+        public virtual Artist Artist { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ArtistMember> ArtistMembers { get; set; }
+        public virtual ICollection<SongComment> SongComments { get; set; }
     }
 }

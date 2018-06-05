@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\code\spengergasse-pos\sem06-csharp\sem06-proj02-music-meta-asp-db\Spengergasse.MusicMetaWebApp\App_Data\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\code\spengergasse-pos\sem06-csharp\sem06-proj02-music-meta-asp-db\Spengergasse.MusicMetaWebApp\Models\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

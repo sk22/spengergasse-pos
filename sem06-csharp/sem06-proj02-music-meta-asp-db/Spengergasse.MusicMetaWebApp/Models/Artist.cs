@@ -7,29 +7,33 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Spengergasse.MusicMetaWebApp.App_Data
+namespace Spengergasse.MusicMetaWebApp.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Album
+    public partial class Artist
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Album()
+        public Artist()
         {
-            this.AlbumRatings = new HashSet<AlbumRating>();
+            this.Albums = new HashSet<Album>();
+            this.ArtistMembers = new HashSet<ArtistMember>();
             this.Songs = new HashSet<Song>();
         }
     
         public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> ArtistId { get; set; }
-        public string Description { get; set; }
-        public Nullable<System.DateTime> Released { get; set; }
+        public string Biography { get; set; }
+        public string Origin { get; set; }
+        public Nullable<System.DateTime> EstablishDate { get; set; }
+        public Nullable<System.DateTime> DissolveDate { get; set; }
+        public Nullable<bool> Active { get; set; }
     
-        public virtual Artist Artist { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AlbumRating> AlbumRatings { get; set; }
+        public virtual ICollection<Album> Albums { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ArtistMember> ArtistMembers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Song> Songs { get; set; }
     }

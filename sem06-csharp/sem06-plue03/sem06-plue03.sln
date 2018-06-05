@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spengergasse.MusicMetaWebApp", "Spengergasse.MusicMetaWebApp\Spengergasse.MusicMetaWebApp.csproj", "{C34F2E17-E5C5-45AC-853F-0E8D662D3C7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spengergasse.WebApp", "Spengergasse.WebApp\Spengergasse.WebApp.csproj", "{B358BFDA-ED37-4DBF-B48A-860EF831CC5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C34F2E17-E5C5-45AC-853F-0E8D662D3C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C34F2E17-E5C5-45AC-853F-0E8D662D3C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C34F2E17-E5C5-45AC-853F-0E8D662D3C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C34F2E17-E5C5-45AC-853F-0E8D662D3C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B358BFDA-ED37-4DBF-B48A-860EF831CC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B358BFDA-ED37-4DBF-B48A-860EF831CC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B358BFDA-ED37-4DBF-B48A-860EF831CC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B358BFDA-ED37-4DBF-B48A-860EF831CC5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4B4101F6-3AB1-4321-BD59-90DD2B2C0163}
+		SolutionGuid = {5BC27EC5-4AAA-4512-8322-0D3F22DC4DDC}
 	EndGlobalSection
 EndGlobal

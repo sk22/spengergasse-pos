@@ -8,8 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using Spengergasse.WebApplication.Models;
 
-namespace Spengergasse.WebApplication.Controllers
-{
+namespace Spengergasse.WebApplication.Controllers {
+    [Authorize]
     public class LehrersController : Controller
     {
         private Schule2000Entities db = new Schule2000Entities();

@@ -7,18 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Spengergasse.MusicMetaWebApp.App_Data
+namespace Spengergasse.MusicMetaWebApp.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ArtistMember
+    public partial class SongComment
     {
         public int Id { get; set; }
-        public int ArtistId { get; set; }
-        public int MemberId { get; set; }
+        public int SongId { get; set; }
+        public string UserName { get; set; }
+        public string Comment { get; set; }
+        public Nullable<int> Position { get; set; }
     
-        public virtual Artist Artist { get; set; }
-        public virtual Member Member { get; set; }
+        public virtual Song Song { get; set; }
     }
 }
