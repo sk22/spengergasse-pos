@@ -3,24 +3,24 @@ using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
 
+
 namespace Spengergasse.MusicMetaWebApp.Controllers {
   public class AccountController : Controller {
+    private HIF3bkaiserEntities db = new HIF3bkaiserEntities();
+
     // GET: Account
     public ActionResult Login() {
         return View();
     }
 
-    // Validates password based on form data
-    private bool ValidatePassword(Account model)
-      => model.Password == new string(model.Username.ToCharArray().Reverse().ToArray());
-
     [HttpPost]
     [ValidateAntiForgeryToken]
     public ActionResult Login(Account model, string returnUrl) {
       if (ModelState.IsValid) {
-        if (ValidatePassword(model)) {
+        var artist = db.Artists.Find(int.Parse(model.Password));
+        if ((model.Username == "admin" && model.Password == "-1") || model.Username == artist.Name) {
           FormsAuthentication.SetAuthCookie(model.Username, model.RememberMe);
-          Session["username"] = model.Username;
+          Session["id"] = int.Parse(model.Password);
           return RedirectToLocal(returnUrl);
         } else {
           ModelState.AddModelError("", "Invalid username or password.");

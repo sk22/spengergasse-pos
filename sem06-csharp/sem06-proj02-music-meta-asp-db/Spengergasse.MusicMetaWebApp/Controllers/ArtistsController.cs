@@ -9,9 +9,11 @@ using System.Web.Mvc;
 using Spengergasse.MusicMetaWebApp.Models;
 
 namespace Spengergasse.MusicMetaWebApp.Controllers {
+  [Authorize]
   public class ArtistsController : Controller {
     private HIF3bkaiserEntities db = new HIF3bkaiserEntities();
 
+    [AllowAnonymous]
     // GET: Artists
     public ActionResult Index() {
       return View(db.Artists.ToList());

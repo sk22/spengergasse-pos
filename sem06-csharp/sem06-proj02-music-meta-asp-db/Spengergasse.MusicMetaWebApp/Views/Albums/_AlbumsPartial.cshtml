@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Spengergasse.MusicMetaWebApp.Models.Album>
 
 <p>
-  @Html.ActionLink("Create New", "Create")
+  @Html.ActionLink("Create New", "Create", "Albums")
 </p>
 <table class="table">
   <tr>
@@ -15,7 +15,7 @@
       @Html.DisplayNameFor(model => model.Released)
     </th>
     <th>
-      @Html.DisplayNameFor(model => model.Artist.Name)
+      @Html.DisplayNameFor(model => model.Artist)
     </th>
     <th></th>
   </tr>
@@ -35,9 +35,9 @@
         @Html.DisplayFor(modelItem => item.Artist.Name)
       </td>
       <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        @Html.ActionLink("Edit", "Edit", "Albums", new { id = item.Id }, null) |
+        @Html.ActionLink("Details", "Details", "Albums", new { id = item.Id }, null) |
+        @Html.ActionLink("Delete", "Delete", "Albums", new { id = item.Id }, null)
       </td>
     </tr>
   }

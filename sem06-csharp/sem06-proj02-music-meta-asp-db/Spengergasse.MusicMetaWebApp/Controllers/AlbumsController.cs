@@ -9,16 +9,19 @@ using System.Web.Mvc;
 using Spengergasse.MusicMetaWebApp.Models;
 
 namespace Spengergasse.MusicMetaWebApp.Controllers {
+  [Authorize]
   public class AlbumsController : Controller {
     private HIF3bkaiserEntities db = new HIF3bkaiserEntities();
 
     // GET: Albums
+    [AllowAnonymous]
     public ActionResult Index() {
       var albums = db.Albums.Include(a => a.Artist);
       return View(albums.ToList());
     }
 
     // GET: Albums/Details/5
+    [AllowAnonymous]
     public ActionResult Details(int? id) {
       if (id == null) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -31,8 +34,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     }
 
     // GET: Albums/Create
+    [Authorize]
     public ActionResult Create() {
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name");
+      var id = (int) Session["id"];
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == id || id == -1), "Id", "Name");
       return View();
     }
 
@@ -41,14 +46,19 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public ActionResult Create([Bind(Include = "Id,Name,ArtistId,Description,Released")] Album album) {
+    public ActionResult Create([Bind(Include = "Id,Name,ArtistId,Description,Released")] Album album, string returnUrl) {
       if (ModelState.IsValid) {
         db.Albums.Add(album);
         db.SaveChanges();
-        return RedirectToAction("Index");
+        if (string.IsNullOrEmpty(returnUrl)) {
+          return RedirectToAction("Index");
+        } else {
+          return Redirect(returnUrl);
+        }
       }
 
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name", album.ArtistId);
+      var id = (int) Session["id"];
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == id || id == -1), "Id", "Name");
       return View(album);
     }
 
@@ -61,7 +71,9 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       if (album == null) {
         return HttpNotFound();
       }
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name", album.ArtistId);
+
+      var userId = (int) Session["id"];
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == userId || userId == -1), "Id", "Name");
       return View(album);
     }
 

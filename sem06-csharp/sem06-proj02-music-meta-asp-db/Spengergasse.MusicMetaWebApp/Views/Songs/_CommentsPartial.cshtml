@@ -22,7 +22,6 @@ Post comment
     </p>
     <div>
       by @(string.IsNullOrEmpty(item.UserName) ? "Anonymous" : item.UserName)
-      at @Html.DisplayFor(modelItem => item.Position)
       – @Html.ActionLink("Delete", "DeleteComment", new { id = item.Id, song = Model.Id })
     </div>
   </div>

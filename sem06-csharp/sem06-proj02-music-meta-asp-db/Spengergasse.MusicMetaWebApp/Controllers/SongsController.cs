@@ -9,9 +9,11 @@ using System.Web.Mvc;
 using Spengergasse.MusicMetaWebApp.Models;
 
 namespace Spengergasse.MusicMetaWebApp.Controllers {
+  [Authorize]
   public class SongsController : Controller {
     private HIF3bkaiserEntities db = new HIF3bkaiserEntities();
 
+    [AllowAnonymous]
     // GET: Songs
     public ActionResult Index(string order, string genre) {
       ViewBag.CurrentSort = order;
@@ -23,10 +25,18 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       var songs = db.Songs.Include(s => s.Album).Include(s => s.Artist);
       if (!string.IsNullOrEmpty(order)) {
         switch (order) {
-          case "title": songs = songs.OrderBy(s => s.Title); break;
-          case "artist": songs = songs.OrderBy(s => s.Artist.Name); break;
-          case "album": songs = songs.OrderBy(s => s.Artist.Name).OrderBy(s => s.Album.Name); break;
-          case "genre": songs = songs.OrderBy(s => s.Genre); break;
+          case "title":
+            songs = songs.OrderBy(s => s.Title);
+            break;
+          case "artist":
+            songs = songs.OrderBy(s => s.Artist.Name);
+            break;
+          case "album":
+            songs = songs.OrderBy(s => s.Artist.Name).OrderBy(s => s.Album.Name);
+            break;
+          case "genre":
+            songs = songs.OrderBy(s => s.Genre);
+            break;
         }
       }
 
@@ -37,6 +47,7 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       return View(songs.ToList());
     }
 
+    [AllowAnonymous]
     // GET: Songs/Details/5
     public ActionResult Details(int? id) {
       if (id == null) {
@@ -52,11 +63,14 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     // POST: Songs/Details/5
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public ActionResult PostComment(int id, string comment, string username, int position = 0) {
+    [AllowAnonymous]
+    public ActionResult PostComment(int id, string comment, string username) {
       if (string.IsNullOrWhiteSpace(comment)) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
       }
       Song song = db.Songs.Find(id);
+      var artist = db.Artists.Find(Session["id"]);
+
       if (song == null) {
         return HttpNotFound();
       }
@@ -64,8 +78,7 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
         db.SongComments.Add(new SongComment {
           SongId = song.Id,
           Comment = comment,
-          UserName = username,
-          Position = position
+          UserName = artist?.Name
         });
         db.SaveChanges();
       }
@@ -77,6 +90,11 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       if (songComment == null) {
         return HttpNotFound();
       }
+
+      if (songComment.Song.ArtistId != (int) Session["id"] && (int) Session["id"] != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
+
       if (ModelState.IsValid) {
         db.SongComments.Remove(songComment);
         db.SaveChanges();
@@ -86,8 +104,9 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
 
     // GET: Songs/Create
     public ActionResult Create() {
-      ViewBag.AlbumId = new SelectList(db.Albums, "Id", "Name");
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name");
+      var id = (int) Session["id"];
+      ViewBag.AlbumId = new SelectList(db.Albums.Where(a => a.ArtistId == id || id == -1), "Id", "Name");
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == id || id == -1), "Id", "Name");
       return View();
     }
 
@@ -97,14 +116,19 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [HttpPost]
     [ValidateAntiForgeryToken]
     public ActionResult Create([Bind(Include = "Id,Title,ArtistId,AlbumId,Genre,DiscNo,TrackNo,ReleaseDate,Comment")] Song song) {
+      var id = (int) Session["id"];
+      if (id != song.ArtistId && id != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
+
       if (ModelState.IsValid) {
-        db.Songs.Add(song);
+        db.Entry(song).State = EntityState.Modified;
         db.SaveChanges();
         return RedirectToAction("Index");
       }
 
-      ViewBag.AlbumId = new SelectList(db.Albums, "Id", "Name", song.AlbumId);
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name", song.ArtistId);
+      ViewBag.AlbumId = new SelectList(db.Albums.Where(a => a.ArtistId == id || id == -1), "Id", "Name");
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == id || id == -1), "Id", "Name");
       return View(song);
     }
 
@@ -114,11 +138,17 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
       }
       Song song = db.Songs.Find(id);
+
+      var userId = (int) Session["id"];
+      if (userId != song.ArtistId) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
+
       if (song == null) {
         return HttpNotFound();
       }
-      ViewBag.AlbumId = new SelectList(db.Albums, "Id", "Name", song.AlbumId);
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name", song.ArtistId);
+      ViewBag.AlbumId = new SelectList(db.Albums.Where(a => a.ArtistId == userId || userId == -1), "Id", "Name");
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == userId || userId == -1), "Id", "Name");
       return View(song);
     }
 
@@ -133,8 +163,9 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
         db.SaveChanges();
         return RedirectToAction("Index");
       }
-      ViewBag.AlbumId = new SelectList(db.Albums, "Id", "Name", song.AlbumId);
-      ViewBag.ArtistId = new SelectList(db.Artists, "Id", "Name", song.ArtistId);
+      var id = (int) Session["id"];
+      ViewBag.AlbumId = new SelectList(db.Albums.Where(a => a.ArtistId == id || id == -1), "Id", "Name");
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == id || id == -1), "Id", "Name");
       return View(song);
     }
 
@@ -144,6 +175,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
       }
       Song song = db.Songs.Find(id);
+      var userId = (int) Session["id"];
+      if (song.ArtistId != userId && userId != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       if (song == null) {
         return HttpNotFound();
       }
