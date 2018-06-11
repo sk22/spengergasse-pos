@@ -1,0 +1,72 @@
+﻿@model Spengergasse.MusicMetaWebApp.Models.Artist
+
+@{
+  ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+  <h4>Artist</h4>
+  <hr />
+  <dl class="dl-horizontal">
+    <dt>
+      @Html.DisplayNameFor(model => model.Name)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Name)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Biography)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Biography)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Origin)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Origin)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.EstablishDate)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.EstablishDate)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.DissolveDate)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.DissolveDate)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Active)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Active)
+    </dd>
+
+  </dl>
+</div>
+<p>
+  @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+  @Html.ActionLink("Back to List", "Index")
+</p>
+
+<h3>Albums</h3>
+@Html.Partial("~/Views/Albums/_AlbumsPartial.cshtml", Model.Albums)
+
+<h3>Songs</h3>
+@Html.Partial("~/Views/Songs/_SongsPartial.cshtml", Model.Songs)
