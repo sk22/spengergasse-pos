@@ -20,6 +20,7 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     }
 
     // GET: Artists/Details/5
+    [AllowAnonymous]
     public ActionResult Details(int? id) {
       if (id == null) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -33,6 +34,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
 
     // GET: Artists/Create
     public ActionResult Create() {
+      var id = (int) Session["id"];
+      if (id != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       return View();
     }
 
@@ -42,6 +47,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [HttpPost]
     [ValidateAntiForgeryToken]
     public ActionResult Create([Bind(Include = "Id,Name,Biography,Origin,EstablishDate,DissolveDate,Active")] Artist artist) {
+      var id = (int) Session["id"];
+      if (id != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       if (ModelState.IsValid) {
         db.Artists.Add(artist);
         db.SaveChanges();
@@ -60,6 +69,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       if (artist == null) {
         return HttpNotFound();
       }
+      var userId = (int) Session["id"];
+      if (artist.Id != userId && userId != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       return View(artist);
     }
 
@@ -70,6 +83,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [ValidateAntiForgeryToken]
     public ActionResult Edit([Bind(Include = "Id,Name,Biography,Origin,EstablishDate,DissolveDate,Active")] Artist artist) {
       if (ModelState.IsValid) {
+        var userId = (int) Session["id"];
+        if (artist.Id != userId && userId != -1) {
+          return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+        }
         db.Entry(artist).State = EntityState.Modified;
         db.SaveChanges();
         return RedirectToAction("Index");
@@ -86,6 +103,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       if (artist == null) {
         return HttpNotFound();
       }
+      var userId = (int) Session["id"];
+      if (artist.Id != userId && userId != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       return View(artist);
     }
 
@@ -94,6 +115,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [ValidateAntiForgeryToken]
     public ActionResult DeleteConfirmed(int id) {
       Artist artist = db.Artists.Find(id);
+      var userId = (int) Session["id"];
+      if (artist.Id != userId && userId != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       db.Artists.Remove(artist);
       db.SaveChanges();
       return RedirectToAction("Index");

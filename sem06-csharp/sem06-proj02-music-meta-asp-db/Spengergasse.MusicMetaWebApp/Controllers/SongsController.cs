@@ -47,8 +47,8 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       return View(songs.ToList());
     }
 
-    [AllowAnonymous]
     // GET: Songs/Details/5
+    [AllowAnonymous]
     public ActionResult Details(int? id) {
       if (id == null) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -91,7 +91,8 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
         return HttpNotFound();
       }
 
-      if (songComment.Song.ArtistId != (int) Session["id"] && (int) Session["id"] != -1) {
+      var userId = (int) Session["id"];
+      if (songComment.Song.ArtistId != userId && userId != -1) {
         return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
       }
 
@@ -158,14 +159,17 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [HttpPost]
     [ValidateAntiForgeryToken]
     public ActionResult Edit([Bind(Include = "Id,Title,ArtistId,AlbumId,Genre,DiscNo,TrackNo,ReleaseDate,Comment")] Song song) {
+      var userId = (int) Session["id"];
+      if (song.ArtistId != userId && userId != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       if (ModelState.IsValid) {
         db.Entry(song).State = EntityState.Modified;
         db.SaveChanges();
         return RedirectToAction("Index");
       }
-      var id = (int) Session["id"];
-      ViewBag.AlbumId = new SelectList(db.Albums.Where(a => a.ArtistId == id || id == -1), "Id", "Name");
-      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == id || id == -1), "Id", "Name");
+      ViewBag.AlbumId = new SelectList(db.Albums.Where(a => a.ArtistId == userId || userId == -1), "Id", "Name");
+      ViewBag.ArtistId = new SelectList(db.Artists.Where(a => a.Id == userId || userId == -1), "Id", "Name");
       return View(song);
     }
 
@@ -190,6 +194,10 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [ValidateAntiForgeryToken]
     public ActionResult DeleteConfirmed(int id) {
       Song song = db.Songs.Find(id);
+      var userId = (int) Session["id"];
+      if (song.ArtistId != userId && userId != -1) {
+        return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+      }
       db.Songs.Remove(song);
       db.SaveChanges();
       return RedirectToAction("Index");
