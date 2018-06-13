@@ -15,7 +15,7 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
 
     [AllowAnonymous]
     // GET: Songs
-    public ActionResult Index(string order, string genre) {
+    public ActionResult Index(string order, string genre, string search) {
       ViewBag.CurrentSort = order;
       ViewBag.SortByTitle = "title";
       ViewBag.SortByArtist = "artist";
@@ -23,6 +23,14 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       ViewBag.SortByGenre = "genre";
 
       var songs = db.Songs.Include(s => s.Album).Include(s => s.Artist);
+      
+      if (!string.IsNullOrWhiteSpace(search)) {
+        ViewBag.Search = search;
+        var searchLower = search.ToLower();
+        songs = songs.Where(s => s.Title.ToLower().Contains(searchLower)
+          || s.Album.Name.ToLower().Contains(searchLower) || s.Artist.Name.ToLower().Contains(searchLower));
+      }
+
       if (!string.IsNullOrEmpty(order)) {
         switch (order) {
           case "title":
