@@ -15,8 +15,15 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
 
     // GET: Albums
     [AllowAnonymous]
-    public ActionResult Index() {
+    public ActionResult Index(string search) {
       var albums = db.Albums.Include(a => a.Artist);
+
+      if (!string.IsNullOrWhiteSpace(search)) {
+        ViewBag.Search = search;
+        var searchLower = search.ToLower();
+        albums = albums.Where(a => a.Name.ToLower().Contains(searchLower)
+          || a.Artist.Name.ToLower().Contains(searchLower));
+      }
       return View(albums.ToList());
     }
 
@@ -67,12 +74,13 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       if (id == null) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
       }
+
       Album album = db.Albums.Find(id);
       if (album == null) {
         return HttpNotFound();
       }
 
-      var userId = (int) Session["id"];
+      int? userId = (int) Session["id"];
       if (album.ArtistId != userId && userId != -1) {
         return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
       }

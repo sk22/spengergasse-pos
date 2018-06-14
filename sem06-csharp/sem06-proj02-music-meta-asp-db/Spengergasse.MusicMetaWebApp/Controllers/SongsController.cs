@@ -93,14 +93,15 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       return RedirectToAction("Details", new { id });
     }
 
-    public ActionResult DeleteComment(int id, int song) {
+    public ActionResult DeleteComment(int song, int id) {
       SongComment songComment = db.SongComments.Find(id);
       if (songComment == null) {
         return HttpNotFound();
       }
 
       var userId = (int) Session["id"];
-      if (songComment.Song.ArtistId != userId && userId != -1) {
+      var artist = db.Artists.Find(userId);
+      if (songComment.UserName != artist?.Name && userId != -1) {
         return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
       }
 
@@ -130,8 +131,9 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
         return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
       }
 
+
       if (ModelState.IsValid) {
-        db.Entry(song).State = EntityState.Modified;
+        db.Songs.Add(song);
         db.SaveChanges();
         return RedirectToAction("Index");
       }
@@ -148,8 +150,8 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
       }
       Song song = db.Songs.Find(id);
 
-      var userId = (int) Session["id"];
-      if (userId != song.ArtistId) {
+      int? userId = (int) Session["id"];
+      if (userId != song.ArtistId && userId != -1) {
         return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
       }
 

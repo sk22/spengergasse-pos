@@ -2,7 +2,7 @@
 
 @using (Html.BeginForm("Index", "Songs", FormMethod.Get)) {
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search" name="search">
+    <input type="text" class="form-control" placeholder="Search" name="search" value="@ViewBag.Search">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 }
@@ -77,9 +77,13 @@
         @Html.DisplayFor(modelItem => item.Comment)
       </td>
       <td>
-        @Html.ActionLink("Edit", "Edit", "Songs", new { id = item.Id }, null) |
-        @Html.ActionLink("Details", "Details", "Songs", new { id = item.Id }, null) |
-        @Html.ActionLink("Delete", "Delete", "Songs", new { id = item.Id }, null)
+        @Html.ActionLink("Details", "Details", "Songs", new { id = item.Id }, null)
+        @if (Session["id"] != null) {
+          @Html.Encode("| ")
+          @Html.ActionLink("Edit", "Edit", "Songs", new { id = item.Id }, null)
+          @Html.Encode(" | ")
+          @Html.ActionLink("Delete", "Delete", "Songs", new { id = item.Id }, null)
+        }
       </td>
     </tr>
   }

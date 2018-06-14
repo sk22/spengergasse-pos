@@ -10,6 +10,8 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     private HIF3bkaiserEntities db = new HIF3bkaiserEntities();
 
     public ActionResult Index() {
+      ViewBag.Genres = db.Songs.Select(s => s.Genre)
+        .Distinct().OrderByDescending(g => db.Songs.Where(s => s.Genre == g).Count());
       return View(db);
     }
   }

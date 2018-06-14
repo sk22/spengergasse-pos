@@ -1,4 +1,5 @@
 ﻿using Spengergasse.MusicMetaWebApp.Models;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -17,8 +18,13 @@ namespace Spengergasse.MusicMetaWebApp.Controllers {
     [ValidateAntiForgeryToken]
     public ActionResult Login(Account model, string returnUrl) {
       if (ModelState.IsValid) {
-        var artist = db.Artists.Find(int.Parse(model.Password));
-        if ((model.Username == "admin" && model.Password == "-1") || model.Username == artist.Name) {
+        Artist artist = null;
+        try {
+          artist = db.Artists.Find(int.Parse(model.Password));
+        } catch (FormatException) {}
+
+        if ((model.Username == "admin" && model.Password == "-1")
+          || (artist != null && model.Username == artist.Name)) {
           FormsAuthentication.SetAuthCookie(model.Username, model.RememberMe);
           Session["id"] = int.Parse(model.Password);
           return RedirectToLocal(returnUrl);

@@ -4,23 +4,37 @@
   ViewBag.Title = "Home Page";
 }
 
+<br />
 <div class="jumbotron">
   <h1>Music Meta Database</h1>
   <p class="lead">Saves your music metadata.</p>
 </div>
 
-<div class="row">
-  <h3>Albums</h3>
+<div class="container">
+  <h3>
+    Genres <small>
+      @Model.Songs.Select(s => s.Genre).Where(g => g.Length > 0).Distinct().Count() items
+    </small>
+  </h3>
+
+  <dl class="dl-horizontal">
+    @foreach (string genre in ViewBag.Genres) {
+      <dt>@Html.ActionLink(string.IsNullOrEmpty(genre) ? "Unspecified" : genre, "Index", "Songs", new { genre }, null)</dt>
+      <dd>@Model.Songs.Where(s => s.Genre == genre).Count()</dd>
+    }
+  </dl>
+
+  <h3>Albums <small>@Model.Albums.Count() items</small></h3>
   @Html.Partial("~/Views/Albums/_AlbumsPartial.cshtml", Model.Albums.Take(5))
   @Html.ActionLink("Show more...", "Index", "Albums")
   <hr />
 
-  <h3>Artists</h3>
+  <h3>Artists <small>@Model.Artists.Count() items</small></h3>
   @Html.Partial("~/Views/Artists/_ArtistsPartial.cshtml", Model.Artists.Take(5))
   @Html.ActionLink("Show more...", "Index", "Artists")
   <hr />
 
-  <h3>Songs</h3>
+  <h3>Songs <small>@Model.Songs.Count() items</small></h3>
   @Html.Partial("~/Views/Songs/_SongsPartial.cshtml", Model.Songs.Take(5))
   @Html.ActionLink("Show more...", "Index", "Songs")
 </div>

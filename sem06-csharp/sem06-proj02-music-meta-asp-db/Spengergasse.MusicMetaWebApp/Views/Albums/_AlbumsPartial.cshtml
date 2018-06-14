@@ -1,5 +1,13 @@
 ﻿@model IEnumerable<Spengergasse.MusicMetaWebApp.Models.Album>
 
+@using (Html.BeginForm("Index", "Albums", FormMethod.Get)) {
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search" name="search" value="@ViewBag.Search">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+}
+<br />
+
 <p>
   @Html.ActionLink("Create New", "Create", "Albums")
 </p>
@@ -35,9 +43,13 @@
         @Html.DisplayFor(modelItem => item.Artist.Name)
       </td>
       <td>
-        @Html.ActionLink("Edit", "Edit", "Albums", new { id = item.Id }, null) |
-        @Html.ActionLink("Details", "Details", "Albums", new { id = item.Id }, null) |
-        @Html.ActionLink("Delete", "Delete", "Albums", new { id = item.Id }, null)
+        @Html.ActionLink("Details", "Details", "Albums", new { id = item.Id }, null)
+        @if (Session["id"] != null) {
+          @Html.Encode("| ")
+          @Html.ActionLink("Edit", "Edit", "Albums", new { id = item.Id }, null)
+          @Html.Encode(" | ")
+          @Html.ActionLink("Delete", "Delete", "Albums", new { id = item.Id }, null)
+        }
       </td>
     </tr>
   }
