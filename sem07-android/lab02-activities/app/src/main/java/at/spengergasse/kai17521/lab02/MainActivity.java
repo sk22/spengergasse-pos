@@ -31,10 +31,17 @@ public class MainActivity extends AppCompatActivity {
             errorMessage.setText("Name must be at least three letters long.");
             return;
         }
-        if (Integer.parseInt(age.getText().toString()) < 0) {
-            errorMessage.setText("Age must be at least 0.");
+
+        try {
+            if (Integer.parseInt(age.getText().toString()) < 0) {
+                errorMessage.setText("Age must be at least 0.");
+                return;
+            }
+        } catch (NumberFormatException nfe) {
+            errorMessage.setText("Age is invalid.");
             return;
         }
+
         final Intent intent = new Intent(
                 view.getContext(),
                 SecondScreenActivity.class
