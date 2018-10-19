@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bmi"
+        android:adjustViewBounds="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_data" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/height"
+        android:hint="@string/height"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/weight"
+        android:hint="@string/weight"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sex"
+        android:checkedButton="@id/sex_surprise">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex_female"
+            android:text="@string/female" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex_male"
+            android:text="@string/male" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex_surprise"
+            android:text="@string/surprise" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:onClick="onCalculateButtonClicked" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/result" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:padding="3dip" />
+                <TextView android:padding="3dip" android:text="@string/bmi_male" />
+                <TextView android:padding="3dip" android:text="@string/bmi_female" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:padding="3dip" android:text="@string/untergewicht" />
+                <TextView android:padding="3dip" android:text="@string/untergewicht_value_male" />
+                <TextView android:padding="3dip" android:text="@string/untergewicht_value_female" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:padding="3dip" android:text="@string/normalgewicht" />
+                <TextView android:padding="3dip" android:text="@string/normalgewicht_value_male" />
+                <TextView android:padding="3dip" android:text="@string/normalgewicht_value_female" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:padding="3dip" android:text="@string/uebergewicht" />
+                <TextView android:padding="3dip" android:text="@string/uebergewicht_value_male" />
+                <TextView android:padding="3dip" android:text="@string/uebergewicht_value_female" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:padding="3dip" android:text="@string/adipositas" />
+                <TextView android:padding="3dip" android:text="@string/adipositas_value" />
+                <TextView android:padding="3dip" android:text="@string/adipositas_value" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:padding="3dip" android:text="@string/starke_adipositas" />
+                <TextView android:padding="3dip" android:text="@string/starke_adipositas_value" />
+                <TextView android:padding="3dip" android:text="@string/starke_adipositas_value" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
