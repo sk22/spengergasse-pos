@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Storage</string>
+    <string name="enter_text">Enter text</string>
+    <string name="save_external">Save externally</string>
+    <string name="save_internal">Save internally</string>
+    <string name="save_preferences">Save to preferences</string>
+    <string name="title_activity_reader">Reader</string>
+    <string name="reader">Switch to reader</string>
+    <string name="internal_storage_hint">Empty…</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="external_storage">External storage</string>
+    <string name="external_storage_hint">Empty…</string>
+    <string name="preferences_data">Preferences data</string>
+    <string name="preferences_data_hint">Empty…</string>
+    <string name="filename">lab04file</string>
+    <string name="preference_file_key">at.spengergasse.kai17521.lab04storage.PREFERENCE_FILE_KEY</string>
+    <string name="saved_to_preferences">Saved to preferences</string>
+    <string name="saved_to_external">Saved to external storage</string>
+    <string name="saved_to_internal">Saved to internal storage</string>
+</resources>
