@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Random Student</string>
+    <string name="load_list">Load list</string>
+    <string name="random">Random</string>
+    <string name="none_left">No students left</string>
+    <string name="save">Save</string>
+    <string name="filename_hint">File name</string>
+    <string name="of">/</string>
+</resources>
