@@ -1,0 +1,16 @@
+[
+  {
+    "name": "A1 Shop Donauzentrum",
+    "branch": "Mobile",
+    "address": {
+      "zip": 1220,
+      "city": "Wien",
+      "street": "Wagramer Straße 94"
+    },
+    "coordinates": {
+      "latitude": 16.435834,
+      "longitude": 48.242096
+    },
+    "photo": "https://source.unsplash.com/random"
+  }
+]
